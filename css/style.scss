@@ -1,0 +1,79 @@
+$text-color:white;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+$font:'Montserrat', sans-serif;
+$accent:#9B0423;
+body{
+  margin: 0;
+  padding:0;
+}
+
+.container-fluid{
+  width: 100%;
+  height: 100%;
+
+  .top{
+    width: 100%;
+    height: 650px;
+    background-image: url('/img/NikkiWindow.jpg');
+    background-repeat: no-repeat;
+    .title{
+      height: 200px;
+      letter-spacing:20px;
+      text-align: center;
+      bottom: 50px;
+      font-family: $font;
+
+      color:$text-color;
+      #soprano{
+        font-size: 30px;
+        margin-top: -15px;
+      }
+      .accent{
+        color:$accent;
+      }
+
+      h1{
+        font-size: 100px;
+        margin:0;
+      }
+    }
+  }
+  .upcoming{
+    width: 100%;
+    height: 325px;
+
+    .section{
+      font-size: 36px;
+      text-align: center;
+      font-family: $font;
+    }
+    .event1{
+      font-family: $font;
+      text-align: center;
+    }
+    .event2{
+      font-family: $font;
+      text-align: center;
+    }
+    .event3{
+      font-family: $font;
+      text-align: center;
+    }
+  }
+  .mediaSign{
+    width:100%;
+    height: 400px;
+    background-image: url('/img/nikkiNoSmile1.jpg');
+    background-size: cover;
+    // background-position: fixed;
+    .section2{
+      margin:0;
+      padding-top: 10%;
+      padding-right: 50%;
+      color:$text-color;
+      font-size: 36px;
+      text-align: center;
+      font-family: $font;
+    }
+  }
+}
