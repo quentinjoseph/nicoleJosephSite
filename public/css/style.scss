@@ -1,0 +1,466 @@
+$text-color:white;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+$font:'Montserrat', sans-serif;
+$fancy:'Poiret One', cursive;
+$accent:#9B0423;
+.lineThrough{
+  background-color: $accent;
+  position:relative;
+  // margin-top: 22px;
+  // margin-bottom: -43px;
+  height: 1px;
+  z-index: 0;
+}
+.footer{
+  height: 40vh;
+}
+@keyframes showDivs{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+body{
+  // .galleria{
+  //   max-width: 70vw;
+  //   height: 40vw;
+  //   background: #000;
+  //   margin:auto;
+  // }
+  margin: 0;
+  padding:0;
+  animation: showDivs 3s;
+    #navTable{
+      text-align: center;
+
+      a{
+        color:grey;
+        font-size: 24px;
+        text-decoration: none;
+        z-index: 11;
+        &:hover{
+          color:white;
+          background-color: grey;
+          border-radius: 4px;
+        }
+      }
+      .navSelect{
+
+        font-family: $font;
+         display: inline;
+         padding:0 40px;
+      }
+    padding:0;
+      list-style: none;
+
+      width: 100%;
+      height: 32px;
+      margin: auto;
+      // background-color: white;
+      z-index: 11;
+    }
+
+  .row{
+    padding:0;
+    margin: 0;
+  }
+}
+
+.container-fluid{
+  width: 100%;
+  height: 100%;
+  padding:0 !important;
+  .title{
+    border-bottom: solid 1px $accent;
+    height: 125px;
+    letter-spacing:20px;
+    text-align: center;
+    // bottom: 50px;
+    font-family: $font;
+    color:black;
+    background-color: white;
+    #soprano{
+      font-size: 30px;
+      margin-top: -15px;
+    }
+    .accent{
+      color:$accent;
+    }
+
+    h1{
+      font-size: 600%;
+      margin:0;
+    }
+  }
+
+  .top{
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    background-image: url('/img/NikkiWindow.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .upcoming{
+    width: 100%;
+    height: 325px;
+    margin: auto;
+    .surroundUpcoming{
+      width:50%;
+      margin: auto;
+      padding-bottom: 20px;
+      // z-index: 15 !important;
+      // background-color: white;
+    .section{
+      font-size: 36px;
+      text-align: center;
+      font-family: $fancy;
+      a{
+        text-decoration: none;
+        color:black;
+
+      }
+    }
+  }
+    .event1{
+      font-family: $fancy;
+      font-size: 17px;
+      text-align: center;
+
+      // margin-bottom: -5px;
+
+    }
+  }
+  .mediaSign{
+    width:100%;
+    height: 500px;
+    background-image: url('/img/nikkiNoSmile3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    // background-position: fixed;
+    .section2{
+      a{
+        text-decoration: none;
+        color:white;
+      }
+      margin:0;
+      padding-top: 10%;
+      padding-right: 50%;
+      color:$text-color;
+      font-size: 36px;
+      text-align: center;
+      font-family: $font;
+    }
+  }
+  // events page
+  .eventsPage{
+    animation: showDivs 3s;
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    // position: relative;
+    width: 100%;
+    .perfromancePic{
+      width: 100%;
+      height: 50vh;
+      border-top: black solid 1px;
+      border-bottom: black solid 1px;
+      background-image: url('/img/performance3.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: fixed;
+      z-index: 5;
+    }
+    .mapHolder{
+      float:right;
+      width: 50%;
+      height: 100%;
+      bottom: 0;
+      margin: 0;
+      #map{
+        margin: 0;
+        height: 50vh;
+        width:50vw;
+
+      }
+    }
+    .eventHolder{
+      width: 100%;
+      float: left;
+
+      .section{
+        font-size: 65px;
+        text-align: center;
+        font-family: $fancy;
+        color: #1F1616;
+        // position: fixed;
+        z-index: 15;
+        width:100%;
+        margin: auto;
+      }
+      .under{
+        // margin-top: 320px;
+      }
+      .eventsDiv{
+        // margin: auto;
+        // text-align: center;
+        font-family: $fancy;
+        padding:0;
+        // padding-bottom: .5%;
+        // border-bottom: solid black 1px;
+        width:50%;
+        height: 150px;
+        &:hover{
+          color: $accent;
+          // opacity: .9;
+        }
+      }
+   }
+  }
+  // thisEventPage
+  .thisEventPage{
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    position: relative;
+    width: 100%;
+    .Pic1{
+
+      width: 100%;
+      height: 50vh;
+      background-image: url('/img/operahouse.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 5;
+
+      // img{
+      //   display: block;
+      //   width: 50vw;
+      //   object-fit: cover;
+      //
+      // }
+    }
+    .mapHolder{
+      float:left;
+      width: 50%;
+      height: 100%;
+      #map{
+        margin: auto;
+        height:50vh;
+        width:100%;
+
+      }
+    }
+    .eventDiv{
+      margin: auto;
+      float: left;
+      font-family: $font;
+      padding-left:2%;
+      // padding-bottom: .5%;
+      // border-bottom: solid black 1px;
+      width:50%;
+      height: 150px;
+      &:hover{
+        opacity: .5;
+      }
+    }
+    .eventHolder{
+      width: 100%;
+      float: left;
+
+      .section{
+        font-size: 50px;
+        text-align: center;
+        font-family: $font;
+        color: white;
+        position: fixed;
+        z-index: 15;
+        width:100%;
+        margin: auto;
+      }
+      .under{
+        margin-top: 320px;
+      }
+
+   }
+  }
+
+}
+// media page
+.mediaContainer{
+  width:80vw;
+  margin: 0 auto;
+  padding-top: 10%;
+  font-family: $fancy;
+  h4{
+    font-size: 200%;
+    margin-top: -50px;
+  }
+  @keyframes showDivs{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
+  .audioDiv{
+    text-align: center;
+    color: black;
+    float: left;
+    border: solid 3px $accent;
+    // padding:15px;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 10vw;
+    background-image: url('/img/NikkiSing.jpg');
+    background-position: fixed;
+    background-size: cover;
+    z-index: 1;
+    animation: showDivs 3s;
+
+    &:hover{
+      opacity: .7;
+    }
+  }
+  .photoDiv{
+    text-align: center;
+    color: black;
+    float: right;
+    border: solid 3px #c67b40;
+    // padding:15px;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 10vw;
+    background-image: url('/img/NikkiWindow2square.jpg');
+    background-size: cover;
+    animation: showDivs 3s;
+    &:hover{
+      opacity: .7;
+    }
+  }
+  .videoDiv{
+    text-align: center;
+    color: black;
+    margin: auto;
+    border: solid 3px grey;
+    // padding:15px;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 10vw;
+    background-image: url('/img/nikkiDecember1.jpg');
+    background-size: cover;
+    animation: showDivs 3s;
+    &:hover{
+      opacity: .7;
+    }
+  }
+
+}
+.behindStuff{
+  margin-top:50px;
+  margin-left: 0;
+  height:150px;
+  width: 100vw;
+  background-color: grey;
+  position: absolute;
+  z-index: 0 !important;
+}
+.behindStuff2{
+  margin-top:200px;
+  margin-left: 0;
+  height:150px;
+  width: 100vw;
+  background-color: grey;
+  position: absolute;
+  z-index: 0 !important;
+}
+.audioBox{
+  text-align: center;
+  width: 60%;
+  margin:3% auto;
+  animation: showDivs 3s;
+  position: relative;
+  z-index: 1;
+}
+.mediaBoxHide{
+  display: none;
+}
+
+.videoBox{
+  text-align: center;
+  width: 60vw;
+  border: solid grey 1px;
+
+  // height: 60vw;
+  margin:1% auto;
+  animation: showDivs 3s;
+  #ytplayer{
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    margin: auto;
+    iframe{
+    // width: 100%;
+    // height: 100%;
+    padding: 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    }
+
+  }
+}
+.photoBox{
+  text-align: center;
+  width: 100%;
+  margin:0 auto;
+  .photoGallery1{
+    background-image: url('/img/resized/nikkiNoSmile.jpg');
+    background-size: cover;
+    width: 90vw;
+    height: 350px;
+    margin: 0 auto;
+  }
+  .photoGallery2{
+    background-image: url('/img/resized/performance.jpg');
+    background-position: -10px;
+    background-size: cover;
+    width: 90vw;
+    height: 350px;
+    margin: 0 auto;
+  }
+  .photoGallery3{
+    background-image: url('/img/resized/400x500/ncutie.jpg');
+    background-size: cover;
+    width: 30vw;
+    height: 350px;
+
+  }
+  .photoGallery4{
+    background-image: url('/img/resized/400x500/window.jpg');
+    background-size: cover;
+    width: 30vw;
+    height: 350px;
+
+  }
+}
+
+// bio page
+.bioPic{
+  float:left;
+  margin-left: 3%;
+}

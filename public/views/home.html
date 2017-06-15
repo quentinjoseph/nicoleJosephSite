@@ -1,0 +1,29 @@
+<!-- <div class="lineThrough"></div> -->
+<!-- <div class="title">
+  <h1 id='titleName'><span class="accent">N</span>icole<span class="accent">Joseph</span></h1>
+  <h3 id='soprano'>soprano</h3>
+</div> -->
+<div class="top">
+
+</div>
+<div class="lineThrough"></div>
+<div class="upcoming">
+  <div class="surroundUpcoming">
+  <h2 class="section"><a href="#!/events">Upcoming Events</a></h2>
+  </div>
+  <div class="row" >
+    <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="col-xs-4 event1"><h3>{{event.eventname}}</h3></div>
+  </div>
+  <div class="row">
+    <div ng-click="goToEvent(event.id)" ng-repeat="event in latest"class="col-xs-4 event1">
+      <div class="afterDate">
+      {{event.eventdate | date : MMMM-dd-yyyy}}</div><br>
+      {{event.description}}<br>
+    </div>
+  </div>
+</div>
+
+<div class="lineThrough"></div>
+<div class="mediaSign">
+  <h2 class="section2"><a href="#!/media">Media</a></h2>
+</div>

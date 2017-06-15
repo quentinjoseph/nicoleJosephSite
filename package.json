@@ -1,0 +1,23 @@
+{
+  "name": "nicolesite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentinjoseph/nicoleJosephSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quentinjoseph/nicoleJosephSite/issues"
+  },
+  "homepage": "https://github.com/quentinjoseph/nicoleJosephSite#readme",
+  "dependencies": {
+    "ng-photoswipe": "^0.2.0"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="eventsPage">
+
+    <div class="eventHolder">
+  <!-- <h2 class="section">Events</h2> -->
+
+<div class="perfromancePic">
+<!-- <img src="img/performance1.jpg" alt=""> -->
+</div>
+
+<div class="mapHolder" ng-controller="mapController">
+  <div id="map"></div>
+</div>
+
+  <h2 class="section">Events</h2>
+  <div class="under">
+
+    <div class="eventsDiv" ng-click="goToEvent(event.id)" ng-repeat="event in events">
+        <h3>{{event.eventname}}</h3>
+        <h4><b>{{event.eventdate | date: MMMM-dd-yyyy}}</b></h4>
+        <p>{{event.description}}</p>
+    </div>
+  </div>
+</div>
+</div>

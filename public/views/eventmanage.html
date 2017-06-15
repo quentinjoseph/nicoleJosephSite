@@ -1,0 +1,32 @@
+<form ng-submit="addEvent(formItem)">
+  <div class="form-group">
+    <label for="event-name">Event Name</lable>
+      <input type="text" name="" value="" required ng-model="formItem.eventName">
+  </div>
+  <div class="form-group">
+    <label for="event-address">Event Address</lable>
+      <input type="text" name="" value="" required ng-model="formItem.eventAddress">
+  </div>
+  <div class="form-group">
+    <label for="event-date">Date</label>
+    <input type="date"
+    ng-model="formItem.date"
+    id="event-date"
+
+    [name="string"]
+    [min="string"]
+    [max="string"]
+    [ng-min=""]
+    [ng-max=""]
+    [required="string"]
+    [ng-required="string"]
+    [ng-change="string"]>
+  </div>
+  <div class="form-group">
+    <label for="event-description">Description</label>
+    <textarea rows="5" type="in" class="form-control" id="event-description" required ng-model="formItem.description">
+    </textarea>
+  </div>
+  <button type="submit">Add Event</button>
+
+</form>

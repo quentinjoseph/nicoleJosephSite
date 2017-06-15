@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lightbox/css/lightbox.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-app='appMod'>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="title">
+          <h1 id='titleName'><span class="accent">N</span>icole<span class="accent">Joseph</span></h1>
+          <h3 id='soprano'>soprano</h3>
+        </div>
+        <ul id=navTable>
+            <li class="navSelect"><a href="#!/home">home</a></li>
+            <li class="navSelect"><a href="#!/events">events</a></li>
+            <li class="navSelect"><a href="#!/bio">biography</a></li>
+            <li class="navSelect"><a href="#!/media">media</a></li>
+            <li class="navSelect"><a href="#!/contact">contact</a></li>
+          </ul>
+        <ng-view></ng-view>
+        <div class="footer"></div>
+      </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7HSnTi3xX3L0J48dGD2hcA1spxSDt5MU"
+      type="text/javascript"></script>
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-route.min.js"></script>
+<script type="text/javascript" src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script type="text/javascript" src="lightbox/js/lightbox.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/routes.js"></script>
+<script type="text/javascript" src="js/controller1.js"></script>
+<script type="text/javascript" src="js/mapController.js"></script>
+<script type="text/javascript" src="js/eventController.js"></script>
+<script type="text/javascript" src="js/mediaController.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
+<!-- <script type="text/javascript" src="js/directives.js"></script> -->
+<script type="text/javascript" src="js/query.js"></script>
+
+
+  </body>
+</html>
