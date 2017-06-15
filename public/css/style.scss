@@ -5,6 +5,7 @@ $text-color:white;
 $font:'Montserrat', sans-serif;
 $fancy:'Poiret One', cursive;
 $accent:#9B0423;
+$gold:#c67b40;
 .lineThrough{
   background-color: $accent;
   position:relative;
@@ -98,7 +99,7 @@ body{
   }
 
   .top{
-    width: 100%;
+    width: 100vw;
     height: 600px;
     margin: 0;
     background-image: url('/img/NikkiWindow.jpg');
@@ -366,23 +367,25 @@ body{
 
 }
 .behindStuff{
+  border-top: solid 2px $gold;
+  border-bottom: solid 2px $gold;
   margin-top:50px;
   margin-left: 0;
-  height:150px;
+  height:275px;
   width: 100vw;
   background-color: grey;
   position: absolute;
   z-index: 0 !important;
 }
-.behindStuff2{
-  margin-top:200px;
-  margin-left: 0;
-  height:150px;
-  width: 100vw;
-  background-color: grey;
-  position: absolute;
-  z-index: 0 !important;
-}
+// .behindStuff2{
+//   margin-top:200px;
+//   margin-left: 0;
+//   height:150px;
+//   width: 100vw;
+//   background-color: grey;
+//   position: absolute;
+//   z-index: 0 !important;
+// }
 .audioBox{
   text-align: center;
   width: 60%;
@@ -398,10 +401,10 @@ body{
 .videoBox{
   text-align: center;
   width: 60vw;
-  border: solid grey 1px;
-
+  border: solid grey 4px;
+  position: relative;
   // height: 60vw;
-  margin:1% auto;
+  margin:3% auto;
   animation: showDivs 3s;
   #ytplayer{
     width: 100%;
@@ -412,7 +415,6 @@ body{
     iframe{
     // width: 100%;
     // height: 100%;
-    padding: 1%;
     position: absolute;
     top: 0;
     left: 0;
@@ -434,8 +436,11 @@ body{
     width: 90vw;
     height: 350px;
     margin: 0 auto;
+    position:relative;
+
   }
   .photoGallery2{
+    display: inline-block;
     background-image: url('/img/resized/performance.jpg');
     background-position: -10px;
     background-size: cover;
@@ -444,10 +449,12 @@ body{
     margin: 0 auto;
   }
   .photoGallery3{
+    display: inline-block;
     background-image: url('/img/resized/400x500/ncutie.jpg');
     background-size: cover;
     width: 30vw;
     height: 350px;
+    float: right;
 
   }
   .photoGallery4{
@@ -455,8 +462,9 @@ body{
     background-size: cover;
     width: 30vw;
     height: 350px;
-
+    float: left;
   }
+
 }
 
 // bio page
