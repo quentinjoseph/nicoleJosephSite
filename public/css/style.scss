@@ -2,10 +2,13 @@ $text-color:white;
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
+ 
 $font:'Montserrat', sans-serif;
 $fancy:'Poiret One', cursive;
 $accent:#9B0423;
 $gold:#c67b40;
+$grey:#e9eaea;
+$light-grey:#efefef;
 .lineThrough{
   background-color: $accent;
   position:relative;
@@ -26,18 +29,29 @@ $gold:#c67b40;
   }
 }
 body{
-  // .galleria{
-  //   max-width: 70vw;
-  //   height: 40vw;
-  //   background: #000;
-  //   margin:auto;
-  // }
+ 
   margin: 0;
   padding:0;
-  animation: showDivs 3s;
+  animation: showDivs 1s;
+  ng-scope{
+    background-color: $grey;
+  }
+  @keyframes nav-slide {
+    from{
+      padding:0 0;
+      /*margin-left: 1920px;*/
+    }
+    to{
+      padding:0 3vw;
+     /* margin-left: 0;*/
+    }
+  }
+
     #navTable{
       text-align: center;
-
+      background-color: $grey;
+      /*animation: nav-slide 2s;*/
+      border-top: 1px solid #dee0e0;
       a{
         color:grey;
         font-size: 24px;
@@ -48,12 +62,16 @@ body{
           background-color: grey;
           border-radius: 4px;
         }
+        &:before{
+          background-color:$grey;
+        }
       }
       .navSelect{
 
         font-family: $font;
          display: inline;
-         padding:0 40px;
+         padding:0 3vw;
+         animation: nav-slide 1s;
       }
     padding:0;
       list-style: none;
@@ -76,20 +94,23 @@ body{
   height: 100%;
   padding:0 !important;
   .title{
-    border-bottom: solid 1px $accent;
+    /*border-bottom: solid 1px $accent;*/
     height: 125px;
-    letter-spacing:20px;
+    letter-spacing:3vw;
     text-align: center;
     // bottom: 50px;
     font-family: $font;
     color:black;
-    background-color: white;
+    background-color: #efefef;
     #soprano{
       font-size: 30px;
       margin-top: -15px;
     }
     .accent{
       color:$accent;
+    }
+    .theN{
+      font-family: $font;
     }
 
     h1{
@@ -103,48 +124,100 @@ body{
     height: 600px;
     margin: 0;
     background-image: url('/img/NikkiWindow.jpg');
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
+    /*background-position: 0 100px;*/
     background-repeat: no-repeat;
     background-size: cover;
-
   }
+ 
   .upcoming{
-    width: 100%;
-    height: 325px;
-    margin: auto;
+    width: 100vw;
+    height: 27vw;
+    margin: 0 auto;
+    background-color: $light-grey;
     .surroundUpcoming{
-      width:50%;
-      margin: auto;
-      padding-bottom: 20px;
-      // z-index: 15 !important;
-      // background-color: white;
+      width:100%;
+      margin:0 auto;
+      /*position: relative;*/
+      /*padding-bottom: 20px;*/
+      // z-index: 1 !important;
+    background-color: $light-grey;
     .section{
+      margin-top: 0;
       font-size: 36px;
       text-align: center;
       font-family: $fancy;
+      position: relative;
+      z-index: 1;
       a{
         text-decoration: none;
         color:black;
-
+        position: relative;
+        z-index: 2;
       }
     }
   }
-    .event1{
+    .eventHomePage{
+      width:75vw;
+      margin: auto;
+    }
+   /*   .event2{
       font-family: $fancy;
       font-size: 17px;
       text-align: center;
-
-      // margin-bottom: -5px;
+   // margin-bottom: -5px;
+    }*/
+    .eventname{
+      color:$gold;
+      font-size: 1.5vw;
+    }
+    
+    .event1{
+      width: 18vw;
+      height: 18vw;
+      border-radius: 9vw;
+      font-family: $fancy;
+      font-size: 1vw;
+      padding: 2vw;
+      text-align: center;
+      border:solid $accent 4px;
+      position: relative;
+      z-index: 1;
 
     }
-  }
+    .event1:after{
+  content: '';
+  position: absolute;
+  top: .75vw;
+  left: .75vw;
+  right: .75vw;
+  bottom: .75vw;
+  border-radius: 10vw;
+  background:$grey;
+  border:solid 2px #dee0e0;
+  z-index: -1;
+}
+    
+    .rec0{
+      float: left;
+    }
+    .rec2{
+      margin:auto;
+      
+    }
+    .rec1{
+      float:right;
+      
+    }
+  
+}
   .mediaSign{
     width:100%;
-    height: 500px;
+    height: 450px;
     background-image: url('/img/nikkiNoSmile3.jpg');
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-size: cover;
-    // background-position: fixed;
+    /*background-position: fixed;*/
     .section2{
       a{
         text-decoration: none;
@@ -161,7 +234,7 @@ body{
   }
   // events page
   .eventsPage{
-    animation: showDivs 3s;
+    animation: showDivs 1s;
     a{
       color:black;
       text-decoration: none;
@@ -170,8 +243,8 @@ body{
     width: 100%;
     .perfromancePic{
       width: 100%;
-      height: 50vh;
-      border-top: black solid 1px;
+      height: 500px;
+      border-top:#dee0e0 solid 1px;
       border-bottom: black solid 1px;
       background-image: url('/img/performance3.jpg');
       background-repeat: no-repeat;
@@ -180,21 +253,21 @@ body{
       z-index: 5;
     }
     .mapHolder{
-      float:right;
+      /*float:right;*/
       width: 50%;
-      height: 100%;
+      height: 0%;
       bottom: 0;
       margin: 0;
       #map{
         margin: 0;
-        height: 50vh;
+        height: 0;
         width:50vw;
 
       }
     }
     .eventHolder{
       width: 100%;
-      float: left;
+      /*float: left;*/
 
       .section{
         font-size: 65px;
@@ -210,12 +283,12 @@ body{
         // margin-top: 320px;
       }
       .eventsDiv{
-        // margin: auto;
-        // text-align: center;
+        margin: auto;
+        text-align: center;
         font-family: $fancy;
         padding:0;
         // padding-bottom: .5%;
-        // border-bottom: solid black 1px;
+        // border: solid black 1px;
         width:50%;
         height: 150px;
         &:hover{
@@ -235,8 +308,8 @@ body{
     width: 100%;
     .Pic1{
 
-      width: 100%;
-      height: 50vh;
+      width: 100vw;
+      height: 35vw;
       background-image: url('/img/operahouse.jpg');
       background-size: cover;
       background-repeat: no-repeat;
@@ -249,14 +322,18 @@ body{
       //
       // }
     }
-    .mapHolder{
+}
+#thisEventHold{
+  width: 95vw;
+  margin-top: 3vh;
+   .mapHolder{
       float:left;
       width: 50%;
       height: 100%;
       #map{
         margin: auto;
-        height:50vh;
-        width:100%;
+        height:29vw;
+        width:50vw;
 
       }
     }
@@ -269,9 +346,9 @@ body{
       // border-bottom: solid black 1px;
       width:50%;
       height: 150px;
-      &:hover{
+      /*&:hover{
         opacity: .5;
-      }
+      }*/
     }
     .eventHolder{
       width: 100%;
@@ -293,7 +370,6 @@ body{
 
    }
   }
-
 }
 // media page
 .mediaContainer{
@@ -366,17 +442,18 @@ body{
   }
 
 }
-.behindStuff{
-  border-top: solid 2px $gold;
-  border-bottom: solid 2px $gold;
-  margin-top:50px;
-  margin-left: 0;
-  height:275px;
-  width: 100vw;
-  background-color: grey;
-  position: absolute;
-  z-index: 0 !important;
-}
+// .behindStuff{
+//   // border-top: solid 2px $accent;
+//   // border-bottom: solid 2px $accent;
+//   // margin-top:50px;
+//   margin-left: 0;
+//   height:100vh;
+//   width: 100vw;
+//   background-color: #e9eaea;
+//   position: absolute;
+//   z-index: 0 !important;
+//
+// }
 // .behindStuff2{
 //   margin-top:200px;
 //   margin-left: 0;
@@ -390,7 +467,7 @@ body{
   text-align: center;
   width: 60%;
   margin:3% auto;
-  animation: showDivs 3s;
+  animation: showDivs 1s;
   position: relative;
   z-index: 1;
 }
@@ -401,21 +478,22 @@ body{
 .videoBox{
   text-align: center;
   width: 60vw;
-  border: solid grey 4px;
+  // border: solid grey 4px;
   position: relative;
   // height: 60vw;
-  margin:3% auto;
-  animation: showDivs 3s;
+  margin:4% auto;
+  animation: showDivs 1s;
   #ytplayer{
-    width: 100%;
+    width: 44vw;
+    height: 25vw;
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
+    // padding-bottom: 56.25%;
+    // padding-top: 30px; height: 0; overflow: hidden;
     margin: auto;
     iframe{
     // width: 100%;
     // height: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -428,47 +506,79 @@ body{
 }
 .photoBox{
   text-align: center;
-  width: 100%;
-  margin:0 auto;
+  width: 80%;
+  margin:3% auto;
+  animation: showDivs 3s;
+  font-family: $font;
+  position: relative;
   .photoGallery1{
     background-image: url('/img/resized/nikkiNoSmile.jpg');
     background-size: cover;
-    width: 90vw;
-    height: 350px;
+    width: 80vw;
+    height: 30vw;
     margin: 0 auto;
     position:relative;
+    border-bottom: solid 4px #e9eaea;
 
   }
   .photoGallery2{
     display: inline-block;
     background-image: url('/img/resized/performance.jpg');
-    background-position: -10px;
+    background-position: fixed;
     background-size: cover;
-    width: 90vw;
-    height: 350px;
+    width: 80vw;
+    height: 30vw;
     margin: 0 auto;
+    position: relative;
+    border-top: solid 4px #e9eaea;
   }
   .photoGallery3{
     display: inline-block;
     background-image: url('/img/resized/400x500/ncutie.jpg');
     background-size: cover;
     width: 30vw;
-    height: 350px;
+    height: 30vw;
     float: right;
-
+    position: relative;
   }
   .photoGallery4{
     background-image: url('/img/resized/400x500/window.jpg');
     background-size: cover;
     width: 30vw;
-    height: 350px;
+    height: 30vw;
     float: left;
+    position: relative;
   }
-
+  .photoGallery5{
+    background-image: url('/img/resized/square500/sing.jpg');
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    margin:0 auto;
+    position: relative;
+    border-left: solid 4px #e9eaea;
+    border-right: solid 4px #e9eaea;
+  }
 }
-
+.boxHolder{
+  background-color: #e9eaea;
+}
 // bio page
-.bioPic{
-  float:left;
-  margin-left: 3%;
+.bioContain{
+  width:85vw;
+  margin:3% auto;
+  .bioPic{
+    float:left;
+    width: 40vw;
+    height:30vw;
+    background-image: url('/img/resized/400x500/smiles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .bioP{
+    margin-left: 42vw;
+    font-family: $font;
+    
+  }
 }

@@ -4,7 +4,7 @@ app.controller("mediaController", function ($scope){
 var audio = angular.element(document.querySelector('#audio'));
 var video = angular.element(document.querySelector('#video'));
 var photo = angular.element(document.querySelector('#photo'));
-
+var behindbar = angular.element(document.querySelector('#behind'));
 $scope.showAudio=function(){
 audio.removeClass('mediaBoxHide');
 audio.addClass('audioBox');
@@ -12,6 +12,7 @@ video.removeClass('videoBox');
 video.addClass('mediaBoxHide');
 photo.removeClass('photoBox');
 photo.addClass('mediaBoxHide');
+behindbar.addClass('behindStuff');
 console.log('audio open')
 }
 
@@ -22,6 +23,7 @@ audio.removeClass('audioBox');
 audio.addClass('mediaBoxHide');
 photo.removeClass('photoBox');
 photo.addClass('mediaBoxHide');
+behindbar.addClass('behindStuff');
 console.log('video open')
 }
 
@@ -32,6 +34,7 @@ audio.removeClass('audioBox');
 audio.addClass('mediaBoxHide');
 video.removeClass('videoBox');
 video.addClass('mediaBoxHide');
+// behindbar.removeClass('behindStuff');
 console.log('photo open')
 }
 

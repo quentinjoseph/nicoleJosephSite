@@ -53,7 +53,7 @@ app.get('/events', function(req, res) {
     });
 });
 app.get('/recent', function(req, res) {
-    pool.query("SELECT * FROM events where eventdate > now() ORDER BY eventdate ASC LIMIT 3").then(function(result) {
+    pool.query("SELECT * FROM events where eventdate + INTERVAL '24 HOUR' > now() ORDER BY eventdate ASC LIMIT 3").then(function(result) {
             res.send(result.rows);
         }).catch(function(err) {
             console.log(err);
