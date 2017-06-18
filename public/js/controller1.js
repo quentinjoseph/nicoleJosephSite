@@ -51,4 +51,9 @@ $scope.goToEvent = function (eventId) {
     console.log(eventId)
   }
 
+
+
+
+
+// navbar seclection
 });
