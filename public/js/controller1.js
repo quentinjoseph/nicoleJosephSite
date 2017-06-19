@@ -56,4 +56,77 @@ $scope.goToEvent = function (eventId) {
 
 
 // navbar seclection
+var home = angular.element(document.querySelector('#liHome'));
+var events = angular.element(document.querySelector('#liEvents'));
+var bio = angular.element(document.querySelector('#liBio'));
+var media = angular.element(document.querySelector('#liMedia'));
+var contact = angular.element(document.querySelector('#liContact'));
+
+$scope.navHome = function(){
+  home.addClass('pageNotify');
+  home.removeClass('navSelect');
+  events.removeClass('pageNotify');
+  events.addClass('navSelect');
+  bio.removeClass('pageNotify');
+  bio.addClass('navSelect');
+  media.removeClass('pageNotify');
+  media.addClass('navSelect');
+  contact.removeClass('pageNotify');
+  contact.addClass('navSelect');
+
+  }
+
+$scope.navEvents = function(){
+  events.addClass('pageNotify');
+  events.removeClass('navSelect');
+  home.removeClass('pageNotify');
+  home.addClass('navSelect');
+  bio.removeClass('pageNotify');
+  bio.addClass('navSelect');
+  media.removeClass('pageNotify');
+  media.addClass('navSelect');
+  contact.removeClass('pageNotify');
+  contact.addClass('navSelect');
+  }
+
+$scope.navBio = function(){
+  bio.addClass('pageNotify');
+  bio.removeClass('navSelect');
+  home.removeClass('pageNotify');
+  home.addClass('navSelect');
+  events.removeClass('pageNotify');
+  events.addClass('navSelect');
+  media.removeClass('pageNotify');
+  media.addClass('navSelect');
+  contact.removeClass('pageNotify');
+  contact.addClass('navSelect');
+  }
+
+$scope.navMedia = function(){
+  media.addClass('pageNotify');
+  media.removeClass('navSelect');
+  home.removeClass('pageNotify');
+  home.addClass('navSelect');
+  events.removeClass('pageNotify');
+  events.addClass('navSelect');
+  bio.removeClass('pageNotify');
+  bio.addClass('navSelect');
+  contact.removeClass('pageNotify');
+  contact.addClass('navSelect');
+  }
+
+
+$scope.navContact = function(){
+  contact.addClass('pageNotify');
+  contact.removeClass('navSelect');
+  home.removeClass('pageNotify');
+  home.addClass('navSelect');
+  events.removeClass('pageNotify');
+  events.addClass('navSelect');
+  bio.removeClass('pageNotify');
+  bio.addClass('navSelect');
+  media.removeClass('pageNotify');
+  media.addClass('navSelect');
+  }
+
 });

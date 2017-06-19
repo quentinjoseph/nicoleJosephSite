@@ -1,4 +1,5 @@
 <div class="thisEventPage">
+<div class="pic1Holder">
 <div class="Pic1"></div>
 </div>
 <div id="thisEventHold">
@@ -6,8 +7,10 @@
     <h3>{{event.eventname}}</h3>
     <h4><b>{{event.eventdate | date: MMMM-dd-yyyy}}</b></h4>
     <p>{{event.description}}</p>
+    <a href="{{event.linkto}}"><button type="button" name="button">More Info</button></a>
 </div>
 <div class="mapHolder">
   <div id="map"></div>
+</div>
 </div>
 </div>

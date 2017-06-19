@@ -32,8 +32,8 @@ function errorCallback(res) {
 
 app.post('/events', function(req, res) {
     var event = req.body;
-    var sql = "INSERT INTO events(eventname, eventdate, description, lat, lng) VALUES ($1::text, $2::date, $3::text, $4::decimal, $5::decimal)";
-    var values = [event.eventName, event.date, event.description, event.lat, event.lng];
+    var sql = "INSERT INTO events(eventname, eventdate, description, lat, lng, linkto) VALUES ($1::text, $2::date, $3::text, $4::decimal, $5::decimal, $6::text)";
+    var values = [event.eventName, event.date, event.description, event.lat, event.lng, event.linkto];
 
     pool.query(sql, values).then(function() {
         res.status(201);
@@ -54,7 +54,15 @@ app.get('/events', function(req, res) {
 });
 app.get('/recent', function(req, res) {
     pool.query("SELECT * FROM events where eventdate + INTERVAL '24 HOUR' > now() ORDER BY eventdate ASC LIMIT 3").then(function(result) {
+      if(result.rows.length < 3){
+        pool.query("SELECT * FROM events ORDER BY eventdate DESC LIMIT 3").then(function(result){
+          res.send(result.rows);
+          console.log(result.rows.length)
+        })
+      }else{
+            console.log(result.rows.length)
             res.send(result.rows);
+          }
         }).catch(function(err) {
             console.log(err);
         });

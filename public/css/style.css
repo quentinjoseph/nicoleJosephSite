@@ -4,6 +4,9 @@
 /*font-family: 'Great Vibes', cursive;
 font-family: 'Rouge Script', cursive;
 font-family: 'Bilbo Swash Caps', cursive;*/
+.icon {
+  width: 3vw; }
+
 .lineThrough {
   background-color: #9B0423;
   position: relative;
@@ -65,11 +68,17 @@ body {
         border-radius: 4px; }
       body #navTable a:before {
         background-color: #e9eaea; }
+    body #navTable .pageNotify {
+      display: inline;
+      font-family: "Montserrat", sans-serif;
+      padding: 0 3vw;
+      border-radius: 4px; }
+      body #navTable .pageNotify a {
+        color: #9B0423; }
     body #navTable .navSelect {
       font-family: "Montserrat", sans-serif;
       display: inline;
-      padding: 0 3vw;
-      animation: nav-slide 1s; }
+      padding: 0 3vw; }
   body .row {
     padding: 0;
     margin: 0; }
@@ -107,30 +116,18 @@ body {
     background-size: cover; }
   .container-fluid .upcoming {
     width: 100vw;
-    height: 27vw;
+    height: 25vw;
     margin: 0 auto;
-    background-color: #efefef;
-    /*background-image: url('/img/greystripes.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;*/
-    /*   .event2{
-       font-family: $fancy;
-       font-size: 17px;
-       text-align: center;
-    // margin-bottom: -5px;
-     }*/ }
+    background-color: #efefef; }
     .container-fluid .upcoming .surroundUpcoming {
       width: 100%;
       margin: 0 auto;
-      /*position: relative;*/
-      /*padding-bottom: 20px;*/
       background-color: #efefef; }
       .container-fluid .upcoming .surroundUpcoming .section {
         margin-top: 0;
         font-size: 36px;
         text-align: center;
-        font-family: "Poiret One", cursive;
+        font-family: "Montserrat", sans-serif;
         position: relative;
         z-index: 1; }
         .container-fluid .upcoming .surroundUpcoming .section a {
@@ -139,7 +136,8 @@ body {
           position: relative;
           z-index: 2; }
     .container-fluid .upcoming .eventHomePage {
-      width: 75vw;
+      width: 82vw;
+      height: 100%;
       margin: auto; }
     .container-fluid .upcoming .eventname {
       color: #c67b40;
@@ -168,12 +166,6 @@ body {
       background: #e9eaea;
       border: solid 2px #dee0e0;
       z-index: -1; }
-    .container-fluid .upcoming .rec0 {
-      float: left; }
-    .container-fluid .upcoming .rec2 {
-      margin: auto; }
-    .container-fluid .upcoming .rec1 {
-      float: right; }
   .container-fluid .mediaSign {
     width: 100%;
     height: 450px;
@@ -242,108 +234,109 @@ body {
         .container-fluid .eventsPage .eventHolder .eventsDiv:hover {
           color: #9B0423; }
   .container-fluid .thisEventPage {
-    position: relative;
-    width: 100%; }
-    .container-fluid .thisEventPage a {
-      color: black;
-      text-decoration: none; }
-    .container-fluid .thisEventPage .Pic1 {
-      width: 100vw;
-      height: 35vw;
-      background-image: url("/img/operahouse.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      z-index: 5; }
-  .container-fluid #thisEventHold {
-    width: 95vw;
-    margin-top: 3vh; }
-    .container-fluid #thisEventHold .mapHolder {
-      float: left;
-      width: 50%;
-      height: 100%; }
-      .container-fluid #thisEventHold .mapHolder #map {
+    width: 100vw;
+    height: 1000px; }
+    .container-fluid .thisEventPage .pic1Holder {
+      width: 100vw; }
+      .container-fluid .thisEventPage .pic1Holder a {
+        color: black;
+        text-decoration: none; }
+      .container-fluid .thisEventPage .pic1Holder .Pic1 {
+        width: 100vw;
+        height: 35vw;
+        background-image: url("/img/operahouse.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5; }
+    .container-fluid .thisEventPage #thisEventHold {
+      width: 95vw;
+      margin-top: 3vh; }
+      .container-fluid .thisEventPage #thisEventHold .mapHolder {
+        float: left;
+        width: 50%;
+        height: 100%; }
+        .container-fluid .thisEventPage #thisEventHold .mapHolder #map {
+          margin: auto;
+          height: 29vw;
+          width: 50vw; }
+      .container-fluid .thisEventPage #thisEventHold .eventDiv {
         margin: auto;
-        height: 29vw;
-        width: 50vw; }
-    .container-fluid #thisEventHold .eventDiv {
-      margin: auto;
-      float: left;
-      font-family: "Montserrat", sans-serif;
-      padding-left: 2%;
-      width: 50%;
-      height: 150px;
-      /*&:hover{
-        opacity: .5;
-      }*/ }
-    .container-fluid #thisEventHold .eventHolder {
-      width: 100%;
-      float: left; }
-      .container-fluid #thisEventHold .eventHolder .section {
-        font-size: 50px;
-        text-align: center;
+        float: left;
         font-family: "Montserrat", sans-serif;
-        color: white;
-        position: fixed;
-        z-index: 15;
+        padding-left: 2%;
+        width: 50%;
+        height: 150px;
+        /*&:hover{
+          opacity: .5;
+        }*/ }
+      .container-fluid .thisEventPage #thisEventHold .eventHolder {
         width: 100%;
-        margin: auto; }
-      .container-fluid #thisEventHold .eventHolder .under {
-        margin-top: 320px; }
-
-.mediaContainer {
-  width: 80vw;
-  margin: 0 auto;
-  padding-top: 10%;
-  font-family: "Poiret One", cursive; }
-  .mediaContainer h4 {
-    font-size: 200%;
-    margin-top: -50px; }
+        float: left; }
+        .container-fluid .thisEventPage #thisEventHold .eventHolder .section {
+          font-size: 50px;
+          text-align: center;
+          font-family: "Montserrat", sans-serif;
+          color: white;
+          position: fixed;
+          z-index: 15;
+          width: 100%;
+          margin: auto; }
+        .container-fluid .thisEventPage #thisEventHold .eventHolder .under {
+          margin-top: 320px; }
+  .container-fluid .mediaContainer {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 10%;
+    font-family: "Poiret One", cursive; }
+    .container-fluid .mediaContainer h4 {
+      font-size: 200%;
+      margin-top: -50px; }
 @keyframes showDivs {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-  .mediaContainer .audioDiv {
-    text-align: center;
-    color: black;
-    float: left;
-    border: solid 3px #9B0423;
-    height: 20vw;
-    width: 20vw;
-    border-radius: 10vw;
-    background-image: url("/img/NikkiSing.jpg");
-    background-position: fixed;
-    background-size: cover;
-    z-index: 1;
-    animation: showDivs 3s; }
-    .mediaContainer .audioDiv:hover {
-      opacity: .7; }
-  .mediaContainer .photoDiv {
-    text-align: center;
-    color: black;
-    float: right;
-    border: solid 3px #c67b40;
-    height: 20vw;
-    width: 20vw;
-    border-radius: 10vw;
-    background-image: url("/img/NikkiWindow2square.jpg");
-    background-size: cover;
-    animation: showDivs 3s; }
-    .mediaContainer .photoDiv:hover {
-      opacity: .7; }
-  .mediaContainer .videoDiv {
-    text-align: center;
-    color: black;
-    margin: auto;
-    border: solid 3px grey;
-    height: 20vw;
-    width: 20vw;
-    border-radius: 10vw;
-    background-image: url("/img/nikkiDecember1.jpg");
-    background-size: cover;
-    animation: showDivs 3s; }
-    .mediaContainer .videoDiv:hover {
-      opacity: .7; }
+    .container-fluid .mediaContainer .audioDiv {
+      text-align: center;
+      color: black;
+      float: left;
+      border: solid 3px #9B0423;
+      height: 20vw;
+      width: 20vw;
+      border-radius: 10vw;
+      background-image: url("/img/NikkiSing.jpg");
+      background-position: fixed;
+      background-size: cover;
+      z-index: 1;
+      animation: showDivs 3s; }
+      .container-fluid .mediaContainer .audioDiv:hover {
+        opacity: .7; }
+    .container-fluid .mediaContainer .photoDiv {
+      text-align: center;
+      color: black;
+      float: right;
+      border: solid 3px #c67b40;
+      height: 20vw;
+      width: 20vw;
+      border-radius: 10vw;
+      background-image: url("/img/NikkiWindow2square.jpg");
+      background-size: cover;
+      animation: showDivs 3s; }
+      .container-fluid .mediaContainer .photoDiv:hover {
+        opacity: .7; }
+    .container-fluid .mediaContainer .videoDiv {
+      text-align: center;
+      color: black;
+      margin: auto;
+      border: solid 3px grey;
+      height: 20vw;
+      width: 20vw;
+      border-radius: 10vw;
+      background-image: url("/img/nikkiDecember1.jpg");
+      background-size: cover;
+      animation: showDivs 3s; }
+      .container-fluid .mediaContainer .videoDiv:hover {
+        opacity: .7; }
 
 .audioBox {
   text-align: center;
@@ -363,16 +356,42 @@ body {
   margin: 4% auto;
   animation: showDivs 1s; }
   .videoBox #ytplayer {
-    width: 44vw;
+    font-family: "Montserrat", sans-serif;
+    width: 50vw;
     height: 25vw;
     position: relative;
-    margin: auto; }
-    .videoBox #ytplayer iframe {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
+    padding-top: 2vw;
+    margin: 0 auto; }
+    .videoBox #ytplayer a {
+      color: black;
+      text-decoration: none;
+      font-size: 1vw; }
+      .videoBox #ytplayer a .vidRep {
+        width: 20vw;
+        height: 20vw;
+        float: left;
+        border: solid 2px #9B0423;
+        border-radius: 10vw;
+        padding-top: 3%; }
+        .videoBox #ytplayer a .vidRep .vidName {
+          color: #c67b40;
+          font-size: 1.5vw;
+          margin-top: 3px; }
+        .videoBox #ytplayer a .vidRep:hover {
+          border: solid 2px grey; }
+      .videoBox #ytplayer a .vidRep2 {
+        width: 20vw;
+        height: 20vw;
+        float: right;
+        border: solid 2px #9B0423;
+        border-radius: 10vw;
+        padding-top: 3%; }
+        .videoBox #ytplayer a .vidRep2 .vidName {
+          color: #c67b40;
+          font-size: 1.5vw;
+          margin-top: 3px; }
+        .videoBox #ytplayer a .vidRep2:hover {
+          border: solid 2px grey; }
 
 .photoBox {
   text-align: center;

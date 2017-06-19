@@ -20,7 +20,7 @@
 <div class="goBehind2"></div>
 <!-- <div class="goBehind3"></div> -->
   <div class="row eventHomePage">
-    <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="event1 rec{{$index}}">
+    <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="event1 col-xs-3 col-xs-offset-1 rec{{$index}}">
       <div class="afterDate">
       {{event.eventdate | date : MMMM-dd-yyyy}}</div><br>
       <span class="eventname" >{{event.eventname}}</span><br>
@@ -29,6 +29,7 @@
   </div>
 </div>
 <div class="lineThrough"></div>
+
 <div class="mediaSign">
   <h2 class="section2"><a href="#!/media">Media</a></h2>
 </div>
