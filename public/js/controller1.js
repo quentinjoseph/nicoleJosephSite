@@ -51,6 +51,22 @@ $scope.goToEvent = function (eventId) {
     console.log(eventId)
   }
 
+// event management
+
+$scope.searchEvents = [];
+
+  eventService.getAllEvents().then(function(response) {
+    $scope.searchEvents = response;
+  });
+
+// update events
+$scope.updateItem;
+$scope.updateEvents=function(update){
+  console.log(update);
+  eventService.updateEvent(update).then(function(){
+
+  });
+}
 
 
 
@@ -128,5 +144,20 @@ $scope.navContact = function(){
   media.removeClass('pageNotify');
   media.addClass('navSelect');
   }
+// bio show download buttons
+var resume = angular.element(document.querySelector('#resume'));
+var headshot1 = angular.element(document.querySelector('#headshot1'));
+var headshot2 = angular.element(document.querySelector('#headshot2'));
+var main = angular.element(document.querySelector('#main'));
+$scope.showButtons = function(){
+  main.removeClass('bioButton');
+  main.addClass('buttonHide');
+  resume.removeClass('buttonHide');
+  resume.addClass('bioButton');
+  headshot1.removeClass('buttonHide');
+  headshot1.addClass('bioButton');
+  headshot2.removeClass('buttonHide');
+  headshot2.addClass('bioButton');
+}
 
 });

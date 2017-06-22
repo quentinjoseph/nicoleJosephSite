@@ -7,7 +7,8 @@ $scope.singleEvent=[];
        function initMap() {
          map = new google.maps.Map(document.getElementById('map'), {
            center: {lat: 37.0902, lng: -95.7129},
-           zoom: 3
+           zoom: 3,
+           scrollwheel: false
          });
 
        }

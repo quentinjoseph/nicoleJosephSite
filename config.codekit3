@@ -4,36 +4,1402 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "387CB991-AF6C-4407-8292-C36C30D229B3"
+		"uuidString": "398C6685-88A6-4EA5-BE98-221CE3B0A61D"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
-		"oAP": "\/public\/node_modules",
+		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
 	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/public\/package-min.json",
+		"oAP": "\/package-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"\/public": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/public\/public",
+	"\/public\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/css\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/css\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/style.css.map",
 		"oF": 0
+		},
+	"\/public\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-black.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-black.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-black.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-dashed.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-dashed.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-dashed.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-dashed.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-light.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-light.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-light.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-rounded.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.eot",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-rounded.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-rounded.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.ttf",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans-rounded.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.woff",
+		"oF": 0
+		},
+	"\/public\/css\/webfonts\/ostrich-sans.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/css\/webfonts\/ostrich-sans-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/files\/Nicole_S_Joseph.jpg": {
+		"ft": 16384,
+		"iS": 1233840,
+		"oA": 0,
+		"oAP": "\/public\/files\/Nicole_S_Joseph.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/files\/Nicole_S_Joseph_2.jpg": {
+		"ft": 16384,
+		"iS": 1183669,
+		"oA": 0,
+		"oAP": "\/public\/files\/Nicole_S_Joseph_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/files\/Nicole_S_Joseph_Resume.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/files\/Nicole_S_Joseph_Resume.pdf",
+		"oF": 0
+		},
+	"\/public\/fonts\/Montserrat-Light.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/fonts\/Montserrat-Light.ttf",
+		"oF": 0
+		},
+	"\/public\/fonts\/Montserrat-Regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/fonts\/Montserrat-Regular.ttf",
+		"oF": 0
+		},
+	"\/public\/fonts\/Montserrat-Thin.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/fonts\/Montserrat-Thin.ttf",
+		"oF": 0
+		},
+	"\/public\/img\/icons\/camera-icon-52.png": {
+		"ft": 32768,
+		"iS": 10901,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/camera-icon-52.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/img\/icons\/favicon.ico",
+		"oF": 0
+		},
+	"\/public\/img\/icons\/FB.png": {
+		"ft": 32768,
+		"iS": 1596,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/FB.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/hs1.png": {
+		"ft": 32768,
+		"iS": 54378,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/hs1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/hs2.png": {
+		"ft": 32768,
+		"iS": 45573,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/hs2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/instagram.png": {
+		"ft": 32768,
+		"iS": 1848,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/instagram.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/linkedin.png": {
+		"ft": 32768,
+		"iS": 1673,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/linkedin.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/N.png": {
+		"ft": 32768,
+		"iS": 1623,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/N.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/play.png": {
+		"ft": 32768,
+		"iS": 22928,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/play.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/icons\/resume.png": {
+		"ft": 32768,
+		"iS": 19318,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/resume.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/NikkiCutie.jpg": {
+		"ft": 16384,
+		"iS": 630221,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiCutie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiCutie2.jpg": {
+		"ft": 16384,
+		"iS": 620556,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiCutie2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/nikkiDecember1.jpg": {
+		"ft": 16384,
+		"iS": 78739,
+		"oA": 0,
+		"oAP": "\/public\/img\/nikkiDecember1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiNoSmile.jpg": {
+		"ft": 16384,
+		"iS": 1233513,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiNoSmile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/nikkiNoSmile1.jpg": {
+		"ft": 16384,
+		"iS": 7627837,
+		"oA": 0,
+		"oAP": "\/public\/img\/nikkiNoSmile1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/nikkiNoSmile1fit.jpg": {
+		"ft": 16384,
+		"iS": 972490,
+		"oA": 0,
+		"oAP": "\/public\/img\/nikkiNoSmile1fit.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/nikkiNoSmile2.jpg": {
+		"ft": 16384,
+		"iS": 1625532,
+		"oA": 0,
+		"oAP": "\/public\/img\/nikkiNoSmile2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/nikkiNoSmile3.jpg": {
+		"ft": 16384,
+		"iS": 795217,
+		"oA": 0,
+		"oAP": "\/public\/img\/nikkiNoSmile3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiSerious": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/img\/NikkiSerious",
+		"oF": 0
+		},
+	"\/public\/img\/NikkiSing.jpg": {
+		"ft": 16384,
+		"iS": 87804,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiSing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiSurprise.jpg": {
+		"ft": 16384,
+		"iS": 1036470,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiSurprise.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiSurprise2.jpg": {
+		"ft": 16384,
+		"iS": 637526,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiSurprise2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiWindow.jpg": {
+		"ft": 16384,
+		"iS": 934438,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiWindow.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiWindow2.jpg": {
+		"ft": 16384,
+		"iS": 1225166,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiWindow2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/NikkiWindow2square.jpg": {
+		"ft": 16384,
+		"iS": 903825,
+		"oA": 0,
+		"oAP": "\/public\/img\/NikkiWindow2square.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/operahouse.jpg": {
+		"ft": 16384,
+		"iS": 396218,
+		"oA": 0,
+		"oAP": "\/public\/img\/operahouse.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/performance1.jpg": {
+		"ft": 16384,
+		"iS": 5968367,
+		"oA": 0,
+		"oAP": "\/public\/img\/performance1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/performance2.jpg": {
+		"ft": 16384,
+		"iS": 18035590,
+		"oA": 0,
+		"oAP": "\/public\/img\/performance2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/performance3.jpg": {
+		"ft": 16384,
+		"iS": 863220,
+		"oA": 0,
+		"oAP": "\/public\/img\/performance3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/400x500\/ncutie.jpg": {
+		"ft": 16384,
+		"iS": 142191,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/400x500\/ncutie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/400x500\/nosmilewindow.jpg": {
+		"ft": 16384,
+		"iS": 195772,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/400x500\/nosmilewindow.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/400x500\/smiles.jpg": {
+		"ft": 16384,
+		"iS": 150539,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/400x500\/smiles.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/400x500\/surprise.jpg": {
+		"ft": 16384,
+		"iS": 150237,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/400x500\/surprise.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/400x500\/window.jpg": {
+		"ft": 16384,
+		"iS": 138091,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/400x500\/window.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/ncutie.jpg": {
+		"ft": 16384,
+		"iS": 387166,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/ncutie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/NikkiCutie390w451h.jpg": {
+		"ft": 16384,
+		"iS": 62376,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/NikkiCutie390w451h.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/nikkiNoSmile.jpg": {
+		"ft": 16384,
+		"iS": 278609,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/nikkiNoSmile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/performance.jpg": {
+		"ft": 16384,
+		"iS": 801736,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/performance.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/square500\/dupois.png": {
+		"ft": 32768,
+		"iS": 139775,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/square500\/dupois.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/resized\/square500\/laugh.jpg": {
+		"ft": 16384,
+		"iS": 149467,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/square500\/laugh.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/square500\/serious.jpg": {
+		"ft": 16384,
+		"iS": 82768,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/square500\/serious.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/square500\/sing.jpg": {
+		"ft": 16384,
+		"iS": 74872,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/square500\/sing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/w900h600\/DSCN2215.jpg": {
+		"ft": 16384,
+		"iS": 1783320,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/w900h600\/DSCN2215.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/public\/img\/resized\/w900h600\/figaro.jpg": {
+		"ft": 16384,
+		"iS": 201029,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/w900h600\/figaro.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/w900h600\/flipped.png": {
+		"ft": 32768,
+		"iS": 236844,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/w900h600\/flipped.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/resized\/w900h600\/pizza.jpg": {
+		"ft": 16384,
+		"iS": 1800837,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/w900h600\/pizza.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/w900h600\/pizza.png": {
+		"ft": 32768,
+		"iS": 775641,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/w900h600\/pizza.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/resized\/w900h600\/pizza2.jpg": {
+		"ft": 16384,
+		"iS": 277043,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/w900h600\/pizza2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/w900h600\/Screen Shot 2017-06-19 at 9.29.00 PM.png": {
+		"ft": 32768,
+		"iS": 728455,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/w900h600\/Screen Shot 2017-06-19 at 9.29.00 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/resized\/window.jpg": {
+		"ft": 16384,
+		"iS": 1156652,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/window.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/smiles.jpg": {
+		"ft": 16384,
+		"iS": 518340,
+		"oA": 0,
+		"oAP": "\/public\/img\/smiles.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/stripe.png": {
+		"ft": 32768,
+		"iS": 1288,
+		"oA": 0,
+		"oAP": "\/public\/img\/stripe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/index.html",
+		"oF": 0
+		},
+	"\/public\/js\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/app-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/contactController-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/contactController-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/contactController.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/contactController-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/controller1-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/controller1-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/controller1.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/controller1-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/directives.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/directives-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/eventController-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/eventController-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/eventController.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/eventController-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/mapController-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/mapController-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/mapController.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/mapController-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/mediaController.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/mediaController-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/query-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/query-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/query.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/query-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/routes-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/routes-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/routes.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/routes-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/service-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/service-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/service.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/service-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lib\/angular-route.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lib\/angular-route.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lib\/angular.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lib\/angular.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css.map",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css.map",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap.css.map",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css.map",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.eot",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.ttf",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff2",
+		"oF": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lib\/bootstrap-3.3.7-dist\/js\/npm.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/js\/npm-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lib\/ui-bootstrap-tpls-2.5.0.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lib\/ui-bootstrap-tpls-2.5.0.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lightbox\/css\/lightbox.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/css\/lightbox-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/lightbox\/css\/lightbox.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/css\/lightbox.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/lightbox\/images\/close.png": {
+		"ft": 32768,
+		"iS": 280,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/images\/close.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/lightbox\/images\/loading.gif": {
+		"ft": 4194304,
+		"iS": 8476,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/images\/loading.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/public\/lightbox\/images\/next.png": {
+		"ft": 32768,
+		"iS": 1350,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/images\/next.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/lightbox\/images\/prev.png": {
+		"ft": 32768,
+		"iS": 1360,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/images\/prev.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/lightbox\/js\/lightbox-plus-jquery.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/js\/lightbox-plus-jquery-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lightbox\/js\/lightbox-plus-jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/js\/lightbox-plus-jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lightbox\/js\/lightbox-plus-jquery.min.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lightbox\/js\/lightbox-plus-jquery.min.map",
+		"oF": 0
+		},
+	"\/public\/lightbox\/js\/lightbox.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/js\/lightbox-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lightbox\/js\/lightbox.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/lightbox\/js\/lightbox.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/lightbox\/js\/lightbox.min.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/lightbox\/js\/lightbox.min.map",
+		"oF": 0
+		},
+	"\/public\/litty\/lity.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/litty\/lity-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/litty\/lity.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/litty\/lity-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/litty\/lity.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/litty\/lity.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/litty\/lity.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/litty\/lity.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/server-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/server-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/views\/bio.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/bio.html",
+		"oF": 0
+		},
+	"\/public\/views\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/contact.html",
+		"oF": 0
+		},
+	"\/public\/views\/eventmanage.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/eventmanage.html",
+		"oF": 0
+		},
+	"\/public\/views\/events.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/events.html",
+		"oF": 0
+		},
+	"\/public\/views\/eventupdate.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/eventupdate.html",
+		"oF": 0
+		},
+	"\/public\/views\/home.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/home.html",
+		"oF": 0
+		},
+	"\/public\/views\/media.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/media.html",
+		"oF": 0
+		},
+	"\/public\/views\/sent.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/sent.html",
+		"oF": 0
+		},
+	"\/public\/views\/thisevent.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/thisevent.html",
+		"oF": 0
+		},
+	"\/server-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/server-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/server.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/public\/server-min.js",
+		"oAP": "\/server-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -44,14 +1410,14 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 518915168,
+	"creationDate": 519633422,
 	"displayValue": "nicoleSite",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-doge"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -302,8 +1668,8 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 1,
-	"buildFolderName": "public",
+	"buildFolderActive": 0,
+	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -1405,7 +2771,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/localhost:5000",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -1983,6 +3349,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

@@ -12,21 +12,17 @@
   <div class="surroundUpcoming">
   <h2 class="section"><a href="#!/events">Upcoming Events</a></h2>
   </div>
-  <!-- <div class="row" >
-    <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" id class="col-xs-4 event2 rec{{$index}}"><h3>{{event.eventname}}</h3></div>
-  </div> -->
-
-<!-- <div class="goBehind"></div> -->
-<div class="goBehind2"></div>
-<!-- <div class="goBehind3"></div> -->
+<!-- <div class="sideways"></div> -->
   <div class="row eventHomePage">
     <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="event1 col-xs-3 col-xs-offset-1 rec{{$index}}">
       <div class="afterDate">
       {{event.eventdate | date : MMMM-dd-yyyy}}</div><br>
       <span class="eventname" >{{event.eventname}}</span><br>
       {{event.description}}<br>
+      <!-- <img src="../img/icons/N.png" alt=""> -->
     </div>
   </div>
+  <div class="seeFull"><a href="#!/events">See Full Schedule</a></div>
 </div>
 <div class="lineThrough"></div>
 

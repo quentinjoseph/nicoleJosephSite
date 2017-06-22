@@ -25,7 +25,8 @@ $scope.goToEvent = function (eventId) {
      function initMap() {
        map = new google.maps.Map(document.getElementById('map'), {
          center: {lat: Number(thisEvent[0].lat), lng:Number(thisEvent[0].lng)},
-         zoom: 18
+         zoom: 18,
+         scrollwheel: false
        });
 
      }

@@ -4,7 +4,11 @@ const pg = require('pg');
 
 const app = express();
 
-
+// Mailjet variables -api we use to send post id email to user
+var mailjet = require('node-mailjet').connect('7672f7d7861def0d58556c8fde5fd009', 'e46c285ea610edd14646958ed4ce3223');
+function handleError (err) {
+  throw new Error(err.ErrorMessage);
+}
 
 
 
@@ -38,10 +42,73 @@ app.post('/events', function(req, res) {
     pool.query(sql, values).then(function() {
         res.status(201);
         res.send("INSERTED");
-        // adjust();
-        // testEmail();
+
     }).catch(errorCallback(res));
 });
+
+app.post('/eventmanage', function(req, res) {
+    var events = req.body;
+    var update= req.body.text;
+    var updateNum=update.replace(/"/g,"");
+    var sectionRep=req.body.column;
+    // var sectionRep=section.replace(/"/g,"");
+    var sql = "UPDATE events SET description = $1::text WHERE id =$2::int";
+    var sql2 = "UPDATE events SET eventname = $1::text WHERE id =$2::int";
+    var sql3 = "UPDATE events SET linkto = $1::text WHERE id =$2::int";
+    var sql4 = "UPDATE events SET eventdate = $1::date WHERE id =$2::int";
+    var values = [update, events.id];
+    var values2 = [updateNum, events.id];
+    console.log(sectionRep);
+    if (sectionRep=='description'){
+    pool.query(sql, values).then(function() {
+        res.status(201);
+        res.send("INSERTED");
+    }).catch(errorCallback(res));
+    }else if (sectionRep=='event name'){
+    pool.query(sql2, values).then(function() {
+        res.status(201);
+        res.send("INSERTED");
+    }).catch(errorCallback(res));
+  }else if(sectionRep=='link'){
+    pool.query(sql3, values).then(function() {
+        res.status(201);
+        res.send("INSERTED");
+    }).catch(errorCallback(res));
+  }else if(sectionRep=='date'){
+    pool.query(sql4, values2).then(function() {
+        res.status(201);
+        res.send("INSERTED");
+    }).catch(errorCallback(res));
+  }
+});
+
+app.post('/contact', function(req, res) {
+    var emails = req.body;
+
+    function sendEmail() {
+      email = {};
+      email['FromName'] =  emails.name ;
+      email['FromEmail'] = 'soprano.nicole.joseph@gmail.com' ;
+      email['Subject'] = 'Message From '+ emails.email;
+      email['Recipients'] = [{'Email': 'soprano.nicole.joseph@gmail.com'}];
+      email['Text-Part'] = emails.message ;
+
+      mailjet.post('send')
+        .request(email)
+        .then(function() {
+            res.status(201);
+            res.send("Sent");
+            // adjust();
+            // testEmail();
+        }).catch(errorCallback(res));
+        // .catch(handleError);
+    }
+    sendEmail();
+
+});
+
+
+
 
 
 

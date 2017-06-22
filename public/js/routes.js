@@ -16,12 +16,26 @@ app.config(function($routeProvider) {
       templateUrl: 'views/media.html',
       controller: 'mediaController'
 
+    }).when('/contact',{
+      templateUrl: 'views/contact.html',
+      controller: 'contactController'
+
+    }).when('/sent',{
+      templateUrl: 'views/sent.html',
+      controller: 'contactController'
+
     })
     .when('/eventmanage',{
     templateUrl: 'views/eventmanage.html',
     controller: 'controller1'
 
-  }).when('/thisevent',{
+    })
+    .when('/eventupdate',{
+    templateUrl: 'views/eventupdate.html',
+    controller: 'controller1'
+
+    })
+    .when('/thisevent',{
     templateUrl: 'views/thisevent.html',
     controller: 'eventController'
 
