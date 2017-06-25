@@ -19,5 +19,8 @@
   "homepage": "https://github.com/quentinjoseph/nicoleJosephSite#readme",
   "dependencies": {
     "ng-photoswipe": "^0.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
   }
 }

@@ -9,6 +9,18 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/.env": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.env",
+		"oF": 0
+		},
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/app.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -23,6 +35,14 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
+	"\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -30,6 +50,24 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/pg-connection-pool-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/pg-connection-pool-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/pg-connection-pool.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/pg-connection-pool-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/Procfile.txt": {
 		"ft": 8192,
