@@ -277,9 +277,7 @@ body{
       font-family: $fancy2;
       font-size: 3vw;
     }
-    .descript{
-      width:48vw;
-    }
+
 
     .event1{
 
@@ -293,6 +291,9 @@ body{
       z-index: 2;
       &:hover{
         cursor: pointer;
+      }
+      .descript{
+        width:48vw;
       }
       .seeFull{
         @media(max-width: 475px){

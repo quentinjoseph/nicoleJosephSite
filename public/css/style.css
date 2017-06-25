@@ -219,8 +219,6 @@ body {
       text-decoration: underline;
       font-family: "Rouge Script", cursive;
       font-size: 3vw; }
-    .container-fluid .upcoming .descript {
-      width: 48vw; }
     .container-fluid .upcoming .event1 {
       display: inline-block;
       width: 100vw;
@@ -232,6 +230,8 @@ body {
       z-index: 2; }
       .container-fluid .upcoming .event1:hover {
         cursor: pointer; }
+      .container-fluid .upcoming .event1 .descript {
+        width: 48vw; }
       .container-fluid .upcoming .event1 .seeFull {
         font-size: 1.5vw;
         font-family: money;
