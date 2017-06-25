@@ -182,9 +182,10 @@ app.get('/recent', function(req, res) {
 // id SERIAL UNIQUE PRIMARY KEY,
 // eventName VARCHAR(40),
 // eventdate TIMESTAMP,
-// description VARCHAR(200),
-// lat DECIMAL(11,20),
-// lng DECIMAL(10,20),
-// timeadded TIMESTAMP DEFAULT NOW()
+// description VARCHAR(400),
+// lat numeric(30,25),
+// lng numeric(30,25),
+// timeadded TIMESTAMP DEFAULT NOW(),
+// linkto VARCHAR(400)
 //
 // );
