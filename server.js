@@ -17,14 +17,14 @@ app.use(bodyParser.json());
 
 //pg connection for heroku
 // var pool = require("./pg-connection-pool");
-var pool = new pg.Pool({
-    user: "postgres",
-    password: "quentin",
-    host: "localhost",
-    port: 5432,
-    database: "nicole",
-    ssl: false
-});
+// var pool = new pg.Pool({
+//     user: "postgres",
+//     password: "quentin",
+//     host: "localhost",
+//     port: 5432,
+//     database: "nicole",
+//     ssl: false
+// });
 
 
 function errorCallback(res) {
