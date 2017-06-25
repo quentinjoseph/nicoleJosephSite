@@ -9,7 +9,7 @@ $scope.addEvent = function(item){
   function geocodeAddress(geocoder, resultsMap) {
     var geocoder = new google.maps.Geocoder();
     var address = item.eventAddress;
-    console.log(address);
+    // console.log(address);
     geocoder.geocode({'address': address}, function(results, status) {
       if (status === 'OK') {
 
@@ -18,7 +18,7 @@ $scope.addEvent = function(item){
       $scope.formItem.lat= lat;
       $scope.formItem.lng= lng;
       eventService.addEvent(item).then(function(){
-      console.log($scope.formItem);
+      // console.log($scope.formItem);
       $scope.formItem={};
       $scope.addSuccess=true;
       })

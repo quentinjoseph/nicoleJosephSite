@@ -258,6 +258,7 @@ body{
     span{
       font-family: $fancy;
       font-size: 1.25vw;
+      font-style: italic;
     }
   }
     .eventHomePage{
@@ -269,6 +270,8 @@ body{
       display: inline-block;
     }
     .afterDate{
+      width:47vw;
+      margin-top: 2vw;
       margin-bottom: -2vh;
     }
     .eventname{
@@ -293,7 +296,16 @@ body{
         cursor: pointer;
       }
       .descript{
-        width:48vw;
+        font-size: 1.5vw;
+        width:47vw;
+        height: 5vw;
+        margin:0;
+        white-space: pre-line;
+        color:#173547;
+        // font-family: money;
+        p{
+          margin:0;
+        }
       }
       .seeFull{
         @media(max-width: 475px){
@@ -307,7 +319,7 @@ body{
         float: left;
         margin-right: 2vw;
         // bottom:2vw;
-        margin-top: 3vw;
+        margin-top: 2vw;
         position: relative;
         }
     }
@@ -437,6 +449,7 @@ body{
         text-align: center;
         span{
           font-family: $fancy;
+          font-style: italic;
         }
       }
       .eventsDiv{

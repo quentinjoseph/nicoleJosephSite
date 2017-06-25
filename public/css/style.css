@@ -204,7 +204,8 @@ body {
         z-index: 1; }
       .container-fluid .upcoming .surroundUpcoming span {
         font-family: "Didact Gothic", sans-serif;
-        font-size: 1.25vw; }
+        font-size: 1.25vw;
+        font-style: italic; }
     .container-fluid .upcoming .eventHomePage {
       width: 100%;
       margin: auto;
@@ -213,6 +214,8 @@ body {
       height: 100%;
       display: inline-block; }
     .container-fluid .upcoming .afterDate {
+      width: 47vw;
+      margin-top: 2vw;
       margin-bottom: -2vh; }
     .container-fluid .upcoming .eventname {
       color: #c67b40;
@@ -231,14 +234,21 @@ body {
       .container-fluid .upcoming .event1:hover {
         cursor: pointer; }
       .container-fluid .upcoming .event1 .descript {
-        width: 48vw; }
+        font-size: 1.5vw;
+        width: 47vw;
+        height: 5vw;
+        margin: 0;
+        white-space: pre-line;
+        color: #173547; }
+        .container-fluid .upcoming .event1 .descript p {
+          margin: 0; }
       .container-fluid .upcoming .event1 .seeFull {
         font-size: 1.5vw;
         font-family: money;
         text-decoration: none;
         float: left;
         margin-right: 2vw;
-        margin-top: 3vw;
+        margin-top: 2vw;
         position: relative; }
         @media (max-width: 475px) {
           .container-fluid .upcoming .event1 .seeFull {
@@ -345,7 +355,8 @@ body {
         right: 0%;
         text-align: center; }
         .container-fluid .eventsPage .eventHolder .under span {
-          font-family: "Didact Gothic", sans-serif; }
+          font-family: "Didact Gothic", sans-serif;
+          font-style: italic; }
       .container-fluid .eventsPage .eventHolder .eventsDiv {
         margin-left: auto;
         margin-right: auto;
