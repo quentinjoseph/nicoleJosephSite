@@ -243,9 +243,10 @@ body {
         .container-fluid .upcoming .event1 .descript p {
           margin: 0; }
       .container-fluid .upcoming .event1 .seeFull {
+        color: blue;
         font-size: 1.5vw;
         font-family: money;
-        text-decoration: none;
+        text-decoration: underline;
         float: left;
         margin-right: 2vw;
         margin-top: 2vw;
