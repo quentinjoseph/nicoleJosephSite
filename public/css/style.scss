@@ -315,13 +315,16 @@ body{
         }
         color:blue;
         font-size: 1.5vw;
-        font-family: $font;
+        font-family: $fancy;
         text-decoration: underline;
         float: left;
         margin-right: 2vw;
         // bottom:2vw;
         margin-top: 2vw;
         position: relative;
+        a{
+          color:blue;
+        }
         }
     }
     .picHolder0{

@@ -245,7 +245,7 @@ body {
       .container-fluid .upcoming .event1 .seeFull {
         color: blue;
         font-size: 1.5vw;
-        font-family: money;
+        font-family: "Didact Gothic", sans-serif;
         text-decoration: underline;
         float: left;
         margin-right: 2vw;
@@ -256,6 +256,8 @@ body {
             bottom: 2.5vw;
             float: left;
             font-size: 1.0vw; } }
+        .container-fluid .upcoming .event1 .seeFull a {
+          color: blue; }
     .container-fluid .upcoming .picHolder0 {
       width: 48vw;
       height: 100%;
