@@ -747,12 +747,22 @@ body {
     .bioContain .bioHolder .buttonHide {
       display: none; }
     .bioContain .bioHolder .bioButton {
+      border: solid 1px black;
+      margin-bottom: 0;
       color: black;
       display: inline-block;
       animation: showDivs 2s; }
+      .bioContain .bioHolder .bioButton p {
+        margin-bottom: 0; }
       .bioContain .bioHolder .bioButton a {
         color: black;
         text-decoration: none; }
+        .bioContain .bioHolder .bioButton a:hover {
+          color: white; }
+      .bioContain .bioHolder .bioButton:hover {
+        background-color: black;
+        border: solid 1px black;
+        color: white; }
     .bioContain .bioHolder .docs {
       font-family: money;
       font-size: 24px;
@@ -762,9 +772,12 @@ body {
       margin-top: 6vw; }
       .bioContain .bioHolder .docs #main {
         width: 285px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        border: solid 0.25px #76767a; }
         .bioContain .bioHolder .docs #main:hover {
-          color: #008eed;
+          color: white;
+          background-color: black;
+          border: 1px solid black;
           cursor: pointer; }
       .bioContain .bioHolder .docs img {
         padding: 0 6vw; }
