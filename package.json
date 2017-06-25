@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/quentinjoseph/nicoleJosephSite#readme",
   "dependencies": {
-    "ng-photoswipe": "^0.2.0"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "ng-photoswipe": "^0.2.0",
+    "node-mailjet": "^3.1.0",
+    "pg": "^6.4.0"
   },
   "devDependencies": {
     "dotenv": "^4.0.0"

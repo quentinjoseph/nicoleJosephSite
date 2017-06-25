@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const pg = require('pg');
 
 const app = express();
-var pool = require("./pg­-connection­-pool");
+// var pool = require("./pg­-connection­-pool");
 // Mailjet variables -api we use to send post id email to user
 var mailjet = require('node-mailjet').connect('7672f7d7861def0d58556c8fde5fd009', 'e46c285ea610edd14646958ed4ce3223');
 function handleError (err) {
@@ -16,7 +16,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 //pg connection for heroku
-// var pool = require("./pg-connection-pool");
+var pool = require("./pg-connection-pool");
 // var pool = new pg.Pool({
 //     user: "postgres",
 //     password: "quentin",
