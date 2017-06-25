@@ -219,6 +219,8 @@ body {
       text-decoration: underline;
       font-family: "Rouge Script", cursive;
       font-size: 3vw; }
+    .container-fluid .upcoming .descript {
+      width: 48vw; }
     .container-fluid .upcoming .event1 {
       display: inline-block;
       width: 100vw;
