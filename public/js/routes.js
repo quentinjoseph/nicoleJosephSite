@@ -24,20 +24,13 @@ app.config(function($routeProvider) {
       templateUrl: 'views/sent.html',
       controller: 'contactController'
 
-    })
-    .when('/eventmanage',{
-    templateUrl: 'views/eventmanage.html',
-    controller: 'controller1'
+    }).when('/admin',{
+      templateUrl: 'views/admin.html',
+      controller: 'controller1'
 
-    })
-    .when('/eventupdate',{
-    templateUrl: 'views/eventupdate.html',
-    controller: 'controller1'
-
-    })
-    .when('/thisevent',{
-    templateUrl: 'views/thisevent.html',
-    controller: 'eventController'
+    }).when('/thisevent',{
+      templateUrl: 'views/thisevent.html',
+      controller: 'eventController'
 
     })
       .otherwise('/home');

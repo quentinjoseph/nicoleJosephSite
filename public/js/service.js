@@ -96,4 +96,31 @@ app.service("eventService", function($http) {
        });
        return promise
    }
+
+   this.deleteEvent = function(postid) {
+       // DELETE /api/items/{ID}
+       console.log(postid);
+       var userid =postid.id;
+       return $http.delete('/deletepost?postid='+ userid).then(function(response){
+         console.log(response);
+         return response;
+       // TODO Make the HTTP request to the server and return a promise.
+   })
+   }
+
+   this.checkLogin = function(login) {
+       var username=login.username;
+       var pword=username.pword;
+       var promise = $http({
+         method: 'GET',
+         url: '/eventlogin?username='+username
+     }).then(function successCallback(response) {
+       loginCheck = response.data;
+       console.log(loginCheck);
+       return loginCheck;
+   }, function errorCallback(response) {
+       console.log('error');
+   });
+     return promise;
+   };
 });

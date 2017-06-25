@@ -13,7 +13,7 @@ video.addClass('mediaBoxHide');
 photo.removeClass('photoBox');
 photo.addClass('mediaBoxHide');
 behindbar.addClass('behindStuff');
-console.log('audio open')
+
 }
 
 $scope.showVideo=function(){
@@ -24,7 +24,7 @@ audio.addClass('mediaBoxHide');
 photo.removeClass('photoBox');
 photo.addClass('mediaBoxHide');
 behindbar.addClass('behindStuff');
-console.log('video open')
+
 }
 
 $scope.showPhoto=function(){
@@ -34,8 +34,7 @@ audio.removeClass('audioBox');
 audio.addClass('mediaBoxHide');
 video.removeClass('videoBox');
 video.addClass('mediaBoxHide');
-// behindbar.removeClass('behindStuff');
-console.log('photo open')
+
 }
 
 

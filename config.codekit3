@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/app.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -22,6 +30,12 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/Procfile.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Procfile.txt",
+		"oF": 0
 		},
 	"\/public\/css\/style.css": {
 		"aP": 1,
@@ -51,240 +65,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-black.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-black.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-black.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-black.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-black.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-bold.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-bold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-bold.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-dashed.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-dashed.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-dashed.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-dashed.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-dashed.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-italic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-italic.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-inline-regular.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-inline-regular.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-light.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-light.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-light.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-light.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-regular.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-regular.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-rounded.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.eot",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-rounded.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-rounded.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.ttf",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans-rounded.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-rounded.woff",
-		"oF": 0
-		},
-	"\/public\/css\/webfonts\/ostrich-sans.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/public\/css\/webfonts\/ostrich-sans-min.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/public\/files\/Nicole_S_Joseph.jpg": {
 		"ft": 16384,
@@ -413,6 +193,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/public\/img\/icons\/paper-plane.png": {
+		"ft": 32768,
+		"iS": 9616,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/paper-plane.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/img\/icons\/play.png": {
 		"ft": 32768,
 		"iS": 22928,
@@ -435,51 +226,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/public\/img\/NikkiCutie.jpg": {
-		"ft": 16384,
-		"iS": 630221,
-		"oA": 0,
-		"oAP": "\/public\/img\/NikkiCutie.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/NikkiCutie2.jpg": {
-		"ft": 16384,
-		"iS": 620556,
-		"oA": 0,
-		"oAP": "\/public\/img\/NikkiCutie2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/public\/img\/nikkiDecember1.jpg": {
 		"ft": 16384,
 		"iS": 78739,
 		"oA": 0,
 		"oAP": "\/public\/img\/nikkiDecember1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/NikkiNoSmile.jpg": {
-		"ft": 16384,
-		"iS": 1233513,
-		"oA": 0,
-		"oAP": "\/public\/img\/NikkiNoSmile.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/nikkiNoSmile1.jpg": {
-		"ft": 16384,
-		"iS": 7627837,
-		"oA": 0,
-		"oAP": "\/public\/img\/nikkiNoSmile1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -495,77 +246,11 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/public\/img\/nikkiNoSmile2.jpg": {
-		"ft": 16384,
-		"iS": 1625532,
-		"oA": 0,
-		"oAP": "\/public\/img\/nikkiNoSmile2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/nikkiNoSmile3.jpg": {
-		"ft": 16384,
-		"iS": 795217,
-		"oA": 0,
-		"oAP": "\/public\/img\/nikkiNoSmile3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/NikkiSerious": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/img\/NikkiSerious",
-		"oF": 0
-		},
 	"\/public\/img\/NikkiSing.jpg": {
 		"ft": 16384,
 		"iS": 87804,
 		"oA": 0,
 		"oAP": "\/public\/img\/NikkiSing.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/NikkiSurprise.jpg": {
-		"ft": 16384,
-		"iS": 1036470,
-		"oA": 0,
-		"oAP": "\/public\/img\/NikkiSurprise.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/NikkiSurprise2.jpg": {
-		"ft": 16384,
-		"iS": 637526,
-		"oA": 0,
-		"oAP": "\/public\/img\/NikkiSurprise2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/NikkiWindow.jpg": {
-		"ft": 16384,
-		"iS": 934438,
-		"oA": 0,
-		"oAP": "\/public\/img\/NikkiWindow.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/NikkiWindow2.jpg": {
-		"ft": 16384,
-		"iS": 1225166,
-		"oA": 0,
-		"oAP": "\/public\/img\/NikkiWindow2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -586,26 +271,6 @@
 		"iS": 396218,
 		"oA": 0,
 		"oAP": "\/public\/img\/operahouse.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/performance1.jpg": {
-		"ft": 16384,
-		"iS": 5968367,
-		"oA": 0,
-		"oAP": "\/public\/img\/performance1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/performance2.jpg": {
-		"ft": 16384,
-		"iS": 18035590,
-		"oA": 0,
-		"oAP": "\/public\/img\/performance2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -666,6 +331,16 @@
 		"iS": 138091,
 		"oA": 0,
 		"oAP": "\/public\/img\/resized\/400x500\/window.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/resized\/landscape\/Detroit Opera House 2.jpg": {
+		"ft": 16384,
+		"iS": 1426174,
+		"oA": 0,
+		"oAP": "\/public\/img\/resized\/landscape\/Detroit Opera House 2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -835,27 +510,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/public\/img\/smiles.jpg": {
-		"ft": 16384,
-		"iS": 518340,
-		"oA": 0,
-		"oAP": "\/public\/img\/smiles.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/public\/img\/stripe.png": {
-		"ft": 32768,
-		"iS": 1288,
-		"oA": 0,
-		"oAP": "\/public\/img\/stripe.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/public\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -916,15 +570,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/public\/js\/directives.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/public\/js\/directives-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/public\/js\/eventController-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -957,6 +602,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/mapController-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/js\/mediaController-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/mediaController-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1323,14 +977,11 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/public\/server-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/public\/server-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
+	"\/public\/views\/admin.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/views\/admin.html",
+		"oF": 0
 		},
 	"\/public\/views\/bio.html": {
 		"ft": 8192,
@@ -1354,12 +1005,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/views\/events.html",
-		"oF": 0
-		},
-	"\/public\/views\/eventupdate.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/public\/views\/eventupdate.html",
 		"oF": 0
 		},
 	"\/public\/views\/home.html": {

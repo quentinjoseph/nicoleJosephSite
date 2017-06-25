@@ -26,6 +26,7 @@ var pool = new pg.Pool({
     ssl: false
 });
 
+
 function errorCallback(res) {
     return function(err) {
         console.log(err);
@@ -98,10 +99,7 @@ app.post('/contact', function(req, res) {
         .then(function() {
             res.status(201);
             res.send("Sent");
-            // adjust();
-            // testEmail();
         }).catch(errorCallback(res));
-        // .catch(handleError);
     }
     sendEmail();
 
@@ -124,10 +122,10 @@ app.get('/recent', function(req, res) {
       if(result.rows.length < 3){
         pool.query("SELECT * FROM events ORDER BY eventdate DESC LIMIT 3").then(function(result){
           res.send(result.rows);
-          console.log(result.rows.length)
+
         })
       }else{
-            console.log(result.rows.length)
+
             res.send(result.rows);
           }
         }).catch(function(err) {
@@ -147,6 +145,27 @@ app.get('/recent', function(req, res) {
         }).catch(function(err) {
             console.log(err);
         });
+    });
+
+    app.get('/eventlogin', function(req, res) {
+      var username = req.query.username;
+      var values = [username];
+      var sql = "SELECT * FROM login WHERE username = $1::text";
+      console.log(req.body);
+        pool.query(sql,values).then(function(result) {
+            res.send(result.rows);
+        }).catch(function(err) {
+            console.log(err);
+        });
+    });
+
+    app.delete('/deletepost', function(req, res) {
+        var userPostid = Number(req.query.postid);
+        var sql = "DELETE FROM events WHERE id = $1::int";
+        var values= [userPostid]; // <-- This gets the :id part of the URL
+        pool.query(sql, values).then(function() {
+            res.send("DELETED");
+        }).catch(res);
     });
 
 

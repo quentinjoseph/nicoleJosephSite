@@ -1,0 +1,126 @@
+<div class="manageContainer" ng-show='pageShow'>
+  <!--show/search events  -->
+<div class="form2" ng-show='pageShow'>
+
+  		<h1>Search</h1>
+  		<label><i class="fa fa-search" aria-hidden="true"></i></label><input style="color: black;"id="search" type="text" ng-model="searchInput">
+
+
+
+  	<span  class="item" ng-repeat="event in searchEvents | filter: searchInput | limitTo: 2" ng-show="searchInput">
+  			<div ng-click="">
+  			<!-- <div ng-click="goToEvent(event.id)"> -->
+  				<h2>{{event.eventname}}</h2>
+  				<h4>{{event.eventdate | date: MMMM-dd-yyyy}}</h4>
+          <h5>eventID: {{event.id}}</h5>
+  				<p>{{event.description}}</p>
+  			</div>
+
+  	</span>
+
+
+</div>
+<!-- add event -->
+<div class="form1">
+  <h1>Add Event</h1>
+<form ng-submit="addEvent(formItem)">
+<div class="form-group">
+  <label for="event-name"></lable>
+    <input placeholder="event name" type="text" name="" value="" required ng-model="formItem.eventName">
+</div>
+<div class="form-group">
+  <label for="event-address"></lable>
+    <input placeholder="Event Address" type="text" name="" value="" required ng-model="formItem.eventAddress">
+</div>
+<div class="form-group">
+  <label for="event-date"></label>
+  <input type="date"
+  ng-model="formItem.date"
+  id="event-date"
+
+  [name="string"]
+  [min="string"]
+  [max="string"]
+  [ng-min=""]
+  [ng-max=""]
+  [required="string"]
+  [ng-required="string"]
+  [ng-change="string"]>
+</div>
+<div class="form-group">
+  <label for="event-description">Description</label>
+  <textarea placeholder="enter description of event" rows="5" type="in" class="form-control" id="event-description" required ng-model="formItem.description">
+  </textarea>
+</div>
+<div class="form-group">
+  <label for="event-link"></label>
+  <textarea placeholder="link to more details" rows="1" type="in" class="form-control" id="event-description"  ng-model="formItem.linkto">
+  </textarea>
+</div>
+<button type="submit">Add Event</button>
+
+</form>
+<div class=""ng-show="addSuccess">event added</div>
+</div>
+
+
+</div>
+
+<div class="deleteContainer" ng-show='pageShow'>
+  <!--delete event  -->
+  <div class="form3" ng-show='pageShow'>
+    <h1>Delete Event</h1>
+    <form ng-submit="deletePosts(deleter)">
+
+    <div class="form-group">
+      <label for="event-ID"></lable>
+        <input placeholder="eventID" type="number" name="" value="" required ng-model="deleter.id">
+    </div>
+
+    <button type="submit">Delete Event</button>
+    </form>
+    <div class=""ng-show="deleteSuccess">event deleted</div>
+  </div>
+
+  <!--update events  -->
+  <div class="form4" ng-show='pageShow'>
+    <h1>Update Event</h1>
+    <form ng-submit="updateEvents(updateItem)">
+    <div class="form-group">
+      <label for="edit-section">Which Section Do You Want To Edit</label>
+      <select class="form-control" id="edit-section" ng-model="updateItem.column">
+        <option >event name</option>
+        <option >link</option>
+        <option >date</option>
+        <option>description</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="event-name"></lable>
+        <input placeholder="eventID" type="number" name="" value="" required ng-model="updateItem.id">
+    </div>
+    <div class="form-group">
+      <label for="event-description">update</label>
+      <textarea placeholder="enter description of event" rows="5" type="in" class="form-control" id="event-description" required ng-model="updateItem.text">
+      </textarea>
+    </div>
+    <button type="submit">Update Event</button>
+    </form>
+    <div class="" ng-show="updateSuccess"><p>sucessfully updated</p></div>
+  </div>
+</div>
+<!-- login -->
+<div class="login" ng-show='loginHide'>
+  <form ng-submit="checkLogin(login)">
+  <div class="form-group">
+    <label for="user-username"></lable>
+      <input placeholder="username" type="text" name="" value="" required ng-model="login.username">
+  </div>
+  <div class="form-group">
+    <label for="user-password"></label>
+    <input placeholder="password" type="password" name="" value="" required ng-model="login.pword">
+  </div>
+  <button type="submit">login</button>
+  </form>
+
+</div>

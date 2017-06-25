@@ -4,11 +4,12 @@ app.controller("controller1", function ($scope, eventService, $location) {
 $scope.formItem={};
 $scope.events;
 $scope.latest;
+$scope.addSuccess=false;
 $scope.addEvent = function(item){
   function geocodeAddress(geocoder, resultsMap) {
     var geocoder = new google.maps.Geocoder();
     var address = item.eventAddress;
-    console.log(address);
+    // console.log(address);
     geocoder.geocode({'address': address}, function(results, status) {
       if (status === 'OK') {
 
@@ -17,7 +18,9 @@ $scope.addEvent = function(item){
       $scope.formItem.lat= lat;
       $scope.formItem.lng= lng;
       eventService.addEvent(item).then(function(){
-      console.log($scope.formItem);
+      // console.log($scope.formItem);
+      $scope.formItem={};
+      $scope.addSuccess=true;
       })
 
       } else {
@@ -29,7 +32,7 @@ $scope.addEvent = function(item){
 geocodeAddress();
 
 };
-
+// get latest events for homepage (shows 3 latest events)
 function getLatestEvents(){
   eventService.getLatestEvents().then(function(results){
     $scope.latest=results;
@@ -37,6 +40,7 @@ function getLatestEvents(){
   })
 }
 getLatestEvents();
+
 
 $scope.getEventById= function(eventId){
   var id=eventId;
@@ -60,15 +64,52 @@ $scope.searchEvents = [];
   });
 
 // update events
-$scope.updateItem;
+$scope.updateSuccess=false;
+$scope.updateItem={};
 $scope.updateEvents=function(update){
-  console.log(update);
+  // console.log(update);
   eventService.updateEvent(update).then(function(){
-
+  $scope.updateItem={};
+  $scope.updateSuccess=true;
   });
 }
 
+// deletePosts
+$scope.deleter={};
+$scope.deleteSuccess=false;
+$scope.deletePosts = function(postid){
 
+  eventService.deleteEvent(postid).then(function(response){
+    console.log(response);
+    $scope.deleter={};
+    $scope.deleteSuccess=true;
+  });
+}
+
+// loginCheck
+$scope.login;
+$scope.pageShow=false;
+$scope.loginHide=true;
+$scope.checkLogin =function(login){
+  // console.log(login);
+var username = login.username;
+var userpword = login.pword;
+eventService.checkLogin(login).then(function(response){
+pword =response[0].password;
+user = response[0].username;
+if ((pword == userpword)&&(user == username)){
+  // console.log('success');
+  $scope.pageShow=true;
+  $scope.loginHide=false;
+}else{
+  console.log('nope');
+  $scope.loginHide=true;
+  $scope.pageShow=false;
+}
+
+});
+
+}
 
 
 // navbar seclection
