@@ -13,7 +13,7 @@
     <!-- <h2 class="section">Events</h2> -->
     <div class="eventsDiv" ng-click="goToEvent(event.id)" ng-repeat="event in events">
         <h3><span class="fancyName">{{event.eventname}}</span></h3>
-        <h4><b>{{event.eventdate | date: MMMM-dd-yyyy}}</b></h4>
+        <h4><b>{{event.eventdate | date: longDate}}</b></h4>
         <p>{{event.description}}</p>
     </div>
   </div>

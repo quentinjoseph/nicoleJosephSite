@@ -16,7 +16,7 @@
     <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="event1 center-block rec{{$index}}">
       <div class="picHolder{{$index}}"></div>
       <div class="afterDate">
-      {{event.eventdate | date : MMMM-dd-yyyy}}</div><br>
+      {{event.eventdate | date : longDate}}</div><br>
       <span class="eventname" >{{event.eventname}}</span><br>
       <div class="descript"><p>{{event.description}}</p></div><br>
       <div class="seeFull"><a href="#!/events">See Full Schedule</a></div>
