@@ -75,9 +75,70 @@ body{
     }
   }
 
+// nav for mobile
 
 
+    .mobileNav{
+      @media only screen
+      and (min-device-width : 667px)
+      {
+        display: none;
+
+      }
+      text-align: center;
+      border-radius: 57px;
+      width:71px;
+      background-color: rgba(212, 214, 214,.5);
+      position: fixed;
+      font-size: 40px;
+      color:black;
+      z-index: 19;
+
+  }
+  .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align:center;
+  }
+
+  .sidenav a {
+      margin-top: 20px;
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 40px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+
+  }
+
+  .sidenav a:hover{
+      color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 50px;
+      margin-left: 50px;
+  }
+  // large screen nav
     #navTable{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+        display: none;
+
+      }
       @media(max-width: 607px){
         height: 28px;
       }
@@ -94,6 +155,7 @@ body{
         @media(max-width: 375px){
           font-size: 9px;
         }
+
         color:black;
         font-size: 20px;
         text-decoration: none;
@@ -142,6 +204,7 @@ body{
   padding:0 !important;
 
   .title{
+
     @media (max-width: 800px){
       height: 100px;
     }
@@ -162,6 +225,12 @@ body{
     color:black;
     background-color: $light-grey;
     #soprano{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+        font-size: 10px;
+
+      }
       @media (max-width: 800px){
         font-size: 28px
       }
@@ -174,7 +243,7 @@ body{
         font-size: 25px;
       }
       @media(max-width: 400px){
-        font-size: 20px;
+        font-size: 12px;
       }
       font-size: 30px;
       margin-top: -13px;
@@ -208,6 +277,13 @@ body{
   }
 
   .top{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px){
+      background-size: cover;
+      background-attachment: local;
+
+    }
     @media(max-width: 1280px){
       background-position: 0 -25px;
     }
@@ -235,7 +311,7 @@ body{
       height: 29vw;
     }
     width: 100vw;
-    height: 27vw;
+    height: 25vw;
     margin: 0 auto;
     background-color: $light-grey;
     position:relative;
@@ -247,6 +323,11 @@ body{
       background-color: $light-grey;
       text-align: center;
     .section{
+      @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px){
+      margin-bottom:-1.5vw;
+    }
       margin-top: 0;
       margin-bottom: .5vw;
       font-size: 4vw;
@@ -256,8 +337,14 @@ body{
       z-index: 1;
     }
     span{
+      @media only screen
+      and (min-device-width : 667px)
+      {
+        display: none;
+
+      }
       font-family: $fancy;
-      font-size: 1.25vw;
+      font-size: 2vw;
       font-style: italic;
     }
   }
@@ -270,11 +357,29 @@ body{
       display: inline-block;
     }
     .afterDate{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+        width: 100%;
+        font-size: 3vw;
+        text-align: center;
+        margin-top: -2px;
+        margin-bottom: -2.5vh;
+        color:$accent;
+      }
       width:47vw;
       margin-top: 2vw;
       margin-bottom: -2vh;
     }
     .eventname{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+        width: 100%;
+        font-size: 5vw;
+        text-align: center;
+        font-family: $fancy2;
+      }
       color:$gold;
       text-decoration: underline;
       font-family: $fancy2;
@@ -283,7 +388,12 @@ body{
 
 
     .event1{
-
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+        text-align: center;
+        margin:0;
+      }
       display: inline-block;
       width:100vw;
       height: 70%;
@@ -296,6 +406,13 @@ body{
         cursor: pointer;
       }
       .descript{
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 667px){
+          width: 90%;
+          margin:0 auto;
+          font-size: 2.5vw;
+        }
         font-size: 1.5vw;
         width:47vw;
         height: 5vw;
@@ -308,6 +425,11 @@ body{
         }
       }
       .seeFull{
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 667px){
+          display: none;
+        }
         @media(max-width: 475px){
           bottom:2.5vw;
           float:left;
@@ -320,7 +442,7 @@ body{
         float: left;
         margin-right: 2vw;
         // bottom:2vw;
-        margin-top: 2vw;
+        margin-top: -2vw;
         position: relative;
         a{
           color:blue;
@@ -328,6 +450,12 @@ body{
         }
     }
     .picHolder0{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+
+        display: none;
+      }
       width:48vw;
       height: 100%;
       margin-right:4vw;
@@ -336,6 +464,12 @@ body{
       background-image: url('../img/resized/landscape/Detroit Opera House 2.jpg')
     }
     .picHolder1{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+
+        display: none;
+      }
       width:48vw;
       height: 100%;
       margin-right:4vw;
@@ -344,6 +478,12 @@ body{
       background-image: url('../img/resized/w900h600/pizza.png')
     }
     .picHolder2{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px){
+
+        display: none;
+      }
       width:48vw;
       height: 100%;
       margin-right:4vw;
@@ -356,9 +496,16 @@ body{
   .mediaSign{
     @media only screen
     and (min-device-width : 375px)
-    and (max-device-width : 667px) {
+    and (max-device-width : 666px) {
       background-attachment: inherit;
       height: 32vh;
+    }
+    @media (orientation: landscape) and (max-device-width : 667px){
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
     }
     width:100vw;
     height: 53.25vh;
@@ -382,13 +529,18 @@ body{
   }
   // events page
   .eventsPage{
-    // position: fixed;
+
+    @media only screen
+    and (min-device-width : 375px){
+      height: 446px;
+      // height: 1790px;
+    }
+    @media(orientation:landscape)and (max-device-width : 667px) {
+      height: 170px;
+    }
+    background-color: $grey;
     width: 100%;
     animation: showDivs 1s;
-    .fancyName{
-      font-family: $fancy2;
-      color:$gold;
-    }
 
     a{
       color:black;
@@ -396,12 +548,26 @@ body{
     }
 
     .perfromancePic{
+      @media only screen
+      and (device-width : 375px)
+      /*and (max-device-width : 667px)*/ {
+        height: 175px;
+        // background-attachment: fixed;
+        // background-position: 0 110px;
+        background-size: cover;
+
+      }
+      @media (orientation: landscape) and (max-device-width : 667px){
+      display: none;
+
+      }
       @media(max-width: 610px){
         background-position: 45% 50%;
       }
       @media(max-width: 490px){
         background-position: 40% 50%;
       }
+
       width: 100%;
       height: 500px;
       border-top:#dee0e0 solid 1px;
@@ -427,8 +593,21 @@ body{
     }
     .eventHolder{
       width: 100%;
-
       .section{
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 666px){
+          margin-top: 0vw;
+          width:100vw;
+          // right:4vw;
+          left: 0vw;
+          font-size: 45px;
+        }
+        @media (max-device-width : 667px) and (orientation: landscape){
+          position:relative;
+          display:none;
+
+        }
         font-size: 65px;
         text-align: center;
         font-family: $fancy2;
@@ -443,20 +622,64 @@ body{
         right:0%;
       }
       .under{
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 666px){
+          margin-top: 71px;
+          width:100vw;
+          height: 205px;
+          // height: 1500px;
+          // right:4vw;
+          left: 0vw;
+        }
+        @media(orientation:landscape)and (max-device-width : 667px) {
+          height: 178px;
+          margin-top: 0;
+        }
+
         overflow: scroll;
-        height: 380px;
+        height: 300px;
         position:absolute;
         width:50vw;
         margin-top: -389px;
         background: rgba(233, 234, 234,.8);
         right: 0%;
         text-align: center;
+        .portraitEvent{
+          @media(orientation:landscape)and (max-device-width : 667px) {
+            display: block;
+            font-family: $fancy2;
+            color: $accent;
+            font-size: 55px;
+          }
+          display:none;
+        }
         span{
           font-family: $fancy;
-          font-style: italic;
+          // font-style: italic;
         }
+        .fancyName{
+          @media only screen
+          and (min-device-width : 375px)
+          and (max-device-width : 667px) {
+            font-size: 25px;
+            font-family: $fancy2;
+
+          }
+          font-family: $fancy2;
+          color:$gold;
+        }
+
       }
       .eventsDiv{
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 667px) {
+          width:70vw;
+          font-size: 16px;
+          margin-top:10px;
+          margin-bottom: 50px;
+        }
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -539,20 +762,30 @@ body{
 
 }
 // media page
+.allMedia{
+  height: 1350px;
 .mediaContainer{
-  width: 100vw;
+  // width: 100vw;
   .downward{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) {
+    width:100vw;
+    height: 75px;
+    margin-top: 200px;
+
+    }
     position:absolute;
-    width:15vw;
-    height: 100vw;
+    width:100vw;
+    height: 150px;
     background-color: $accent;
-    margin-top:-400px;
-    margin-left: 32.5vw;
+    margin:0;
+    // margin-left: 34.17vw;
     z-index: -999;
-    transform: rotate(-90deg);
+
   }
-  width:80vw;
-  height: 600px;
+  width:100vw;
+  // height: 800px;
   margin-left:auto;
   margin-right: auto;
   padding-top: 10%;
@@ -583,7 +816,17 @@ body{
       opacity:1;
     }
   }
+  .mediaHolder{
+    width:80vw;
+    margin:0 auto;
+    height: 100px;
   .audioDiv{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) {
+      margin-top: 0px;
+
+    }
     text-align: center;
     color: black;
     float: left;
@@ -605,6 +848,12 @@ body{
     }
   }
   .photoDiv{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) {
+      margin-top: 0px;
+
+    }
     text-align: center;
     color: black;
     float: right;
@@ -623,6 +872,12 @@ body{
     }
   }
   .videoDiv{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) {
+      margin-top: 100px;
+
+    }
     text-align: center;
     color: black;
     margin: auto;
@@ -640,15 +895,21 @@ body{
       padding: 5px;
     }
   }
+}
  }
 }
 
 .audioBox{
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+  margin-top:550px;
+  }
   text-align: center;
-  width: 60%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -225px;
+  margin-top: 235px;
   margin-bottom: 50px;
   animation: showDivs 1s;
   position: relative;
@@ -660,13 +921,18 @@ body{
 }
 
 .videoBox{
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+  margin-top:550px;
+  }
   font-family: money;
   text-align: center;
-  width: 60vw;
+  width: 62vw;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -225px;
+  margin-top: 235px;
   margin-bottom: 50px;
   animation: showDivs 1s;
   #ytplayer{
@@ -819,11 +1085,16 @@ body{
   }
 }
 .photoBox{
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+  margin-top:550px;
+  }
   text-align: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -225px;
+  margin-top: 235px;
   margin-bottom: 50px;
   animation: showDivs 3s;
   font-family: $font;
@@ -878,10 +1149,24 @@ body{
   }
 }
 .boxHolder{
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+    margin-top: -500px;
+
+  }
   background-color: #e9eaea;
+}
 }
 // bio page
 .downward{
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px){
+  height: 950px;
+  width: 11vw;
+  margin-left: 89vw;
+  }
   position:absolute;
   width:15vw;
   height: 800px;
@@ -891,6 +1176,12 @@ body{
   z-index: -999;
 }
 .bioContain{
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px){
+  height: 850px;
+  width: 100vw;
+  }
 
   width:85vw;
   height: 750px;
@@ -901,6 +1192,22 @@ body{
   .bioHolder{
     margin-top: 1vw;
   .bioPic{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 665px){
+      width:200px;
+      height: 200px;
+      border: solid 1px $accent;
+      float: right;
+      margin-right: 45px;
+    }
+    @media(orientation:landscape)and (max-device-width : 666px) {
+      width:300px;
+      height: 230px;
+      border: solid 1px $accent;
+      float: right;
+      margin-right: 100px
+    }
     float:left;
     width: 40vw;
     height:40vw;
@@ -910,6 +1217,15 @@ body{
     position: relative;
     z-index: 1;
     div{
+      @media only screen
+      and (min-device-width : 664px)
+      and (max-device-width : 665px){
+      background-position: center top;
+      background-size: contain;
+      }
+      @media(orientation:landscape)and (max-device-width : 666px) {
+      background-position: center top;
+      }
       border: solid black 1px;
       top:5px;
       right:5px;
@@ -924,6 +1240,12 @@ body{
     }
   }
   .bioP{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px){
+      background: rgba(233, 234, 234,.9);
+      float:left;
+    }
     // margin-left: 42vw;
     margin-top: 5vw;
     font-family: $fancy;
@@ -1005,10 +1327,22 @@ body{
 }
 
 .formContainer{
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+  height: 500px;
+  }
   width: 100vw;
   margin:0 auto;
   height: 40vw;
+
   .stuffholder{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) {
+    width:90vw;
+    margin-top: 75px;
+    }
     width: 63vw;
     margin-left: auto;
     margin-right: auto;
@@ -1019,6 +1353,12 @@ body{
       font-family: $font;
     }
     .formholder{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px) {
+      width: 340px;
+      height: 300px;
+      }
       float:left;
       width:30vw;
       height: 30vw;
@@ -1053,6 +1393,11 @@ body{
       }
     }
     .contactPic{
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 400px) {
+
+      }
 
       background-image: url('../img/resized/square500/laugh.jpg');
       background-size: cover;

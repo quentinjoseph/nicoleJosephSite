@@ -50,6 +50,46 @@ body {
     padding: 0 0; }
   to {
     padding: 0 4vw; } }
+  body .mobileNav {
+    text-align: center;
+    border-radius: 57px;
+    width: 71px;
+    background-color: rgba(212, 214, 214, 0.5);
+    position: fixed;
+    font-size: 40px;
+    color: black;
+    z-index: 19; }
+    @media only screen and (min-device-width: 667px) {
+      body .mobileNav {
+        display: none; } }
+  body .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center; }
+  body .sidenav a {
+    margin-top: 20px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+  body .sidenav a:hover {
+    color: #f1f1f1; }
+  body .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px; }
   body #navTable {
     text-align: center;
     background-color: #e9eaea;
@@ -60,6 +100,9 @@ body {
     height: 32px;
     margin: auto;
     z-index: 11; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      body #navTable {
+        display: none; } }
     @media (max-width: 607px) {
       body #navTable {
         height: 28px; } }
@@ -125,6 +168,9 @@ body {
       font-size: 30px;
       margin-top: -13px;
       margin-bottom: 10px; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .title #soprano {
+          font-size: 10px; } }
       @media (max-width: 800px) {
         .container-fluid .title #soprano {
           font-size: 28px; } }
@@ -138,7 +184,7 @@ body {
           font-size: 25px; } }
       @media (max-width: 400px) {
         .container-fluid .title #soprano {
-          font-size: 20px; } }
+          font-size: 12px; } }
     .container-fluid .title .accent {
       color: #9B0423; }
     .container-fluid .title .theN {
@@ -167,6 +213,10 @@ body {
     background-position: 0 -200px;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .top {
+        background-size: cover;
+        background-attachment: local; } }
     @media (max-width: 1280px) {
       .container-fluid .top {
         background-position: 0 -25px; } }
@@ -175,7 +225,7 @@ body {
         background-position: 0 0px; } }
   .container-fluid .upcoming {
     width: 100vw;
-    height: 27vw;
+    height: 25vw;
     margin: 0 auto;
     background-color: #efefef;
     position: relative; }
@@ -202,10 +252,16 @@ body {
         font-family: money;
         position: relative;
         z-index: 1; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .upcoming .surroundUpcoming .section {
+            margin-bottom: -1.5vw; } }
       .container-fluid .upcoming .surroundUpcoming span {
         font-family: "Didact Gothic", sans-serif;
-        font-size: 1.25vw;
+        font-size: 2vw;
         font-style: italic; }
+        @media only screen and (min-device-width: 667px) {
+          .container-fluid .upcoming .surroundUpcoming span {
+            display: none; } }
     .container-fluid .upcoming .eventHomePage {
       width: 100%;
       margin: auto;
@@ -217,11 +273,25 @@ body {
       width: 47vw;
       margin-top: 2vw;
       margin-bottom: -2vh; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .upcoming .afterDate {
+          width: 100%;
+          font-size: 3vw;
+          text-align: center;
+          margin-top: -2px;
+          margin-bottom: -2.5vh;
+          color: #9B0423; } }
     .container-fluid .upcoming .eventname {
       color: #c67b40;
       text-decoration: underline;
       font-family: "Rouge Script", cursive;
       font-size: 3vw; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .upcoming .eventname {
+          width: 100%;
+          font-size: 5vw;
+          text-align: center;
+          font-family: "Rouge Script", cursive; } }
     .container-fluid .upcoming .event1 {
       display: inline-block;
       width: 100vw;
@@ -231,6 +301,10 @@ body {
       margin-right: 3.5vw;
       margin-left: 3.5vw;
       z-index: 2; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .upcoming .event1 {
+          text-align: center;
+          margin: 0; } }
       .container-fluid .upcoming .event1:hover {
         cursor: pointer; }
       .container-fluid .upcoming .event1 .descript {
@@ -240,6 +314,11 @@ body {
         margin: 0;
         white-space: pre-line;
         color: #173547; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .upcoming .event1 .descript {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 2.5vw; } }
         .container-fluid .upcoming .event1 .descript p {
           margin: 0; }
       .container-fluid .upcoming .event1 .seeFull {
@@ -249,8 +328,11 @@ body {
         text-decoration: underline;
         float: left;
         margin-right: 2vw;
-        margin-top: 2vw;
+        margin-top: -2vw;
         position: relative; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .upcoming .event1 .seeFull {
+            display: none; } }
         @media (max-width: 475px) {
           .container-fluid .upcoming .event1 .seeFull {
             bottom: 2.5vw;
@@ -265,6 +347,9 @@ body {
       background-size: cover;
       float: right;
       background-image: url("../img/resized/landscape/Detroit Opera House 2.jpg"); }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .upcoming .picHolder0 {
+          display: none; } }
     .container-fluid .upcoming .picHolder1 {
       width: 48vw;
       height: 100%;
@@ -272,6 +357,9 @@ body {
       background-size: cover;
       float: right;
       background-image: url("../img/resized/w900h600/pizza.png"); }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .upcoming .picHolder1 {
+          display: none; } }
     .container-fluid .upcoming .picHolder2 {
       width: 48vw;
       height: 100%;
@@ -279,6 +367,9 @@ body {
       background-size: cover;
       float: right;
       background-image: url("../img/resized/w900h600/flipped.png"); }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .upcoming .picHolder2 {
+          display: none; } }
   .container-fluid .mediaSign {
     width: 100vw;
     height: 53.25vh;
@@ -286,10 +377,16 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center 32vh; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
       .container-fluid .mediaSign {
         background-attachment: inherit;
         height: 32vh; } }
+    @media (orientation: landscape) and (max-device-width: 667px) {
+      .container-fluid .mediaSign {
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top; } }
     .container-fluid .mediaSign .section2 {
       margin: 0;
       padding-top: 10%;
@@ -302,11 +399,15 @@ body {
         text-decoration: none;
         color: white; }
   .container-fluid .eventsPage {
+    background-color: #e9eaea;
     width: 100%;
     animation: showDivs 1s; }
-    .container-fluid .eventsPage .fancyName {
-      font-family: "Rouge Script", cursive;
-      color: #c67b40; }
+    @media only screen and (min-device-width: 375px) {
+      .container-fluid .eventsPage {
+        height: 446px; } }
+    @media (orientation: landscape) and (max-device-width: 667px) {
+      .container-fluid .eventsPage {
+        height: 170px; } }
     .container-fluid .eventsPage a {
       color: black;
       text-decoration: none; }
@@ -319,6 +420,13 @@ body {
       background-size: cover;
       background-position: center;
       z-index: 5; }
+      @media only screen and (device-width: 375px) {
+        .container-fluid .eventsPage .perfromancePic {
+          height: 175px;
+          background-size: cover; } }
+      @media (orientation: landscape) and (max-device-width: 667px) {
+        .container-fluid .eventsPage .perfromancePic {
+          display: none; } }
       @media (max-width: 610px) {
         .container-fluid .eventsPage .perfromancePic {
           background-position: 45% 50%; } }
@@ -348,18 +456,52 @@ body {
         background: rgba(233, 234, 234, 0.8);
         margin-top: -460px;
         right: 0%; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
+          .container-fluid .eventsPage .eventHolder .section {
+            margin-top: 0vw;
+            width: 100vw;
+            left: 0vw;
+            font-size: 45px; } }
+        @media (max-device-width: 667px) and (orientation: landscape) {
+          .container-fluid .eventsPage .eventHolder .section {
+            position: relative;
+            display: none; } }
       .container-fluid .eventsPage .eventHolder .under {
         overflow: scroll;
-        height: 380px;
+        height: 300px;
         position: absolute;
         width: 50vw;
         margin-top: -389px;
         background: rgba(233, 234, 234, 0.8);
         right: 0%;
         text-align: center; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
+          .container-fluid .eventsPage .eventHolder .under {
+            margin-top: 71px;
+            width: 100vw;
+            height: 205px;
+            left: 0vw; } }
+        @media (orientation: landscape) and (max-device-width: 667px) {
+          .container-fluid .eventsPage .eventHolder .under {
+            height: 178px;
+            margin-top: 0; } }
+        .container-fluid .eventsPage .eventHolder .under .portraitEvent {
+          display: none; }
+          @media (orientation: landscape) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .eventHolder .under .portraitEvent {
+              display: block;
+              font-family: "Rouge Script", cursive;
+              color: #9B0423;
+              font-size: 55px; } }
         .container-fluid .eventsPage .eventHolder .under span {
-          font-family: "Didact Gothic", sans-serif;
-          font-style: italic; }
+          font-family: "Didact Gothic", sans-serif; }
+        .container-fluid .eventsPage .eventHolder .under .fancyName {
+          font-family: "Rouge Script", cursive;
+          color: #c67b40; }
+          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .eventHolder .under .fancyName {
+              font-size: 25px;
+              font-family: "Rouge Script", cursive; } }
       .container-fluid .eventsPage .eventHolder .eventsDiv {
         margin-left: auto;
         margin-right: auto;
@@ -368,6 +510,12 @@ body {
         padding: 0;
         width: 50%;
         height: 150px; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .eventsPage .eventHolder .eventsDiv {
+            width: 70vw;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 50px; } }
         .container-fluid .eventsPage .eventHolder .eventsDiv:hover {
           color: #9B0423;
           cursor: pointer; }
@@ -418,290 +566,313 @@ body {
           margin: auto; }
         .container-fluid .thisEventPage #thisEventHold .eventHolder .under {
           margin-top: 320px; }
-  .container-fluid .mediaContainer {
-    width: 100vw;
-    width: 80vw;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10%;
-    font-family: money; }
-    .container-fluid .mediaContainer .downward {
-      position: absolute;
-      width: 15vw;
-      height: 100vw;
-      background-color: #9B0423;
-      margin-top: -400px;
-      margin-left: 32.5vw;
-      z-index: -999;
-      transform: rotate(-90deg); }
-    .container-fluid .mediaContainer h4 {
-      font-size: 200%;
-      margin-top: -50px; }
-      @media (max-width: 590px) {
-        .container-fluid .mediaContainer h4 {
-          font-size: 165%;
-          margin-top: -40px; } }
-      @media (max-width: 490px) {
-        .container-fluid .mediaContainer h4 {
-          font-size: 135%;
-          margin-top: -30px; } }
-      @media (max-width: 404px) {
-        .container-fluid .mediaContainer h4 {
-          font-size: 80%;
-          margin-top: -20px; } }
+  .container-fluid .allMedia {
+    height: 1350px; }
+    .container-fluid .allMedia .mediaContainer {
+      width: 100vw;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10%;
+      font-family: money; }
+      .container-fluid .allMedia .mediaContainer .downward {
+        position: absolute;
+        width: 100vw;
+        height: 150px;
+        background-color: #9B0423;
+        margin: 0;
+        z-index: -999; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .allMedia .mediaContainer .downward {
+            width: 100vw;
+            height: 75px;
+            margin-top: 200px; } }
+      .container-fluid .allMedia .mediaContainer h4 {
+        font-size: 200%;
+        margin-top: -50px; }
+        @media (max-width: 590px) {
+          .container-fluid .allMedia .mediaContainer h4 {
+            font-size: 165%;
+            margin-top: -40px; } }
+        @media (max-width: 490px) {
+          .container-fluid .allMedia .mediaContainer h4 {
+            font-size: 135%;
+            margin-top: -30px; } }
+        @media (max-width: 404px) {
+          .container-fluid .allMedia .mediaContainer h4 {
+            font-size: 80%;
+            margin-top: -20px; } }
 @keyframes showDivs {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-    .container-fluid .mediaContainer .audioDiv {
-      text-align: center;
-      color: black;
-      float: left;
-      border: solid 3px black;
-      height: 20vw;
-      width: 20vw;
-      border-radius: 10vw;
-      background-image: url("/img/NikkiSing.jpg");
+      .container-fluid .allMedia .mediaContainer .mediaHolder {
+        width: 80vw;
+        margin: 0 auto;
+        height: 100px; }
+        .container-fluid .allMedia .mediaContainer .mediaHolder .audioDiv {
+          text-align: center;
+          color: black;
+          float: left;
+          border: solid 3px black;
+          height: 20vw;
+          width: 20vw;
+          border-radius: 10vw;
+          background-image: url("/img/NikkiSing.jpg");
+          background-position: fixed;
+          background-size: cover;
+          z-index: 1;
+          animation: showDivs 1s; }
+          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+            .container-fluid .allMedia .mediaContainer .mediaHolder .audioDiv {
+              margin-top: 0px; } }
+          .container-fluid .allMedia .mediaContainer .mediaHolder .audioDiv:hover {
+            border: solid 5px black;
+            cursor: pointer;
+            padding: 5px; }
+        .container-fluid .allMedia .mediaContainer .mediaHolder .photoDiv {
+          text-align: center;
+          color: black;
+          float: right;
+          border: solid 3px #c67b40;
+          height: 20vw;
+          width: 20vw;
+          border-radius: 10vw;
+          background-image: url("/img/NikkiWindow2square.jpg");
+          background-size: cover;
+          animation: showDivs 1s; }
+          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+            .container-fluid .allMedia .mediaContainer .mediaHolder .photoDiv {
+              margin-top: 0px; } }
+          .container-fluid .allMedia .mediaContainer .mediaHolder .photoDiv:hover {
+            border: solid 5px #c67b40;
+            cursor: pointer;
+            padding: 5px; }
+        .container-fluid .allMedia .mediaContainer .mediaHolder .videoDiv {
+          text-align: center;
+          color: black;
+          margin: auto;
+          border: solid 3px grey;
+          height: 20vw;
+          width: 20vw;
+          border-radius: 10vw;
+          background-image: url("/img/nikkiDecember1.jpg");
+          background-size: cover;
+          animation: showDivs 1s; }
+          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+            .container-fluid .allMedia .mediaContainer .mediaHolder .videoDiv {
+              margin-top: 100px; } }
+          .container-fluid .allMedia .mediaContainer .mediaHolder .videoDiv:hover {
+            border: solid 5px grey;
+            cursor: pointer;
+            padding: 5px; }
+  .container-fluid .audioBox {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 235px;
+    margin-bottom: 50px;
+    animation: showDivs 1s;
+    position: relative;
+    z-index: 1;
+    font-family: money; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .audioBox {
+        margin-top: 550px; } }
+  .container-fluid .mediaBoxHide {
+    display: none; }
+  .container-fluid .videoBox {
+    font-family: money;
+    text-align: center;
+    width: 62vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 235px;
+    margin-bottom: 50px;
+    animation: showDivs 1s; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .videoBox {
+        margin-top: 550px; } }
+    .container-fluid .videoBox #ytplayer {
+      font-family: "Didact Gothic", sans-serif;
+      width: 60vw;
+      height: 25vw;
+      position: relative;
+      padding-top: 2vw;
+      margin: 0 auto; }
+      .container-fluid .videoBox #ytplayer a {
+        color: black;
+        text-decoration: none;
+        font-size: 1vw; }
+        .container-fluid .videoBox #ytplayer a .vidRep {
+          width: 25vw;
+          height: 20vw;
+          float: left;
+          border: solid 2px #9B0423;
+          padding-top: 3%;
+          background-image: url("../img/resized/w900h600/flipped.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative; }
+          @media (max-width: 375px) {
+            .container-fluid .videoBox #ytplayer a .vidRep {
+              padding-top: 0; } }
+          .container-fluid .videoBox #ytplayer a .vidRep div {
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7); }
+          .container-fluid .videoBox #ytplayer a .vidRep h3 {
+            margin-top: 50px; }
+            @media (max-width: 900px) {
+              .container-fluid .videoBox #ytplayer a .vidRep h3 {
+                margin-top: 30px; } }
+            @media (max-width: 640px) {
+              .container-fluid .videoBox #ytplayer a .vidRep h3 {
+                margin-top: 10px; } }
+            @media (max-width: 492px) {
+              .container-fluid .videoBox #ytplayer a .vidRep h3 {
+                margin-top: 0;
+                margin-bottom: 0; } }
+            @media (max-width: 375px) {
+              .container-fluid .videoBox #ytplayer a .vidRep h3 {
+                margin-top: -10px;
+                margin-bottom: -3px; } }
+          @media (max-width: 695px) {
+            .container-fluid .videoBox #ytplayer a .vidRep h5 {
+              margin-top: 0;
+              font-size: 150%; } }
+          @media (max-width: 310px) {
+            .container-fluid .videoBox #ytplayer a .vidRep h5 {
+              margin-bottom: 0; } }
+          @media (max-width: 575px) {
+            .container-fluid .videoBox #ytplayer a .vidRep p {
+              margin-bottom: 0; } }
+          .container-fluid .videoBox #ytplayer a .vidRep .vidName {
+            color: #9B0423;
+            font-size: 2vw;
+            margin-top: 3px; }
+          .container-fluid .videoBox #ytplayer a .vidRep:hover {
+            border: solid 4px grey;
+            cursor: pointer; }
+        .container-fluid .videoBox #ytplayer a .vidRep2 {
+          width: 25vw;
+          height: 20vw;
+          float: right;
+          border: solid 2px #9B0423;
+          padding-top: 3%;
+          background-image: url("../img/resized/w900h600/Screen Shot 2017-06-19 at 9.29.00 PM.png");
+          background-size: cover;
+          background-position: center right;
+          background-repeat: no-repeat;
+          position: relative; }
+          @media (max-width: 375px) {
+            .container-fluid .videoBox #ytplayer a .vidRep2 {
+              padding-top: 0; } }
+          .container-fluid .videoBox #ytplayer a .vidRep2 div {
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7); }
+          .container-fluid .videoBox #ytplayer a .vidRep2 h3 {
+            margin-top: 50px; }
+            @media (max-width: 900px) {
+              .container-fluid .videoBox #ytplayer a .vidRep2 h3 {
+                margin-top: 30px; } }
+            @media (max-width: 640px) {
+              .container-fluid .videoBox #ytplayer a .vidRep2 h3 {
+                margin-top: 10px; } }
+            @media (max-width: 492px) {
+              .container-fluid .videoBox #ytplayer a .vidRep2 h3 {
+                margin-top: 0;
+                margin-bottom: 0; } }
+            @media (max-width: 375px) {
+              .container-fluid .videoBox #ytplayer a .vidRep2 h3 {
+                margin-top: -10px;
+                margin-bottom: -3px; } }
+          @media (max-width: 695px) {
+            .container-fluid .videoBox #ytplayer a .vidRep2 h5 {
+              margin-top: 0;
+              font-size: 150%; } }
+          @media (max-width: 310px) {
+            .container-fluid .videoBox #ytplayer a .vidRep2 h5 {
+              margin-bottom: 0; } }
+          @media (max-width: 575px) {
+            .container-fluid .videoBox #ytplayer a .vidRep2 p {
+              margin-bottom: 0; } }
+          .container-fluid .videoBox #ytplayer a .vidRep2 .vidName {
+            color: #9B0423;
+            font-size: 2vw;
+            margin-top: 3px; }
+          .container-fluid .videoBox #ytplayer a .vidRep2:hover {
+            border: solid 4px grey;
+            cursor: pointer; }
+  .container-fluid .photoBox {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 235px;
+    margin-bottom: 50px;
+    animation: showDivs 3s;
+    font-family: money;
+    position: relative; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .photoBox {
+        margin-top: 550px; } }
+    .container-fluid .photoBox .photoGallery1 {
+      background-image: url("/img/resized/nikkiNoSmile.jpg");
+      background-size: cover;
+      width: 80vw;
+      height: 30vw;
+      margin: 0 auto;
+      position: relative;
+      border-bottom: solid 4px #e9eaea; }
+    .container-fluid .photoBox .photoGallery2 {
+      display: inline-block;
+      background-image: url("/img/resized/performance.jpg");
       background-position: fixed;
       background-size: cover;
-      z-index: 1;
-      animation: showDivs 1s; }
-      .container-fluid .mediaContainer .audioDiv:hover {
-        border: solid 5px black;
-        cursor: pointer;
-        padding: 5px; }
-    .container-fluid .mediaContainer .photoDiv {
-      text-align: center;
-      color: black;
+      width: 80vw;
+      height: 30vw;
+      margin: 0 auto;
+      position: relative;
+      border-top: solid 4px #e9eaea; }
+    .container-fluid .photoBox .photoGallery3 {
+      display: inline-block;
+      background-image: url("/img/resized/400x500/ncutie.jpg");
+      background-size: cover;
+      width: 30vw;
+      height: 30vw;
       float: right;
-      border: solid 3px #c67b40;
-      height: 20vw;
-      width: 20vw;
-      border-radius: 10vw;
-      background-image: url("/img/NikkiWindow2square.jpg");
+      position: relative; }
+    .container-fluid .photoBox .photoGallery4 {
+      background-image: url("/img/resized/400x500/window.jpg");
       background-size: cover;
-      animation: showDivs 1s; }
-      .container-fluid .mediaContainer .photoDiv:hover {
-        border: solid 5px #c67b40;
-        cursor: pointer;
-        padding: 5px; }
-    .container-fluid .mediaContainer .videoDiv {
-      text-align: center;
-      color: black;
-      margin: auto;
-      border: solid 3px grey;
-      height: 20vw;
-      width: 20vw;
-      border-radius: 10vw;
-      background-image: url("/img/nikkiDecember1.jpg");
+      width: 30vw;
+      height: 30vw;
+      float: left;
+      position: relative; }
+    .container-fluid .photoBox .photoGallery5 {
+      background-image: url("/img/resized/square500/sing.jpg");
       background-size: cover;
-      animation: showDivs 1s; }
-      .container-fluid .mediaContainer .videoDiv:hover {
-        border: solid 5px grey;
-        cursor: pointer;
-        padding: 5px; }
-
-.audioBox {
-  text-align: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -225px;
-  margin-bottom: 50px;
-  animation: showDivs 1s;
-  position: relative;
-  z-index: 1;
-  font-family: money; }
-
-.mediaBoxHide {
-  display: none; }
-
-.videoBox {
-  font-family: money;
-  text-align: center;
-  width: 60vw;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -225px;
-  margin-bottom: 50px;
-  animation: showDivs 1s; }
-  .videoBox #ytplayer {
-    font-family: "Didact Gothic", sans-serif;
-    width: 60vw;
-    height: 25vw;
-    position: relative;
-    padding-top: 2vw;
-    margin: 0 auto; }
-    .videoBox #ytplayer a {
-      color: black;
-      text-decoration: none;
-      font-size: 1vw; }
-      .videoBox #ytplayer a .vidRep {
-        width: 25vw;
-        height: 20vw;
-        float: left;
-        border: solid 2px #9B0423;
-        padding-top: 3%;
-        background-image: url("../img/resized/w900h600/flipped.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative; }
-        @media (max-width: 375px) {
-          .videoBox #ytplayer a .vidRep {
-            padding-top: 0; } }
-        .videoBox #ytplayer a .vidRep div {
-          top: 20px;
-          right: 20px;
-          bottom: 20px;
-          left: 20px;
-          position: absolute;
-          background: rgba(255, 255, 255, 0.7); }
-        .videoBox #ytplayer a .vidRep h3 {
-          margin-top: 50px; }
-          @media (max-width: 900px) {
-            .videoBox #ytplayer a .vidRep h3 {
-              margin-top: 30px; } }
-          @media (max-width: 640px) {
-            .videoBox #ytplayer a .vidRep h3 {
-              margin-top: 10px; } }
-          @media (max-width: 492px) {
-            .videoBox #ytplayer a .vidRep h3 {
-              margin-top: 0;
-              margin-bottom: 0; } }
-          @media (max-width: 375px) {
-            .videoBox #ytplayer a .vidRep h3 {
-              margin-top: -10px;
-              margin-bottom: -3px; } }
-        @media (max-width: 695px) {
-          .videoBox #ytplayer a .vidRep h5 {
-            margin-top: 0;
-            font-size: 150%; } }
-        @media (max-width: 310px) {
-          .videoBox #ytplayer a .vidRep h5 {
-            margin-bottom: 0; } }
-        @media (max-width: 575px) {
-          .videoBox #ytplayer a .vidRep p {
-            margin-bottom: 0; } }
-        .videoBox #ytplayer a .vidRep .vidName {
-          color: #9B0423;
-          font-size: 2vw;
-          margin-top: 3px; }
-        .videoBox #ytplayer a .vidRep:hover {
-          border: solid 4px grey;
-          cursor: pointer; }
-      .videoBox #ytplayer a .vidRep2 {
-        width: 25vw;
-        height: 20vw;
-        float: right;
-        border: solid 2px #9B0423;
-        padding-top: 3%;
-        background-image: url("../img/resized/w900h600/Screen Shot 2017-06-19 at 9.29.00 PM.png");
-        background-size: cover;
-        background-position: center right;
-        background-repeat: no-repeat;
-        position: relative; }
-        @media (max-width: 375px) {
-          .videoBox #ytplayer a .vidRep2 {
-            padding-top: 0; } }
-        .videoBox #ytplayer a .vidRep2 div {
-          top: 20px;
-          right: 20px;
-          bottom: 20px;
-          left: 20px;
-          position: absolute;
-          background: rgba(255, 255, 255, 0.7); }
-        .videoBox #ytplayer a .vidRep2 h3 {
-          margin-top: 50px; }
-          @media (max-width: 900px) {
-            .videoBox #ytplayer a .vidRep2 h3 {
-              margin-top: 30px; } }
-          @media (max-width: 640px) {
-            .videoBox #ytplayer a .vidRep2 h3 {
-              margin-top: 10px; } }
-          @media (max-width: 492px) {
-            .videoBox #ytplayer a .vidRep2 h3 {
-              margin-top: 0;
-              margin-bottom: 0; } }
-          @media (max-width: 375px) {
-            .videoBox #ytplayer a .vidRep2 h3 {
-              margin-top: -10px;
-              margin-bottom: -3px; } }
-        @media (max-width: 695px) {
-          .videoBox #ytplayer a .vidRep2 h5 {
-            margin-top: 0;
-            font-size: 150%; } }
-        @media (max-width: 310px) {
-          .videoBox #ytplayer a .vidRep2 h5 {
-            margin-bottom: 0; } }
-        @media (max-width: 575px) {
-          .videoBox #ytplayer a .vidRep2 p {
-            margin-bottom: 0; } }
-        .videoBox #ytplayer a .vidRep2 .vidName {
-          color: #9B0423;
-          font-size: 2vw;
-          margin-top: 3px; }
-        .videoBox #ytplayer a .vidRep2:hover {
-          border: solid 4px grey;
-          cursor: pointer; }
-
-.photoBox {
-  text-align: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -225px;
-  margin-bottom: 50px;
-  animation: showDivs 3s;
-  font-family: money;
-  position: relative; }
-  .photoBox .photoGallery1 {
-    background-image: url("/img/resized/nikkiNoSmile.jpg");
-    background-size: cover;
-    width: 80vw;
-    height: 30vw;
-    margin: 0 auto;
-    position: relative;
-    border-bottom: solid 4px #e9eaea; }
-  .photoBox .photoGallery2 {
-    display: inline-block;
-    background-image: url("/img/resized/performance.jpg");
-    background-position: fixed;
-    background-size: cover;
-    width: 80vw;
-    height: 30vw;
-    margin: 0 auto;
-    position: relative;
-    border-top: solid 4px #e9eaea; }
-  .photoBox .photoGallery3 {
-    display: inline-block;
-    background-image: url("/img/resized/400x500/ncutie.jpg");
-    background-size: cover;
-    width: 30vw;
-    height: 30vw;
-    float: right;
-    position: relative; }
-  .photoBox .photoGallery4 {
-    background-image: url("/img/resized/400x500/window.jpg");
-    background-size: cover;
-    width: 30vw;
-    height: 30vw;
-    float: left;
-    position: relative; }
-  .photoBox .photoGallery5 {
-    background-image: url("/img/resized/square500/sing.jpg");
-    background-size: cover;
-    width: 30vw;
-    height: 30vw;
-    margin: 0 auto;
-    position: relative;
-    border-left: solid 4px #e9eaea;
-    border-right: solid 4px #e9eaea; }
-
-.boxHolder {
-  background-color: #e9eaea; }
+      width: 30vw;
+      height: 30vw;
+      margin: 0 auto;
+      position: relative;
+      border-left: solid 4px #e9eaea;
+      border-right: solid 4px #e9eaea; }
+  .container-fluid .boxHolder {
+    background-color: #e9eaea; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .boxHolder {
+        margin-top: -500px; } }
 
 .downward {
   position: absolute;
@@ -711,11 +882,20 @@ body {
   margin-top: -50px;
   margin-left: 70vw;
   z-index: -999; }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    .downward {
+      height: 950px;
+      width: 11vw;
+      margin-left: 89vw; } }
 
 .bioContain {
   width: 85vw;
   height: 750px;
   margin: 0 auto; }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    .bioContain {
+      height: 850px;
+      width: 100vw; } }
   .bioContain h2 {
     font-family: "Didact Gothic", sans-serif; }
   .bioContain .bioHolder {
@@ -729,6 +909,20 @@ body {
       padding: 5px;
       position: relative;
       z-index: 1; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 665px) {
+        .bioContain .bioHolder .bioPic {
+          width: 200px;
+          height: 200px;
+          border: solid 1px #9B0423;
+          float: right;
+          margin-right: 45px; } }
+      @media (orientation: landscape) and (max-device-width: 666px) {
+        .bioContain .bioHolder .bioPic {
+          width: 300px;
+          height: 230px;
+          border: solid 1px #9B0423;
+          float: right;
+          margin-right: 100px; } }
       .bioContain .bioHolder .bioPic div {
         border: solid black 1px;
         top: 5px;
@@ -741,12 +935,23 @@ body {
         background-position: center;
         position: absolute;
         z-index: 2; }
+        @media only screen and (min-device-width: 664px) and (max-device-width: 665px) {
+          .bioContain .bioHolder .bioPic div {
+            background-position: center top;
+            background-size: contain; } }
+        @media (orientation: landscape) and (max-device-width: 666px) {
+          .bioContain .bioHolder .bioPic div {
+            background-position: center top; } }
     .bioContain .bioHolder .bioP {
       margin-top: 5vw;
       font-family: "Didact Gothic", sans-serif;
       margin-bottom: 0;
       color: black;
       background: rgba(233, 234, 234, 0.7); }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .bioContain .bioHolder .bioP {
+          background: rgba(233, 234, 234, 0.9);
+          float: left; } }
     .bioContain .bioHolder .buttonHide {
       display: none; }
     .bioContain .bioHolder .bioButton {
@@ -801,12 +1006,19 @@ body {
   width: 100vw;
   margin: 0 auto;
   height: 40vw; }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    .formContainer {
+      height: 500px; } }
   .formContainer .stuffholder {
     width: 63vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vw;
     height: 50vw; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .formContainer .stuffholder {
+        width: 90vw;
+        margin-top: 75px; } }
     .formContainer .stuffholder p {
       text-align: center;
       font-family: money; }
@@ -817,6 +1029,10 @@ body {
       background-color: white;
       border: solid 1px #9B0423;
       position: absolute; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .formContainer .stuffholder .formholder {
+          width: 340px;
+          height: 300px; } }
       .formContainer .stuffholder .formholder form {
         top: 10px;
         right: 10px;

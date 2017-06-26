@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/N.png" />
     <title>Nicole Joseph</title>
   </head>
-  <body ng-app='appMod'>
+  <body ng-app='appMod' ng-controller="controller1">
 
     <div class="container-fluid">
       <div class="row">
@@ -25,6 +26,17 @@
             <li ng-click="navMedia()" id="liMedia"class="navSelect"><a href="#!/media">media</a></li>
             <li ng-click="navContact()" id="liContact"class="navSelect"><a href="#!/contact">contact</a></li>
           </ul>
+<!--mobile nav  -->
+          <div class="circleNav"><span class="mobileNav" style="font-size:50px;cursor:pointer" ng-click="openNav()">&#9776; </span></div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+            <a ng-click="closeNav()" href="#!/home">home</a>
+            <a ng-click="closeNav()" href="#!/events">events</a>
+            <a ng-click="closeNav()" href="#!/bio">bio</a>
+            <a ng-click="closeNav()" href="#!/media">media</a>
+            <a ng-click="closeNav()" href="#!/contact">contact</a>
+          </div>
+
         <ng-view></ng-view>
 
         <div class="footer">

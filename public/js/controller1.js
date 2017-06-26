@@ -201,4 +201,14 @@ $scope.showButtons = function(){
   headshot2.addClass('bioButton');
 }
 
+
+$scope.openNav=function() {
+  console.log('hey');
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+$scope.closeNav=function() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 });
