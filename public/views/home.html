@@ -7,19 +7,21 @@
 <div class="upcoming">
 
   <div class="surroundUpcoming">
-  <h2 class="section" ng-click="goR1()">Upcoming Events &rarr;</h2>
-  <span class="directions">scroll right or left to see more events or click on an event for more details</span>
+  <a href="#!/events"><h2 class="section" ng-click="goR1()">&larr; Upcoming Events &rarr;</h2></a>
+  <!-- <span class="directions">scroll right or left to see more events or click on an event for more details</span> -->
   </div>
 
   <div id="moveTo1" class="row eventHomePage">
 
     <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="event1 center-block rec{{$index}}">
       <div class="picHolder{{$index}}"></div>
+      <div class="eventData{{$index}}">
       <div class="afterDate">
       {{event.eventdate | date : longDate:'+0430'}}</div><br>
       <span class="eventname" >{{event.eventname}}</span><br>
       <div class="descript"><p>{{event.description}}</p></div><br>
       <div class="seeFull"><a href="#!/events">See Full Schedule</a></div>
+      </div>
     </div>
 
   </div>

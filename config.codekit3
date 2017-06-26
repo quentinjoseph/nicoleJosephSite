@@ -710,6 +710,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/public\/js\/mediaController-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/mediaController-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/public\/js\/mediaController.js": {
 		"ft": 64,
 		"mi": 1,

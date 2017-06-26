@@ -282,6 +282,7 @@ body{
     and (max-device-width : 667px){
       background-size: cover;
       background-attachment: local;
+      height: 300px;
 
     }
     @media(max-width: 1280px){
@@ -310,6 +311,12 @@ body{
     @media(max-width: 625px){
       height: 29vw;
     }
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px){
+      height: 30vw;
+
+    }
     width: 100vw;
     height: 25vw;
     margin: 0 auto;
@@ -322,11 +329,16 @@ body{
       padding-bottom: 0;
       background-color: $light-grey;
       text-align: center;
+      a{
+        color:#173547;
+        text-decoration: none;
+      }
     .section{
       @media only screen
     and (min-device-width : 375px)
     and (max-device-width : 667px){
       margin-bottom:-1.5vw;
+      font-size: 30px;
     }
       margin-top: 0;
       margin-bottom: .5vw;
@@ -349,12 +361,21 @@ body{
     }
   }
     .eventHomePage{
+      @keyframes slides{
+        from{
+          left:0;
+        }
+        to{
+          left:100vw;
+        }
+      }
       width:100%;
       margin: auto;
       overflow:auto;
       white-space:nowrap;
       height: 83%;
       display: inline-block;
+
     }
     .afterDate{
       @media only screen
@@ -363,7 +384,7 @@ body{
         width: 100%;
         font-size: 3vw;
         text-align: center;
-        margin-top: -2px;
+        margin-top: 7px;
         margin-bottom: -2.5vh;
         color:$accent;
       }
@@ -372,17 +393,18 @@ body{
       margin-bottom: -2vh;
     }
     .eventname{
+
       @media only screen
       and (min-device-width : 375px)
       and (max-device-width : 667px){
         width: 100%;
         font-size: 5vw;
         text-align: center;
-        font-family: $font;
+        font-family: money;
       }
       color:$gold;
-      text-decoration: underline;
-      font-family: $fancy;
+      // text-decoration: underline;
+      font-family: money;
       font-size: 3vw;
     }
 
@@ -428,7 +450,9 @@ body{
         @media only screen
         and (min-device-width : 375px)
         and (max-device-width : 667px){
-          display: none;
+      display: none;
+
+
         }
         @media(max-width: 475px){
           bottom:2.5vw;
@@ -517,6 +541,9 @@ body{
       a{
         text-decoration: none;
         color:white;
+        &:hover{
+          color:red;
+        }
       }
       margin:0;
       padding-top: 10%;
@@ -697,32 +724,67 @@ body{
   // thisEventPage
 
   .thisEventPage{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px){
+      height: 700px;
+    }
     width: 100vw;
     height: 1000px;
+    font-family: $fancy;
+    color:black;
     .pic1Holder{
       a{
+        font-family: $fancy;
         color:black;
         text-decoration: none;
       }
       // position: relative;
       width: 100vw;
       .Pic1{
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 666px){
+         height: 35vw;
+        }
+        @media(orientation:landscape)and (max-device-width : 667px) {
+          display: none;
+        }
         width: 100vw;
-        height: 35vw;
+        height: 20vw;
         background-image: url('/img/operahouse.jpg');
         background-size: cover;
+        background-position: center bottom;
         background-repeat: no-repeat;
         z-index: 5;
       }
   }
   #thisEventHold{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px){
+      margin-top: -15px;
+    }
     width: 95vw;
     margin-top: 3vh;
      .mapHolder{
+       @media only screen
+       and (min-device-width : 375px)
+       and (max-device-width : 667px){
+         width:100%;
+         margin:0 auto;
+       }
         float:left;
         width: 50%;
         height: 100%;
         #map{
+          @media only screen
+          and (min-device-width : 375px)
+          and (max-device-width : 667px){
+            width:70vw;
+            height:200px;
+            margin:0 auto;
+          }
           margin: auto;
           height:29vw;
           width:50vw;
@@ -730,6 +792,14 @@ body{
         }
       }
       .eventDiv{
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 667px){
+          width:95vw;
+          text-align: center;
+          margin:0 auto;
+          height: 220px;
+        }
 
         margin: auto;
         float: left;
@@ -737,27 +807,52 @@ body{
         padding-left:2%;
         width:50%;
         height: 150px;
-
-      }
-      .eventHolder{
-        width: 100%;
-        float: left;
-
-        .section{
-          font-size: 50px;
+        h3{
+          color:$gold;
+        }
+        a{
+          color:black;
+          text-decoration: none;
+        p{
+          @media only screen
+          and (min-device-width : 375px)
+          and (max-device-width : 667px){
+            border:solid 1px black;
+            width:160px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+          }
+          border:solid 1px black;
+          width:160px;
+          margin-top: 20px;
           text-align: center;
-          font-family: $font;
-          color: white;
-          position: fixed;
-          z-index: 15;
-          width:100%;
-          margin: auto;
+          &:hover{
+            background-color: black;
+            color:white;
+          }
         }
-        .under{
-          margin-top: 320px;
-        }
-
-     }
+       }
+      }
+    //   .eventHolder{
+    //     width: 100%;
+    //     float: left;
+     //
+    //     .section{
+    //       font-size: 50px;
+    //       text-align: center;
+    //       font-family: $font;
+    //       color: white;
+    //       position: fixed;
+    //       z-index: 15;
+    //       width:100%;
+    //       margin: auto;
+    //     }
+    //     .under{
+    //       margin-top: 320px;
+    //     }
+     //
+    //  }
     }
 
 }
@@ -769,15 +864,22 @@ body{
   height: 665px;
   }
   height: 1350px;
+
 .mediaContainer{
-  // width: 100vw;
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+
+  margin-top: -85px;
+
+  }
   .downward{
     @media only screen
     and (min-device-width : 375px)
     and (max-device-width : 667px) {
     width:100vw;
     height: 75px;
-    margin-top: 200px;
+    margin-top: 0px;
 
     }
     position:absolute;
@@ -793,7 +895,7 @@ body{
   // height: 800px;
   margin-left:auto;
   margin-right: auto;
-  padding-top: 10%;
+  // padding-top: 10%;
   font-family: $font;
   h4{
     @media(max-width: 590px){
