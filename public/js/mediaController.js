@@ -13,7 +13,7 @@ video.addClass('mediaBoxHide');
 photo.removeClass('photoBox');
 photo.addClass('mediaBoxHide');
 behindbar.addClass('behindStuff');
-document.getElementById('getToThis').scrollIntoView({behavior: "smooth"});
+document.getElementById('audioID').scrollIntoView({behavior: "smooth"});
 }
 
 $scope.showVideo=function(){
@@ -24,7 +24,7 @@ audio.addClass('mediaBoxHide');
 photo.removeClass('photoBox');
 photo.addClass('mediaBoxHide');
 behindbar.addClass('behindStuff');
-document.getElementById('getToThis').scrollIntoView({behavior: "smooth"});
+document.getElementById('audioID').scrollIntoView({behavior: "smooth"});
 }
 
 $scope.showPhoto=function(){
@@ -34,7 +34,7 @@ audio.removeClass('audioBox');
 audio.addClass('mediaBoxHide');
 video.removeClass('videoBox');
 video.addClass('mediaBoxHide');
-document.getElementById('getToThis').scrollIntoView({behavior: "smooth"});
+document.getElementById('audioID').scrollIntoView({behavior: "smooth"});
 }
 
 
