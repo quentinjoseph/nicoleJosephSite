@@ -201,14 +201,21 @@ $scope.showButtons = function(){
   headshot2.addClass('bioButton');
 }
 
-
+// mobile slide nav
 $scope.openNav=function() {
-  console.log('hey');
+
     document.getElementById("mySidenav").style.width = "100%";
 }
 
 $scope.closeNav=function() {
     document.getElementById("mySidenav").style.width = "0";
+}
+
+$scope.goR1=function(){
+  document.getElementById('moveTo1').scrollLeft +=1000;
+  // ({ top: 0, left: 100, behavior: 'smooth' });
+  // document.getElementById('moveTo1').scrollIntoView({behavior: "smooth"});
+  // window.scrollBy({ top: 1, left: 0, behavior: 'smooth' });
 }
 
 });

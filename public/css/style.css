@@ -69,7 +69,7 @@ body {
     z-index: 20;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgba(212, 214, 214, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -267,7 +267,7 @@ body {
       margin: auto;
       overflow: auto;
       white-space: nowrap;
-      height: 100%;
+      height: 83%;
       display: inline-block; }
     .container-fluid .upcoming .afterDate {
       width: 47vw;
@@ -284,18 +284,18 @@ body {
     .container-fluid .upcoming .eventname {
       color: #c67b40;
       text-decoration: underline;
-      font-family: "Rouge Script", cursive;
+      font-family: "Didact Gothic", sans-serif;
       font-size: 3vw; }
       @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
         .container-fluid .upcoming .eventname {
           width: 100%;
           font-size: 5vw;
           text-align: center;
-          font-family: "Rouge Script", cursive; } }
+          font-family: money; } }
     .container-fluid .upcoming .event1 {
       display: inline-block;
       width: 100vw;
-      height: 70%;
+      height: 95%;
       font-family: "Didact Gothic", sans-serif;
       font-size: 1.5vw;
       margin-right: 3.5vw;
@@ -568,6 +568,9 @@ body {
           margin-top: 320px; }
   .container-fluid .allMedia {
     height: 1350px; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .allMedia {
+        height: 665px; } }
     .container-fluid .allMedia .mediaContainer {
       width: 100vw;
       margin-left: auto;

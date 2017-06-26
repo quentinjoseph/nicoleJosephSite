@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/quentinjoseph/nicoleJosephSite",
+  "authors": [
+    "Quentin Joseph <qej2@icloud.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "smoothscroll": "^0.3.5"
+  }
+}

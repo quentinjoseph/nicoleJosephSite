@@ -66,6 +66,77 @@
 		"oAP": "\/Procfile.txt",
 		"oF": 0
 		},
+	"\/public\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/public\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/public\/bower_components\/smoothscroll\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/public\/bower_components\/smoothscroll\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/public\/bower_components\/smoothscroll\/_travis.yml": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/public\/bower_components\/smoothscroll\/_travis.yml",
+		"oF": 0
+		},
+	"\/public\/bower_components\/smoothscroll\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/public\/bower_components\/smoothscroll\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/public\/bower_components\/smoothscroll\/dist\/smoothscroll.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/public\/bower_components\/smoothscroll\/dist\/smoothscroll.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/bower_components\/smoothscroll\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/bower_components\/smoothscroll\/LICENSE",
+		"oF": 0
+		},
+	"\/public\/bower_components\/smoothscroll\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/public\/bower_components\/smoothscroll\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/public\/bower_components\/smoothscroll\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/public\/bower_components\/smoothscroll\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/public\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1027,6 +1098,15 @@
 		"oA": 2,
 		"oAP": "\/public\/views\/thisevent.html",
 		"oF": 0
+		},
+	"\/server-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/server-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/server.js": {
 		"ft": 64,

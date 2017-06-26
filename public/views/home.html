@@ -7,11 +7,11 @@
 <div class="upcoming">
 
   <div class="surroundUpcoming">
-  <h2 class="section">Upcoming Events</h2>
+  <h2 class="section" ng-click="goR1()">Upcoming Events &rarr;</h2>
   <span class="directions">scroll right or left to see more events or click on an event for more details</span>
   </div>
-  <!-- <div class="upcomingDiv2"> -->
-  <div class="row eventHomePage">
+
+  <div id="moveTo1" class="row eventHomePage">
 
     <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="event1 center-block rec{{$index}}">
       <div class="picHolder{{$index}}"></div>
