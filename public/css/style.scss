@@ -338,7 +338,7 @@ body{
     and (min-device-width : 375px)
     and (max-device-width : 667px){
       margin-bottom:-1.5vw;
-      font-size: 30px;
+      font-size: 22px;
     }
       margin-top: 0;
       margin-bottom: .5vw;
@@ -398,13 +398,14 @@ body{
       and (min-device-width : 375px)
       and (max-device-width : 667px){
         width: 100%;
+        margin-top: 5px;
         font-size: 5vw;
         text-align: center;
-        font-family: money;
+        font-family: $fancy;
       }
       color:$gold;
       // text-decoration: underline;
-      font-family: money;
+      font-family: $fancy;
       font-size: 3vw;
     }
 
@@ -450,15 +451,18 @@ body{
         @media only screen
         and (min-device-width : 375px)
         and (max-device-width : 667px){
-      display: none;
-
+          // width:160px;
+          // margin-left: auto;
+          // margin-right: auto;
+          text-align: center;
+          margin-top:15px;
 
         }
-        @media(max-width: 475px){
-          bottom:2.5vw;
-          float:left;
-          font-size: 1.0vw;
-        }
+        // @media(max-width: 475px){
+        //   bottom:2.5vw;
+        //   float:left;
+        //   font-size: 1.0vw;
+        // }
         color:blue;
         font-size: 1.5vw;
         font-family: $fancy;
@@ -690,10 +694,10 @@ body{
           and (min-device-width : 375px)
           and (max-device-width : 667px) {
             font-size: 25px;
-            font-family: $fancy2;
+            font-family: $fancy;
 
           }
-          font-family: $fancy2;
+          font-family: $fancy;
           color:$gold;
         }
 

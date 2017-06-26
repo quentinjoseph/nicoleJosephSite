@@ -262,7 +262,7 @@ body {
         @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
           .container-fluid .upcoming .surroundUpcoming .section {
             margin-bottom: -1.5vw;
-            font-size: 30px; } }
+            font-size: 22px; } }
       .container-fluid .upcoming .surroundUpcoming span {
         font-family: "Didact Gothic", sans-serif;
         font-size: 2vw;
@@ -296,14 +296,15 @@ body {
           color: #9B0423; } }
     .container-fluid .upcoming .eventname {
       color: #c67b40;
-      font-family: money;
+      font-family: "Didact Gothic", sans-serif;
       font-size: 3vw; }
       @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
         .container-fluid .upcoming .eventname {
           width: 100%;
+          margin-top: 5px;
           font-size: 5vw;
           text-align: center;
-          font-family: money; } }
+          font-family: "Didact Gothic", sans-serif; } }
     .container-fluid .upcoming .event1 {
       display: inline-block;
       width: 100vw;
@@ -344,12 +345,8 @@ body {
         position: relative; }
         @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
           .container-fluid .upcoming .event1 .seeFull {
-            display: none; } }
-        @media (max-width: 475px) {
-          .container-fluid .upcoming .event1 .seeFull {
-            bottom: 2.5vw;
-            float: left;
-            font-size: 1.0vw; } }
+            text-align: center;
+            margin-top: 15px; } }
         .container-fluid .upcoming .event1 .seeFull a {
           color: blue; }
     .container-fluid .upcoming .picHolder0 {
@@ -510,12 +507,12 @@ body {
         .container-fluid .eventsPage .eventHolder .under span {
           font-family: "Didact Gothic", sans-serif; }
         .container-fluid .eventsPage .eventHolder .under .fancyName {
-          font-family: "Rouge Script", cursive;
+          font-family: "Didact Gothic", sans-serif;
           color: #c67b40; }
           @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
             .container-fluid .eventsPage .eventHolder .under .fancyName {
               font-size: 25px;
-              font-family: "Rouge Script", cursive; } }
+              font-family: "Didact Gothic", sans-serif; } }
       .container-fluid .eventsPage .eventHolder .eventsDiv {
         margin-left: auto;
         margin-right: auto;
