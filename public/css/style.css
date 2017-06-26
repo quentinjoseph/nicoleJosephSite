@@ -216,7 +216,8 @@ body {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
       .container-fluid .top {
         background-size: cover;
-        background-attachment: local; } }
+        background-attachment: local;
+        height: 300px; } }
     @media (max-width: 1280px) {
       .container-fluid .top {
         background-position: 0 -25px; } }
@@ -238,12 +239,18 @@ body {
     @media (max-width: 625px) {
       .container-fluid .upcoming {
         height: 29vw; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .upcoming {
+        height: 30vw; } }
     .container-fluid .upcoming .surroundUpcoming {
       width: 100%;
       margin: 0 auto;
       padding-bottom: 0;
       background-color: #efefef;
       text-align: center; }
+      .container-fluid .upcoming .surroundUpcoming a {
+        color: #173547;
+        text-decoration: none; }
       .container-fluid .upcoming .surroundUpcoming .section {
         margin-top: 0;
         margin-bottom: .5vw;
@@ -254,7 +261,8 @@ body {
         z-index: 1; }
         @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
           .container-fluid .upcoming .surroundUpcoming .section {
-            margin-bottom: -1.5vw; } }
+            margin-bottom: -1.5vw;
+            font-size: 30px; } }
       .container-fluid .upcoming .surroundUpcoming span {
         font-family: "Didact Gothic", sans-serif;
         font-size: 2vw;
@@ -269,6 +277,11 @@ body {
       white-space: nowrap;
       height: 83%;
       display: inline-block; }
+@keyframes slides {
+  from {
+    left: 0; }
+  to {
+    left: 100vw; } }
     .container-fluid .upcoming .afterDate {
       width: 47vw;
       margin-top: 2vw;
@@ -278,13 +291,12 @@ body {
           width: 100%;
           font-size: 3vw;
           text-align: center;
-          margin-top: -2px;
+          margin-top: 7px;
           margin-bottom: -2.5vh;
           color: #9B0423; } }
     .container-fluid .upcoming .eventname {
       color: #c67b40;
-      text-decoration: underline;
-      font-family: "Didact Gothic", sans-serif;
+      font-family: money;
       font-size: 3vw; }
       @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
         .container-fluid .upcoming .eventname {
@@ -398,6 +410,8 @@ body {
       .container-fluid .mediaSign .section2 a {
         text-decoration: none;
         color: white; }
+        .container-fluid .mediaSign .section2 a:hover {
+          color: red; }
   .container-fluid .eventsPage {
     background-color: #e9eaea;
     width: 100%;
@@ -521,30 +535,55 @@ body {
           cursor: pointer; }
   .container-fluid .thisEventPage {
     width: 100vw;
-    height: 1000px; }
+    height: 1000px;
+    font-family: "Didact Gothic", sans-serif;
+    color: black; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      .container-fluid .thisEventPage {
+        height: 700px; } }
     .container-fluid .thisEventPage .pic1Holder {
       width: 100vw; }
       .container-fluid .thisEventPage .pic1Holder a {
+        font-family: "Didact Gothic", sans-serif;
         color: black;
         text-decoration: none; }
       .container-fluid .thisEventPage .pic1Holder .Pic1 {
         width: 100vw;
-        height: 35vw;
+        height: 20vw;
         background-image: url("/img/operahouse.jpg");
         background-size: cover;
+        background-position: center bottom;
         background-repeat: no-repeat;
         z-index: 5; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
+          .container-fluid .thisEventPage .pic1Holder .Pic1 {
+            height: 35vw; } }
+        @media (orientation: landscape) and (max-device-width: 667px) {
+          .container-fluid .thisEventPage .pic1Holder .Pic1 {
+            display: none; } }
     .container-fluid .thisEventPage #thisEventHold {
       width: 95vw;
       margin-top: 3vh; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .thisEventPage #thisEventHold {
+          margin-top: -15px; } }
       .container-fluid .thisEventPage #thisEventHold .mapHolder {
         float: left;
         width: 50%;
         height: 100%; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .thisEventPage #thisEventHold .mapHolder {
+            width: 100%;
+            margin: 0 auto; } }
         .container-fluid .thisEventPage #thisEventHold .mapHolder #map {
           margin: auto;
           height: 29vw;
           width: 50vw; }
+          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+            .container-fluid .thisEventPage #thisEventHold .mapHolder #map {
+              width: 70vw;
+              height: 200px;
+              margin: 0 auto; } }
       .container-fluid .thisEventPage #thisEventHold .eventDiv {
         margin: auto;
         float: left;
@@ -552,20 +591,32 @@ body {
         padding-left: 2%;
         width: 50%;
         height: 150px; }
-      .container-fluid .thisEventPage #thisEventHold .eventHolder {
-        width: 100%;
-        float: left; }
-        .container-fluid .thisEventPage #thisEventHold .eventHolder .section {
-          font-size: 50px;
-          text-align: center;
-          font-family: money;
-          color: white;
-          position: fixed;
-          z-index: 15;
-          width: 100%;
-          margin: auto; }
-        .container-fluid .thisEventPage #thisEventHold .eventHolder .under {
-          margin-top: 320px; }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .thisEventPage #thisEventHold .eventDiv {
+            width: 95vw;
+            text-align: center;
+            margin: 0 auto;
+            height: 220px; } }
+        .container-fluid .thisEventPage #thisEventHold .eventDiv h3 {
+          color: #c67b40; }
+        .container-fluid .thisEventPage #thisEventHold .eventDiv a {
+          color: black;
+          text-decoration: none; }
+          .container-fluid .thisEventPage #thisEventHold .eventDiv a p {
+            border: solid 1px black;
+            width: 160px;
+            margin-top: 20px;
+            text-align: center; }
+            @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+              .container-fluid .thisEventPage #thisEventHold .eventDiv a p {
+                border: solid 1px black;
+                width: 160px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px; } }
+            .container-fluid .thisEventPage #thisEventHold .eventDiv a p:hover {
+              background-color: black;
+              color: white; }
   .container-fluid .allMedia {
     height: 1350px; }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
@@ -575,8 +626,10 @@ body {
       width: 100vw;
       margin-left: auto;
       margin-right: auto;
-      padding-top: 10%;
       font-family: money; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .container-fluid .allMedia .mediaContainer {
+          margin-top: -85px; } }
       .container-fluid .allMedia .mediaContainer .downward {
         position: absolute;
         width: 100vw;
@@ -588,7 +641,7 @@ body {
           .container-fluid .allMedia .mediaContainer .downward {
             width: 100vw;
             height: 75px;
-            margin-top: 200px; } }
+            margin-top: 0px; } }
       .container-fluid .allMedia .mediaContainer h4 {
         font-size: 200%;
         margin-top: -50px; }
