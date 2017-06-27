@@ -415,7 +415,7 @@ body {
     animation: showDivs 1s; }
     @media only screen and (min-device-width: 320px) {
       .container-fluid .eventsPage {
-        height: 446px; } }
+        height: 775px; } }
     @media (orientation: landscape) and (max-device-width: 667px) {
       .container-fluid .eventsPage {
         height: 170px; } }
