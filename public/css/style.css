@@ -100,7 +100,7 @@ body {
     height: 32px;
     margin: auto;
     z-index: 11; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       body #navTable {
         display: none; } }
     @media (max-width: 607px) {
@@ -117,7 +117,7 @@ body {
       @media (max-width: 462px) {
         body #navTable a {
           font-size: 12px; } }
-      @media (max-width: 375px) {
+      @media (max-width: 320px) {
         body #navTable a {
           font-size: 9px; } }
       body #navTable a:hover {
@@ -168,7 +168,7 @@ body {
       font-size: 30px;
       margin-top: -13px;
       margin-bottom: 10px; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .title #soprano {
           font-size: 10px; } }
       @media (max-width: 800px) {
@@ -213,7 +213,7 @@ body {
     background-position: 0 -200px;
     background-repeat: no-repeat;
     background-size: cover; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .top {
         background-size: cover;
         background-attachment: local;
@@ -239,7 +239,7 @@ body {
     @media (max-width: 625px) {
       .container-fluid .upcoming {
         height: 29vw; } }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .upcoming {
         height: 30vw; } }
     .container-fluid .upcoming .surroundUpcoming {
@@ -259,7 +259,7 @@ body {
         font-family: money;
         position: relative;
         z-index: 1; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .upcoming .surroundUpcoming .section {
             margin-bottom: -1.5vw;
             font-size: 22px; } }
@@ -286,7 +286,7 @@ body {
       width: 47vw;
       margin-top: 2vw;
       margin-bottom: -2vh; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .upcoming .afterDate {
           width: 100%;
           font-size: 3vw;
@@ -298,7 +298,7 @@ body {
       color: #c67b40;
       font-family: "Didact Gothic", sans-serif;
       font-size: 3vw; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .upcoming .eventname {
           width: 100%;
           margin-top: 5px;
@@ -314,7 +314,7 @@ body {
       margin-right: 3.5vw;
       margin-left: 3.5vw;
       z-index: 2; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .upcoming .event1 {
           text-align: center;
           margin: 0; } }
@@ -327,7 +327,7 @@ body {
         margin: 0;
         white-space: pre-line;
         color: #173547; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .upcoming .event1 .descript {
             width: 90%;
             margin: 0 auto;
@@ -343,7 +343,7 @@ body {
         margin-right: 2vw;
         margin-top: -2vw;
         position: relative; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .upcoming .event1 .seeFull {
             text-align: center;
             margin-top: 15px; } }
@@ -356,7 +356,7 @@ body {
       background-size: cover;
       float: right;
       background-image: url("../img/resized/landscape/Detroit Opera House 2.jpg"); }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .upcoming .picHolder0 {
           display: none; } }
     .container-fluid .upcoming .picHolder1 {
@@ -366,7 +366,7 @@ body {
       background-size: cover;
       float: right;
       background-image: url("../img/resized/w900h600/pizza.png"); }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .upcoming .picHolder1 {
           display: none; } }
     .container-fluid .upcoming .picHolder2 {
@@ -376,7 +376,7 @@ body {
       background-size: cover;
       float: right;
       background-image: url("../img/resized/w900h600/flipped.png"); }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .upcoming .picHolder2 {
           display: none; } }
   .container-fluid .mediaSign {
@@ -386,7 +386,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center 32vh; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
       .container-fluid .mediaSign {
         background-attachment: inherit;
         height: 32vh; } }
@@ -413,7 +413,7 @@ body {
     background-color: #e9eaea;
     width: 100%;
     animation: showDivs 1s; }
-    @media only screen and (min-device-width: 375px) {
+    @media only screen and (min-device-width: 320px) {
       .container-fluid .eventsPage {
         height: 446px; } }
     @media (orientation: landscape) and (max-device-width: 667px) {
@@ -431,7 +431,7 @@ body {
       background-size: cover;
       background-position: center;
       z-index: 5; }
-      @media only screen and (device-width: 375px) {
+      @media only screen and (device-width: 320px) {
         .container-fluid .eventsPage .perfromancePic {
           height: 175px;
           background-size: cover; } }
@@ -467,7 +467,7 @@ body {
         background: rgba(233, 234, 234, 0.8);
         margin-top: -460px;
         right: 0%; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
           .container-fluid .eventsPage .eventHolder .section {
             margin-top: 0vw;
             width: 100vw;
@@ -486,7 +486,7 @@ body {
         background: rgba(233, 234, 234, 0.8);
         right: 0%;
         text-align: center; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
           .container-fluid .eventsPage .eventHolder .under {
             margin-top: 71px;
             width: 100vw;
@@ -509,7 +509,7 @@ body {
         .container-fluid .eventsPage .eventHolder .under .fancyName {
           font-family: "Didact Gothic", sans-serif;
           color: #c67b40; }
-          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
             .container-fluid .eventsPage .eventHolder .under .fancyName {
               font-size: 25px;
               font-family: "Didact Gothic", sans-serif; } }
@@ -521,7 +521,7 @@ body {
         padding: 0;
         width: 50%;
         height: 150px; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .eventsPage .eventHolder .eventsDiv {
             width: 70vw;
             font-size: 16px;
@@ -535,7 +535,7 @@ body {
     height: 1000px;
     font-family: "Didact Gothic", sans-serif;
     color: black; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .thisEventPage {
         height: 700px; } }
     .container-fluid .thisEventPage .pic1Holder {
@@ -552,7 +552,7 @@ body {
         background-position: center bottom;
         background-repeat: no-repeat;
         z-index: 5; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 666px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
           .container-fluid .thisEventPage .pic1Holder .Pic1 {
             height: 35vw; } }
         @media (orientation: landscape) and (max-device-width: 667px) {
@@ -561,14 +561,14 @@ body {
     .container-fluid .thisEventPage #thisEventHold {
       width: 95vw;
       margin-top: 3vh; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .thisEventPage #thisEventHold {
           margin-top: -15px; } }
       .container-fluid .thisEventPage #thisEventHold .mapHolder {
         float: left;
         width: 50%;
         height: 100%; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .thisEventPage #thisEventHold .mapHolder {
             width: 100%;
             margin: 0 auto; } }
@@ -576,7 +576,7 @@ body {
           margin: auto;
           height: 29vw;
           width: 50vw; }
-          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
             .container-fluid .thisEventPage #thisEventHold .mapHolder #map {
               width: 70vw;
               height: 200px;
@@ -588,7 +588,7 @@ body {
         padding-left: 2%;
         width: 50%;
         height: 150px; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .thisEventPage #thisEventHold .eventDiv {
             width: 95vw;
             text-align: center;
@@ -604,7 +604,7 @@ body {
             width: 160px;
             margin-top: 20px;
             text-align: center; }
-            @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+            @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
               .container-fluid .thisEventPage #thisEventHold .eventDiv a p {
                 border: solid 1px black;
                 width: 160px;
@@ -616,7 +616,7 @@ body {
               color: white; }
   .container-fluid .allMedia {
     height: 1350px; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .allMedia {
         height: 665px; } }
     .container-fluid .allMedia .mediaContainer {
@@ -624,7 +624,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       font-family: money; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .allMedia .mediaContainer {
           margin-top: -85px; } }
       .container-fluid .allMedia .mediaContainer .downward {
@@ -634,7 +634,7 @@ body {
         background-color: #9B0423;
         margin: 0;
         z-index: -999; }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .allMedia .mediaContainer .downward {
             width: 100vw;
             height: 75px;
@@ -645,7 +645,7 @@ body {
         font-size: 20px;
         margin-top: 70px;
         background-color: rgba(233, 234, 234, 0.6); }
-        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .allMedia .mediaContainer p {
             font-size: 10px;
             width: 50px;
@@ -672,7 +672,7 @@ body {
           background-size: cover;
           z-index: 1;
           animation: showDivs 1s; }
-          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
             .container-fluid .allMedia .mediaContainer .mediaHolder .audioDiv {
               margin-top: 0px; } }
           .container-fluid .allMedia .mediaContainer .mediaHolder .audioDiv:hover {
@@ -690,7 +690,7 @@ body {
           background-image: url("/img/NikkiWindow2square.jpg");
           background-size: cover;
           animation: showDivs 1s; }
-          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
             .container-fluid .allMedia .mediaContainer .mediaHolder .photoDiv {
               margin-top: 0px; } }
           .container-fluid .allMedia .mediaContainer .mediaHolder .photoDiv:hover {
@@ -708,7 +708,7 @@ body {
           background-image: url("/img/nikkiDecember1.jpg");
           background-size: cover;
           animation: showDivs 1s; }
-          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
             .container-fluid .allMedia .mediaContainer .mediaHolder .videoDiv {
               margin-top: 100px; } }
           .container-fluid .allMedia .mediaContainer .mediaHolder .videoDiv:hover {
@@ -726,7 +726,7 @@ body {
     position: relative;
     z-index: 1;
     font-family: money; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .audioBox {
         margin-top: 550px; } }
   .container-fluid .mediaBoxHide {
@@ -741,7 +741,7 @@ body {
     margin-top: 235px;
     margin-bottom: 50px;
     animation: showDivs 1s; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .videoBox {
         margin-top: 550px; } }
     .container-fluid .videoBox #ytplayer {
@@ -765,7 +765,7 @@ body {
           background-size: cover;
           background-repeat: no-repeat;
           position: relative; }
-          @media (max-width: 375px) {
+          @media (max-width: 320px) {
             .container-fluid .videoBox #ytplayer a .vidRep {
               padding-top: 0; } }
           .container-fluid .videoBox #ytplayer a .vidRep div {
@@ -787,7 +787,7 @@ body {
               .container-fluid .videoBox #ytplayer a .vidRep h3 {
                 margin-top: 0;
                 margin-bottom: 0; } }
-            @media (max-width: 375px) {
+            @media (max-width: 320px) {
               .container-fluid .videoBox #ytplayer a .vidRep h3 {
                 margin-top: -10px;
                 margin-bottom: -3px; } }
@@ -819,7 +819,7 @@ body {
           background-position: center right;
           background-repeat: no-repeat;
           position: relative; }
-          @media (max-width: 375px) {
+          @media (max-width: 320px) {
             .container-fluid .videoBox #ytplayer a .vidRep2 {
               padding-top: 0; } }
           .container-fluid .videoBox #ytplayer a .vidRep2 div {
@@ -841,7 +841,7 @@ body {
               .container-fluid .videoBox #ytplayer a .vidRep2 h3 {
                 margin-top: 0;
                 margin-bottom: 0; } }
-            @media (max-width: 375px) {
+            @media (max-width: 320px) {
               .container-fluid .videoBox #ytplayer a .vidRep2 h3 {
                 margin-top: -10px;
                 margin-bottom: -3px; } }
@@ -872,7 +872,7 @@ body {
     animation: showDivs 3s;
     font-family: money;
     position: relative; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .photoBox {
         margin-top: 550px;
         height: 450px; } }
@@ -920,7 +920,7 @@ body {
       border-right: solid 4px #e9eaea; }
   .container-fluid .boxHolder {
     background-color: #e9eaea; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .boxHolder {
         margin-top: -500px; } }
 
@@ -932,7 +932,7 @@ body {
   margin-top: -50px;
   margin-left: 70vw;
   z-index: -999; }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
     .downward {
       height: 950px;
       width: 11vw;
@@ -942,7 +942,7 @@ body {
   width: 85vw;
   height: 750px;
   margin: 0 auto; }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
     .bioContain {
       height: 850px;
       width: 100vw; } }
@@ -959,7 +959,7 @@ body {
       padding: 5px;
       position: relative;
       z-index: 1; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 665px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 665px) {
         .bioContain .bioHolder .bioPic {
           width: 200px;
           height: 200px;
@@ -998,7 +998,7 @@ body {
       margin-bottom: 0;
       color: black;
       background: rgba(233, 234, 234, 0.7); }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .bioContain .bioHolder .bioP {
           background: rgba(233, 234, 234, 0.9);
           float: left; } }
@@ -1056,7 +1056,7 @@ body {
   width: 100vw;
   margin: 0 auto;
   height: 40vw; }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
     .formContainer {
       height: 500px; } }
   .formContainer .stuffholder {
@@ -1065,7 +1065,7 @@ body {
     margin-right: auto;
     margin-top: 5vw;
     height: 50vw; }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .formContainer .stuffholder {
         width: 90vw;
         margin-top: 75px; } }
@@ -1079,7 +1079,7 @@ body {
       background-color: white;
       border: solid 1px #9B0423;
       position: absolute; }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .formContainer .stuffholder .formholder {
           width: 340px;
           height: 300px; } }

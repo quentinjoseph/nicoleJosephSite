@@ -134,7 +134,7 @@ body{
   // large screen nav
     #navTable{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
         display: none;
 
@@ -152,7 +152,7 @@ body{
         @media(max-width: 462px){
           font-size: 12px;
         }
-        @media(max-width: 375px){
+        @media(max-width: 320px){
           font-size: 9px;
         }
 
@@ -226,7 +226,7 @@ body{
     background-color: $light-grey;
     #soprano{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
         font-size: 10px;
 
@@ -278,7 +278,7 @@ body{
 
   .top{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px){
       background-size: cover;
       background-attachment: local;
@@ -312,7 +312,7 @@ body{
       height: 29vw;
     }
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px){
       height: 30vw;
 
@@ -335,7 +335,7 @@ body{
       }
     .section{
       @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px){
       margin-bottom:-1.5vw;
       font-size: 22px;
@@ -379,7 +379,7 @@ body{
     }
     .afterDate{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
         width: 100%;
         font-size: 3vw;
@@ -395,7 +395,7 @@ body{
     .eventname{
 
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
         width: 100%;
         margin-top: 5px;
@@ -412,7 +412,7 @@ body{
 
     .event1{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
         text-align: center;
         margin:0;
@@ -430,7 +430,7 @@ body{
       }
       .descript{
         @media only screen
-        and (min-device-width : 375px)
+        and (min-device-width : 320px)
         and (max-device-width : 667px){
           width: 90%;
           margin:0 auto;
@@ -449,7 +449,7 @@ body{
       }
       .seeFull{
         @media only screen
-        and (min-device-width : 375px)
+        and (min-device-width : 320px)
         and (max-device-width : 667px){
           // width:160px;
           // margin-left: auto;
@@ -479,7 +479,7 @@ body{
     }
     .picHolder0{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
 
         display: none;
@@ -493,7 +493,7 @@ body{
     }
     .picHolder1{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
 
         display: none;
@@ -507,7 +507,7 @@ body{
     }
     .picHolder2{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px){
 
         display: none;
@@ -523,7 +523,7 @@ body{
 }
   .mediaSign{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 666px) {
       background-attachment: inherit;
       height: 32vh;
@@ -562,7 +562,7 @@ body{
   .eventsPage{
 
     @media only screen
-    and (min-device-width : 375px){
+    and (min-device-width : 320px){
       height: 446px;
       // height: 1790px;
     }
@@ -580,7 +580,7 @@ body{
 
     .perfromancePic{
       @media only screen
-      and (device-width : 375px)
+      and (device-width : 320px)
       /*and (max-device-width : 667px)*/ {
         height: 175px;
         // background-attachment: fixed;
@@ -626,7 +626,7 @@ body{
       width: 100%;
       .section{
         @media only screen
-        and (min-device-width : 375px)
+        and (min-device-width : 320px)
         and (max-device-width : 666px){
           margin-top: 0vw;
           width:100vw;
@@ -654,7 +654,7 @@ body{
       }
       .under{
         @media only screen
-        and (min-device-width : 375px)
+        and (min-device-width : 320px)
         and (max-device-width : 666px){
           margin-top: 71px;
           width:100vw;
@@ -691,7 +691,7 @@ body{
         }
         .fancyName{
           @media only screen
-          and (min-device-width : 375px)
+          and (min-device-width : 320px)
           and (max-device-width : 667px) {
             font-size: 25px;
             font-family: $fancy;
@@ -704,7 +704,7 @@ body{
       }
       .eventsDiv{
         @media only screen
-        and (min-device-width : 375px)
+        and (min-device-width : 320px)
         and (max-device-width : 667px) {
           width:70vw;
           font-size: 16px;
@@ -729,7 +729,7 @@ body{
 
   .thisEventPage{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px){
       height: 700px;
     }
@@ -747,7 +747,7 @@ body{
       width: 100vw;
       .Pic1{
         @media only screen
-        and (min-device-width : 375px)
+        and (min-device-width : 320px)
         and (max-device-width : 666px){
          height: 35vw;
         }
@@ -765,7 +765,7 @@ body{
   }
   #thisEventHold{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px){
       margin-top: -15px;
     }
@@ -773,7 +773,7 @@ body{
     margin-top: 3vh;
      .mapHolder{
        @media only screen
-       and (min-device-width : 375px)
+       and (min-device-width : 320px)
        and (max-device-width : 667px){
          width:100%;
          margin:0 auto;
@@ -783,7 +783,7 @@ body{
         height: 100%;
         #map{
           @media only screen
-          and (min-device-width : 375px)
+          and (min-device-width : 320px)
           and (max-device-width : 667px){
             width:70vw;
             height:200px;
@@ -797,7 +797,7 @@ body{
       }
       .eventDiv{
         @media only screen
-        and (min-device-width : 375px)
+        and (min-device-width : 320px)
         and (max-device-width : 667px){
           width:95vw;
           text-align: center;
@@ -819,7 +819,7 @@ body{
           text-decoration: none;
         p{
           @media only screen
-          and (min-device-width : 375px)
+          and (min-device-width : 320px)
           and (max-device-width : 667px){
             border:solid 1px black;
             width:160px;
@@ -863,7 +863,7 @@ body{
 // media page
 .allMedia{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px) {
   height: 665px;
   }
@@ -871,7 +871,7 @@ body{
 
 .mediaContainer{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px) {
 
   margin-top: -85px;
@@ -879,7 +879,7 @@ body{
   }
   .downward{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px) {
     width:100vw;
     height: 75px;
@@ -903,7 +903,7 @@ body{
   font-family: $font;
   p{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px) {
     font-size: 10px;
     width:50px;
@@ -930,7 +930,7 @@ body{
     height: 100px;
   .audioDiv{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px) {
       margin-top: 0px;
 
@@ -957,7 +957,7 @@ body{
   }
   .photoDiv{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px) {
       margin-top: 0px;
 
@@ -981,7 +981,7 @@ body{
   }
   .videoDiv{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px) {
       margin-top: 100px;
 
@@ -1009,7 +1009,7 @@ body{
 
 .audioBox{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px) {
   margin-top:550px;
   }
@@ -1030,7 +1030,7 @@ body{
 
 .videoBox{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px) {
   margin-top:550px;
   }
@@ -1055,7 +1055,7 @@ body{
       text-decoration: none;
       font-size: 1vw;
       .vidRep{
-        @media(max-width: 375px){
+        @media(max-width: 320px){
           padding-top: 0;
         }
         width: 25vw;
@@ -1091,7 +1091,7 @@ body{
             margin-top: 0;
             margin-bottom: 0;
           }
-          @media(max-width: 375px){
+          @media(max-width: 320px){
             margin-top: -10px;
             margin-bottom: -3px;
           }
@@ -1121,7 +1121,7 @@ body{
         }
       }
       .vidRep2{
-        @media(max-width: 375px){
+        @media(max-width: 320px){
           padding-top: 0;
         }
         width: 25vw;
@@ -1158,7 +1158,7 @@ body{
             margin-top: 0;
             margin-bottom: 0;
           }
-          @media(max-width: 375px){
+          @media(max-width: 320px){
             margin-top: -10px;
             margin-bottom: -3px;
           }
@@ -1194,7 +1194,7 @@ body{
 }
 .photoBox{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px) {
   margin-top:550px;
   height: 450px;
@@ -1259,7 +1259,7 @@ body{
 }
 .boxHolder{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px) {
     margin-top: -500px;
 
@@ -1270,7 +1270,7 @@ body{
 // bio page
 .downward{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px){
   height: 950px;
   width: 11vw;
@@ -1286,7 +1286,7 @@ body{
 }
 .bioContain{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px){
   height: 850px;
   width: 100vw;
@@ -1302,7 +1302,7 @@ body{
     margin-top: 1vw;
   .bioPic{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 665px){
       width:200px;
       height: 200px;
@@ -1350,7 +1350,7 @@ body{
   }
   .bioP{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px){
       background: rgba(233, 234, 234,.9);
       float:left;
@@ -1437,7 +1437,7 @@ body{
 
 .formContainer{
   @media only screen
-  and (min-device-width : 375px)
+  and (min-device-width : 320px)
   and (max-device-width : 667px) {
   height: 500px;
   }
@@ -1447,7 +1447,7 @@ body{
 
   .stuffholder{
     @media only screen
-    and (min-device-width : 375px)
+    and (min-device-width : 320px)
     and (max-device-width : 667px) {
     width:90vw;
     margin-top: 75px;
@@ -1463,7 +1463,7 @@ body{
     }
     .formholder{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 667px) {
       width: 340px;
       height: 300px;
@@ -1503,7 +1503,7 @@ body{
     }
     .contactPic{
       @media only screen
-      and (min-device-width : 375px)
+      and (min-device-width : 320px)
       and (max-device-width : 400px) {
 
       }
