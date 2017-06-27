@@ -3,6 +3,7 @@ $text-color:white;
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Great+Vibes|Rouge+Script');
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Yantramanav:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
 /*font-family: 'Great Vibes', cursive;
 font-family: 'Rouge Script', cursive;
 font-family: 'Bilbo Swash Caps', cursive;
@@ -34,19 +35,47 @@ $light-grey:#efefef;
 }
 
 .footer{
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 666px){
+    height: 5%;
+  }
+  @media (orientation: landscape) and (max-device-width : 667px){
+
+  }
   height: 75px;
   background-color: $grey;
   width: 100vw;
   .iconCenter{
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 666px){
+    padding-top:0;
+    }
+    @media (orientation: landscape) and (max-device-width : 667px){
+
+    }
     padding-top: 10px;
     width:300px;
    margin:0 auto;
     text-align: center;
     font-family: $font;
     .footerIcons{
-      width: 35px;
-      height: 35px;
+      width: 15px;
+      height: 15px;
       margin:auto;
+    }
+    p{
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 666px){
+      margin-bottom: 0;
+      font-size: 10px;
+      }
+      @media (orientation: landscape) and (max-device-width : 667px){
+
+      }
+
     }
   }
 }
@@ -80,20 +109,20 @@ body{
 
     .mobileNav{
       @media only screen
-      and (min-device-width : 667px)
+      and (min-device-width : 668px)
       {
         display: none;
 
       }
       text-align: center;
-      border-radius: 57px;
-      width:71px;
-      background-color: rgba(212, 214, 214,.5);
+      // border-radius: 57px;
+      width:60px;
+      background-color: rgba(212, 214, 214,.3);
       position: fixed;
       font-size: 40px;
       color:black;
       z-index: 19;
-
+      margin-top: 0px;
   }
   .sidenav {
       height: 100%;
@@ -102,7 +131,7 @@ body{
       z-index: 20;
       top: 0;
       left: 0;
-      background-color: rgba(212, 214, 214,.9);
+      background-color: #222222;
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
@@ -192,30 +221,66 @@ body{
       z-index: 11;
     }
 
-  .row{
-    padding:0;
-    margin: 0;
-  }
+
 }
 
 .container-fluid{
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 666px){
+    height:100vh;
+  }
+  @media (orientation: landscape) and (max-device-width : 667px){
+  height: 300px;
+  position:absolute;
+  background-color:rgba(233, 234, 234,.4);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width:100%;
+  font-family: 'open sans';
+  color:black;
+  height: 95px;
+  }
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding:0 !important;
+  .doubleHolder{
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 666px){
+      height: 100vh;
+    }
+    @media (orientation: landscape) and (max-device-width : 667px){
 
+    }
+    height: 100vh;
   .title{
-
-    @media (max-width: 800px){
-      height: 100px;
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 666px){
+      // position:absolute;
+      background-color:rgba(233, 234, 234,.4);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:0px;
+      // margin-top: 200px;
+      width:100%;
+      font-family: 'open sans';
+      color:black;
+      height: 55px;
     }
-    @media (max-width: 600px){
-      height: 90px;
-    }
-    @media (max-width: 540px){
-      height: 70px;
-    }
-    @media(max-width: 400px){
-      height: 50px;
+    @media (orientation: landscape) and (max-device-width : 600px){
+    height: 300px;
+    position:absolute;
+    background-color:rgba(233, 234, 234,.4);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width:100%;
+    font-family: 'open sans';
+    color:black;
+    height: 95px;
     }
 
     height: 125px;
@@ -240,7 +305,7 @@ body{
       }
       @media (max-width: 600px){
         margin-top: 0;
-        font-size: 25px;
+        font-size: 10px;
       }
       @media(max-width: 400px){
         font-size: 12px;
@@ -250,25 +315,36 @@ body{
       margin-bottom: 10px;
     }
     .accent{
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 667px){
+        font-family: 'open sans';
+        color:black;
+      }
       color:$accent;
     }
     .theN{
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 667px){
+        font-family: 'open sans';
+        color:black;
+      }
       font-family: $font;
     }
 
     h1{
-      @media (max-width: 800px){
-        font-size: 500%;
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 667px){
+        font-size: 28px;
       }
-      @media (max-width: 680px){
-        font-size: 400%;
-      }
-      @media (max-width: 540px){
-        font-size: 300%;
-      }
-      @media(max-width: 400px){
-        font-size: 200%;
-      }
+      // @media (max-width: 540px){
+      //   font-size: 300%;
+      // }
+      // @media(max-width: 400px){
+      //   font-size: 200%;
+      // }
 
       font-size: 600%;
       margin:0;
@@ -279,11 +355,15 @@ body{
   .top{
     @media only screen
     and (min-device-width : 320px)
-    and (max-device-width : 667px){
+    and (max-device-width : 666px){
       background-size: cover;
       background-attachment: local;
-      height: 300px;
-
+      height: 40%;
+    }
+    @media (orientation: landscape) and (max-device-width : 667px){
+    background-position: 0 -100px;
+    background-size: cover;
+    height:100vh;
     }
     @media(max-width: 1280px){
       background-position: 0 -25px;
@@ -314,8 +394,8 @@ body{
     @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 667px){
-      height: 30vw;
-
+      height: 20%;
+      background-color: #222222;
     }
     width: 100vw;
     height: 25vw;
@@ -339,6 +419,9 @@ body{
     and (max-device-width : 667px){
       margin-bottom:-1.5vw;
       font-size: 22px;
+      background-color: #222222;
+      border-color: 2px solid #222222;
+      color:white;
     }
       margin-top: 0;
       margin-bottom: .5vw;
@@ -361,60 +444,29 @@ body{
     }
   }
     .eventHomePage{
-      @keyframes slides{
-        from{
-          left:0;
-        }
-        to{
-          left:100vw;
-        }
-      }
+
       width:100%;
       margin: auto;
       overflow:auto;
       white-space:nowrap;
       height: 83%;
       display: inline-block;
-
-    }
-    .afterDate{
-      @media only screen
-      and (min-device-width : 320px)
-      and (max-device-width : 667px){
-        width: 100%;
-        font-size: 3vw;
-        text-align: center;
-        margin-top: 7px;
-        margin-bottom: -2.5vh;
-        color:$accent;
+      .arrowRight{
+        margin-left: 75%;
+        margin-top: -24%;
+        position: absolute;
+        z-index: 2;
+        img{
+          width:60px;
+          height: 60px;
+        }
       }
-      width:47vw;
-      margin-top: 2vw;
-      margin-bottom: -2vh;
-    }
-    .eventname{
-
-      @media only screen
-      and (min-device-width : 320px)
-      and (max-device-width : 667px){
-        width: 100%;
-        margin-top: 5px;
-        font-size: 5vw;
-        text-align: center;
-        font-family: $fancy;
-      }
-      color:$gold;
-      // text-decoration: underline;
-      font-family: $fancy;
-      font-size: 3vw;
-    }
-
 
     .event1{
       @media only screen
       and (min-device-width : 320px)
       and (max-device-width : 667px){
-        text-align: center;
+        // text-align: center;
         margin:0;
       }
       display: inline-block;
@@ -428,13 +480,50 @@ body{
       &:hover{
         cursor: pointer;
       }
+
+      .eventData{
+        float: left;
+        width: 89vw;
+      .afterDate{
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 667px){
+          width: 100%;
+          font-family: 'Open Sans';
+          font-size: 3vw;
+          // text-align: center;
+          margin-top: 4px;
+          margin-bottom: -1.5vh;
+          color:white;
+        }
+        width:47vw;
+        margin-top: 2vw;
+        margin-bottom: -2vh;
+      }
+      .eventname{
+
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 667px){
+          width: 100%;
+          margin-top: 5px;
+          font-size: 5vw;
+          // text-align: center;
+          font-family: $fancy;
+        }
+        color:$gold;
+        // text-decoration: underline;
+        font-family: $fancy;
+        font-size: 3vw;
+      }
       .descript{
         @media only screen
         and (min-device-width : 320px)
         and (max-device-width : 667px){
           width: 90%;
-          margin:0 auto;
-          font-size: 2.5vw;
+          // margin:0 auto;
+          font-size: 14px;
+          color:white;
         }
         font-size: 1.5vw;
         width:47vw;
@@ -447,92 +536,69 @@ body{
           margin:0;
         }
       }
-      .seeFull{
-        @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 667px){
-          // width:160px;
-          // margin-left: auto;
-          // margin-right: auto;
-          text-align: center;
-          margin-top:15px;
+     }
+     .picHolder0{
+       @media only screen
+       and (min-device-width : 320px)
+       and (max-device-width : 667px){
 
-        }
-        // @media(max-width: 475px){
-        //   bottom:2.5vw;
-        //   float:left;
-        //   font-size: 1.0vw;
-        // }
-        color:blue;
-        font-size: 1.5vw;
-        font-family: $fancy;
-        text-decoration: underline;
-        float: left;
-        margin-right: 2vw;
-        // bottom:2vw;
-        margin-top: -2vw;
-        position: relative;
-        a{
-          color:blue;
-        }
-        }
-    }
-    .picHolder0{
-      @media only screen
-      and (min-device-width : 320px)
-      and (max-device-width : 667px){
+         display: none;
+       }
+       width:48vw;
+       height: 100%;
+       margin-right:4vw;
+       background-size: cover;
+       float: right;
+       background-image: url('../img/resized/landscape/Detroit Opera House 2.jpg')
+     }
+     .picHolder1{
+       @media only screen
+       and (min-device-width : 320px)
+       and (max-device-width : 667px){
 
-        display: none;
-      }
-      width:48vw;
-      height: 100%;
-      margin-right:4vw;
-      background-size: cover;
-      float: right;
-      background-image: url('../img/resized/landscape/Detroit Opera House 2.jpg')
-    }
-    .picHolder1{
-      @media only screen
-      and (min-device-width : 320px)
-      and (max-device-width : 667px){
+         display: none;
+       }
+       width:48vw;
+       height: 100%;
+       margin-right:4vw;
+       background-size: cover;
+       float: right;
+       background-image: url('../img/resized/w900h600/pizza.png')
+     }
+     .picHolder2{
+       @media only screen
+       and (min-device-width : 320px)
+       and (max-device-width : 667px){
 
-        display: none;
-      }
-      width:48vw;
-      height: 100%;
-      margin-right:4vw;
-      background-size: cover;
-      float: right;
-      background-image: url('../img/resized/w900h600/pizza.png')
-    }
-    .picHolder2{
-      @media only screen
-      and (min-device-width : 320px)
-      and (max-device-width : 667px){
+         display: none;
+       }
+       width:48vw;
+       height: 100%;
+       margin-right:4vw;
+       background-size: cover;
+       float: right;
+       background-image: url('../img/resized/w900h600/flipped.png')
+     }
 
-        display: none;
-      }
-      width:48vw;
-      height: 100%;
-      margin-right:4vw;
-      background-size: cover;
-      float: right;
-      background-image: url('../img/resized/w900h600/flipped.png')
     }
+  }
 
 }
   .mediaSign{
     @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 666px) {
-      background-attachment: inherit;
-      height: 32vh;
+      background-size: cover;
+      background-attachment: initial;
+      background-position: bottom;
+      height: 35vh;
     }
     @media (orientation: landscape) and (max-device-width : 667px){
-    height: 300px;
+    height: 35vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    background-attachment: fixed;
 
     }
     width:100vw;
@@ -543,6 +609,8 @@ body{
     background-position:center 32vh;
     .section2{
       a{
+        font-size: 20px;
+        font-family: 'Open Sans';
         text-decoration: none;
         color:white;
         &:hover{
@@ -557,6 +625,7 @@ body{
       text-align: center;
       font-family: $font;
     }
+   }
   }
   // events page
   .eventsPage{

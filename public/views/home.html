@@ -5,24 +5,23 @@
 <!-- <div class="lineThrough"></div> -->
 
 <div class="upcoming">
-
+<!-- <p style="color:white;" ng-click="moveEvent()" id="test">Q</p> -->
   <div class="surroundUpcoming">
   <a href="#!/events"><h2 class="section" ng-click="goR1()">&larr; Upcoming Events &rarr;</h2></a>
-  <!-- <span class="directions">scroll right or left to see more events or click on an event for more details</span> -->
   </div>
 
   <div id="moveTo1" class="row eventHomePage">
 
-    <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" class="event1 center-block rec{{$index}}">
+    <div ng-click="goToEvent(event.id)" ng-repeat="event in latest" id="go{{$index}}"class="event1 rec{{$index}}">
       <div class="picHolder{{$index}}"></div>
-
+      <div class="eventData">
       <div class="afterDate">
       {{event.eventdate | date : longDate:'+0430'}}</div><br>
       <span class="eventname" >{{event.eventname}}</span><br>
       <div class="descript"><p>{{event.description}}</p></div><br>
-      <a href="#!/events"><p class="seeFull">See All Events</p></a>
-
     </div>
+    </div>
+    <div class="arrowRight"><img ng-click="moveEvent()" src="../img/icons/arrow-right.png" alt=""></div>
 
   </div>
 

@@ -145,7 +145,7 @@
 		"oA": 0,
 		"oAP": "\/public\/css\/style-min.css",
 		"oF": 0,
-		"oS": 0
+		"oS": 3
 		},
 	"\/public\/css\/style.css.map": {
 		"ft": 8192,
@@ -209,6 +209,17 @@
 		"oA": 2,
 		"oAP": "\/public\/fonts\/Montserrat-Thin.ttf",
 		"oF": 0
+		},
+	"\/public\/img\/icons\/arrow-right.png": {
+		"ft": 32768,
+		"iS": 1098,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/arrow-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/public\/img\/icons\/camera-icon-52.png": {
 		"ft": 32768,

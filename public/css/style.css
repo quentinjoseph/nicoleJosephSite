@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
 @import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Great+Vibes|Rouge+Script");
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Yantramanav:300");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600");
 /*font-family: 'Great Vibes', cursive;
 font-family: 'Rouge Script', cursive;
 font-family: 'Bilbo Swash Caps', cursive;
@@ -23,16 +24,26 @@ font-family: 'Didact Gothic', sans-serif;*/
   height: 75px;
   background-color: #e9eaea;
   width: 100vw; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+    .footer {
+      height: 5%; } }
   .footer .iconCenter {
     padding-top: 10px;
     width: 300px;
     margin: 0 auto;
     text-align: center;
     font-family: money; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+      .footer .iconCenter {
+        padding-top: 0; } }
     .footer .iconCenter .footerIcons {
-      width: 35px;
-      height: 35px;
+      width: 15px;
+      height: 15px;
       margin: auto; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+      .footer .iconCenter p {
+        margin-bottom: 0;
+        font-size: 10px; } }
 
 @keyframes showDivs {
   from {
@@ -52,14 +63,14 @@ body {
     padding: 0 4vw; } }
   body .mobileNav {
     text-align: center;
-    border-radius: 57px;
-    width: 71px;
-    background-color: rgba(212, 214, 214, 0.5);
+    width: 60px;
+    background-color: rgba(212, 214, 214, 0.3);
     position: fixed;
     font-size: 40px;
     color: black;
-    z-index: 19; }
-    @media only screen and (min-device-width: 667px) {
+    z-index: 19;
+    margin-top: 0px; }
+    @media only screen and (min-device-width: 668px) {
       body .mobileNav {
         display: none; } }
   body .sidenav {
@@ -69,7 +80,7 @@ body {
     z-index: 20;
     top: 0;
     left: 0;
-    background-color: rgba(212, 214, 214, 0.9);
+    background-color: #222222;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -137,278 +148,307 @@ body {
       font-family: money;
       display: inline;
       padding: 0 4vw; }
-  body .row {
-    padding: 0;
-    margin: 0; }
 
 .container-fluid {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 0 !important; }
-  .container-fluid .title {
-    height: 125px;
-    letter-spacing: 3vw;
-    text-align: center;
-    font-family: money;
-    color: black;
-    background-color: #efefef; }
-    @media (max-width: 800px) {
-      .container-fluid .title {
-        height: 100px; } }
-    @media (max-width: 600px) {
-      .container-fluid .title {
-        height: 90px; } }
-    @media (max-width: 540px) {
-      .container-fluid .title {
-        height: 70px; } }
-    @media (max-width: 400px) {
-      .container-fluid .title {
-        height: 50px; } }
-    .container-fluid .title #soprano {
-      font-size: 30px;
-      margin-top: -13px;
-      margin-bottom: 10px; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .container-fluid .title #soprano {
-          font-size: 10px; } }
-      @media (max-width: 800px) {
-        .container-fluid .title #soprano {
-          font-size: 28px; } }
-      @media (max-width: 680px) {
-        .container-fluid .title #soprano {
-          margin-top: 0;
-          font-size: 27px; } }
-      @media (max-width: 600px) {
-        .container-fluid .title #soprano {
-          margin-top: 0;
-          font-size: 25px; } }
-      @media (max-width: 400px) {
-        .container-fluid .title #soprano {
-          font-size: 12px; } }
-    .container-fluid .title .accent {
-      color: #9B0423; }
-    .container-fluid .title .theN {
-      font-family: money; }
-    .container-fluid .title h1 {
-      font-size: 600%;
-      margin: 0; }
-      @media (max-width: 800px) {
-        .container-fluid .title h1 {
-          font-size: 500%; } }
-      @media (max-width: 680px) {
-        .container-fluid .title h1 {
-          font-size: 400%; } }
-      @media (max-width: 540px) {
-        .container-fluid .title h1 {
-          font-size: 300%; } }
-      @media (max-width: 400px) {
-        .container-fluid .title h1 {
-          font-size: 200%; } }
-  .container-fluid .top {
-    width: 100vw;
-    height: 600px;
-    margin: 0;
-    background-image: url("../img/resized/window.jpg");
-    background-attachment: fixed;
-    background-position: 0 -200px;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-      .container-fluid .top {
-        background-size: cover;
-        background-attachment: local;
-        height: 300px; } }
-    @media (max-width: 1280px) {
-      .container-fluid .top {
-        background-position: 0 -25px; } }
-    @media (max-width: 910px) {
-      .container-fluid .top {
-        background-position: 0 0px; } }
-  .container-fluid .upcoming {
-    width: 100vw;
-    height: 25vw;
-    margin: 0 auto;
-    background-color: #efefef;
-    position: relative; }
-    @media (max-width: 960px) {
-      .container-fluid .upcoming {
-        height: 27vw; } }
-    @media (max-width: 750px) {
-      .container-fluid .upcoming {
-        height: 28vw; } }
-    @media (max-width: 625px) {
-      .container-fluid .upcoming {
-        height: 29vw; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-      .container-fluid .upcoming {
-        height: 30vw; } }
-    .container-fluid .upcoming .surroundUpcoming {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+    .container-fluid {
+      height: 100vh; } }
+  @media (orientation: landscape) and (max-device-width: 667px) {
+    .container-fluid {
+      height: 300px;
+      position: absolute;
+      background-color: rgba(233, 234, 234, 0.4);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
       width: 100%;
-      margin: 0 auto;
-      padding-bottom: 0;
-      background-color: #efefef;
-      text-align: center; }
-      .container-fluid .upcoming .surroundUpcoming a {
-        color: #173547;
-        text-decoration: none; }
-      .container-fluid .upcoming .surroundUpcoming .section {
-        margin-top: 0;
-        margin-bottom: .5vw;
-        font-size: 4vw;
-        text-align: center;
-        font-family: money;
-        position: relative;
-        z-index: 1; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-          .container-fluid .upcoming .surroundUpcoming .section {
-            margin-bottom: -1.5vw;
-            font-size: 22px; } }
-      .container-fluid .upcoming .surroundUpcoming span {
-        font-family: "Didact Gothic", sans-serif;
-        font-size: 2vw;
-        font-style: italic; }
-        @media only screen and (min-device-width: 667px) {
-          .container-fluid .upcoming .surroundUpcoming span {
-            display: none; } }
-    .container-fluid .upcoming .eventHomePage {
-      width: 100%;
-      margin: auto;
-      overflow: auto;
-      white-space: nowrap;
-      height: 83%;
-      display: inline-block; }
-@keyframes slides {
-  from {
-    left: 0; }
-  to {
-    left: 100vw; } }
-    .container-fluid .upcoming .afterDate {
-      width: 47vw;
-      margin-top: 2vw;
-      margin-bottom: -2vh; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .container-fluid .upcoming .afterDate {
-          width: 100%;
-          font-size: 3vw;
-          text-align: center;
-          margin-top: 7px;
-          margin-bottom: -2.5vh;
-          color: #9B0423; } }
-    .container-fluid .upcoming .eventname {
-      color: #c67b40;
-      font-family: "Didact Gothic", sans-serif;
-      font-size: 3vw; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .container-fluid .upcoming .eventname {
-          width: 100%;
-          margin-top: 5px;
-          font-size: 5vw;
-          text-align: center;
-          font-family: "Didact Gothic", sans-serif; } }
-    .container-fluid .upcoming .event1 {
-      display: inline-block;
-      width: 100vw;
-      height: 95%;
-      font-family: "Didact Gothic", sans-serif;
-      font-size: 1.5vw;
-      margin-right: 3.5vw;
-      margin-left: 3.5vw;
-      z-index: 2; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .container-fluid .upcoming .event1 {
-          text-align: center;
-          margin: 0; } }
-      .container-fluid .upcoming .event1:hover {
-        cursor: pointer; }
-      .container-fluid .upcoming .event1 .descript {
-        font-size: 1.5vw;
-        width: 47vw;
-        height: 5vw;
-        margin: 0;
-        white-space: pre-line;
-        color: #173547; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-          .container-fluid .upcoming .event1 .descript {
-            width: 90%;
-            margin: 0 auto;
-            font-size: 2.5vw; } }
-        .container-fluid .upcoming .event1 .descript p {
-          margin: 0; }
-      .container-fluid .upcoming .event1 .seeFull {
-        color: blue;
-        font-size: 1.5vw;
-        font-family: "Didact Gothic", sans-serif;
-        text-decoration: underline;
-        float: left;
-        margin-right: 2vw;
-        margin-top: -2vw;
-        position: relative; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-          .container-fluid .upcoming .event1 .seeFull {
-            text-align: center;
-            margin-top: 15px; } }
-        .container-fluid .upcoming .event1 .seeFull a {
-          color: blue; }
-    .container-fluid .upcoming .picHolder0 {
-      width: 48vw;
-      height: 100%;
-      margin-right: 4vw;
-      background-size: cover;
-      float: right;
-      background-image: url("../img/resized/landscape/Detroit Opera House 2.jpg"); }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .container-fluid .upcoming .picHolder0 {
-          display: none; } }
-    .container-fluid .upcoming .picHolder1 {
-      width: 48vw;
-      height: 100%;
-      margin-right: 4vw;
-      background-size: cover;
-      float: right;
-      background-image: url("../img/resized/w900h600/pizza.png"); }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .container-fluid .upcoming .picHolder1 {
-          display: none; } }
-    .container-fluid .upcoming .picHolder2 {
-      width: 48vw;
-      height: 100%;
-      margin-right: 4vw;
-      background-size: cover;
-      float: right;
-      background-image: url("../img/resized/w900h600/flipped.png"); }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .container-fluid .upcoming .picHolder2 {
-          display: none; } }
-  .container-fluid .mediaSign {
-    width: 100vw;
-    height: 53.25vh;
-    background-image: url("../img/nikkiNoSmile1fit.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center 32vh; }
+      font-family: 'open sans';
+      color: black;
+      height: 95px; } }
+  .container-fluid .doubleHolder {
+    height: 100vh; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
-      .container-fluid .mediaSign {
-        background-attachment: inherit;
-        height: 32vh; } }
-    @media (orientation: landscape) and (max-device-width: 667px) {
-      .container-fluid .mediaSign {
-        height: 300px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top; } }
-    .container-fluid .mediaSign .section2 {
-      margin: 0;
-      padding-top: 10%;
-      padding-right: 50%;
-      color: white;
-      font-size: 36px;
+      .container-fluid .doubleHolder {
+        height: 100vh; } }
+    .container-fluid .doubleHolder .title {
+      height: 125px;
+      letter-spacing: 3vw;
       text-align: center;
-      font-family: money; }
-      .container-fluid .mediaSign .section2 a {
-        text-decoration: none;
-        color: white; }
-        .container-fluid .mediaSign .section2 a:hover {
-          color: red; }
+      font-family: money;
+      color: black;
+      background-color: #efefef; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+        .container-fluid .doubleHolder .title {
+          background-color: rgba(233, 234, 234, 0.4);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          width: 100%;
+          font-family: 'open sans';
+          color: black;
+          height: 55px; } }
+      @media (orientation: landscape) and (max-device-width: 600px) {
+        .container-fluid .doubleHolder .title {
+          height: 300px;
+          position: absolute;
+          background-color: rgba(233, 234, 234, 0.4);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          width: 100%;
+          font-family: 'open sans';
+          color: black;
+          height: 95px; } }
+      .container-fluid .doubleHolder .title #soprano {
+        font-size: 30px;
+        margin-top: -13px;
+        margin-bottom: 10px; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+          .container-fluid .doubleHolder .title #soprano {
+            font-size: 10px; } }
+        @media (max-width: 800px) {
+          .container-fluid .doubleHolder .title #soprano {
+            font-size: 28px; } }
+        @media (max-width: 680px) {
+          .container-fluid .doubleHolder .title #soprano {
+            margin-top: 0;
+            font-size: 27px; } }
+        @media (max-width: 600px) {
+          .container-fluid .doubleHolder .title #soprano {
+            margin-top: 0;
+            font-size: 10px; } }
+        @media (max-width: 400px) {
+          .container-fluid .doubleHolder .title #soprano {
+            font-size: 12px; } }
+      .container-fluid .doubleHolder .title .accent {
+        color: #9B0423; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+          .container-fluid .doubleHolder .title .accent {
+            font-family: 'open sans';
+            color: black; } }
+      .container-fluid .doubleHolder .title .theN {
+        font-family: money; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+          .container-fluid .doubleHolder .title .theN {
+            font-family: 'open sans';
+            color: black; } }
+      .container-fluid .doubleHolder .title h1 {
+        font-size: 600%;
+        margin: 0; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+          .container-fluid .doubleHolder .title h1 {
+            font-size: 28px; } }
+    .container-fluid .doubleHolder .top {
+      width: 100vw;
+      height: 600px;
+      margin: 0;
+      background-image: url("../img/resized/window.jpg");
+      background-attachment: fixed;
+      background-position: 0 -200px;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+        .container-fluid .doubleHolder .top {
+          background-size: cover;
+          background-attachment: local;
+          height: 40%; } }
+      @media (orientation: landscape) and (max-device-width: 667px) {
+        .container-fluid .doubleHolder .top {
+          background-position: 0 -100px;
+          background-size: cover;
+          height: 100vh; } }
+      @media (max-width: 1280px) {
+        .container-fluid .doubleHolder .top {
+          background-position: 0 -25px; } }
+      @media (max-width: 910px) {
+        .container-fluid .doubleHolder .top {
+          background-position: 0 0px; } }
+    .container-fluid .doubleHolder .upcoming {
+      width: 100vw;
+      height: 25vw;
+      margin: 0 auto;
+      background-color: #efefef;
+      position: relative; }
+      @media (max-width: 960px) {
+        .container-fluid .doubleHolder .upcoming {
+          height: 27vw; } }
+      @media (max-width: 750px) {
+        .container-fluid .doubleHolder .upcoming {
+          height: 28vw; } }
+      @media (max-width: 625px) {
+        .container-fluid .doubleHolder .upcoming {
+          height: 29vw; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+        .container-fluid .doubleHolder .upcoming {
+          height: 20%;
+          background-color: #222222; } }
+      .container-fluid .doubleHolder .upcoming .surroundUpcoming {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 0;
+        background-color: #efefef;
+        text-align: center; }
+        .container-fluid .doubleHolder .upcoming .surroundUpcoming a {
+          color: #173547;
+          text-decoration: none; }
+        .container-fluid .doubleHolder .upcoming .surroundUpcoming .section {
+          margin-top: 0;
+          margin-bottom: .5vw;
+          font-size: 4vw;
+          text-align: center;
+          font-family: money;
+          position: relative;
+          z-index: 1; }
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+            .container-fluid .doubleHolder .upcoming .surroundUpcoming .section {
+              margin-bottom: -1.5vw;
+              font-size: 22px;
+              background-color: #222222;
+              border-color: 2px solid #222222;
+              color: white; } }
+        .container-fluid .doubleHolder .upcoming .surroundUpcoming span {
+          font-family: "Didact Gothic", sans-serif;
+          font-size: 2vw;
+          font-style: italic; }
+          @media only screen and (min-device-width: 667px) {
+            .container-fluid .doubleHolder .upcoming .surroundUpcoming span {
+              display: none; } }
+      .container-fluid .doubleHolder .upcoming .eventHomePage {
+        width: 100%;
+        margin: auto;
+        overflow: auto;
+        white-space: nowrap;
+        height: 83%;
+        display: inline-block; }
+        .container-fluid .doubleHolder .upcoming .eventHomePage .arrowRight {
+          margin-left: 75%;
+          margin-top: -24%;
+          position: absolute;
+          z-index: 2; }
+          .container-fluid .doubleHolder .upcoming .eventHomePage .arrowRight img {
+            width: 60px;
+            height: 60px; }
+        .container-fluid .doubleHolder .upcoming .eventHomePage .event1 {
+          display: inline-block;
+          width: 100vw;
+          height: 95%;
+          font-family: "Didact Gothic", sans-serif;
+          font-size: 1.5vw;
+          margin-right: 3.5vw;
+          margin-left: 3.5vw;
+          z-index: 2; }
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+            .container-fluid .doubleHolder .upcoming .eventHomePage .event1 {
+              margin: 0; } }
+          .container-fluid .doubleHolder .upcoming .eventHomePage .event1:hover {
+            cursor: pointer; }
+          .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData {
+            float: left;
+            width: 89vw; }
+            .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .afterDate {
+              width: 47vw;
+              margin-top: 2vw;
+              margin-bottom: -2vh; }
+              @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+                .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .afterDate {
+                  width: 100%;
+                  font-family: 'Open Sans';
+                  font-size: 3vw;
+                  margin-top: 4px;
+                  margin-bottom: -1.5vh;
+                  color: white; } }
+            .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .eventname {
+              color: #c67b40;
+              font-family: "Didact Gothic", sans-serif;
+              font-size: 3vw; }
+              @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+                .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .eventname {
+                  width: 100%;
+                  margin-top: 5px;
+                  font-size: 5vw;
+                  font-family: "Didact Gothic", sans-serif; } }
+            .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript {
+              font-size: 1.5vw;
+              width: 47vw;
+              height: 5vw;
+              margin: 0;
+              white-space: pre-line;
+              color: #173547; }
+              @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+                .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript {
+                  width: 90%;
+                  font-size: 14px;
+                  color: white; } }
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript p {
+                margin: 0; }
+          .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder0 {
+            width: 48vw;
+            height: 100%;
+            margin-right: 4vw;
+            background-size: cover;
+            float: right;
+            background-image: url("../img/resized/landscape/Detroit Opera House 2.jpg"); }
+            @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder0 {
+                display: none; } }
+          .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder1 {
+            width: 48vw;
+            height: 100%;
+            margin-right: 4vw;
+            background-size: cover;
+            float: right;
+            background-image: url("../img/resized/w900h600/pizza.png"); }
+            @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder1 {
+                display: none; } }
+          .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder2 {
+            width: 48vw;
+            height: 100%;
+            margin-right: 4vw;
+            background-size: cover;
+            float: right;
+            background-image: url("../img/resized/w900h600/flipped.png"); }
+            @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder2 {
+                display: none; } }
+    .container-fluid .doubleHolder .mediaSign {
+      width: 100vw;
+      height: 53.25vh;
+      background-image: url("../img/nikkiNoSmile1fit.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center 32vh; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+        .container-fluid .doubleHolder .mediaSign {
+          background-size: cover;
+          background-attachment: initial;
+          background-position: bottom;
+          height: 35vh; } }
+      @media (orientation: landscape) and (max-device-width: 667px) {
+        .container-fluid .doubleHolder .mediaSign {
+          height: 35vh;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center top;
+          background-attachment: fixed; } }
+      .container-fluid .doubleHolder .mediaSign .section2 {
+        margin: 0;
+        padding-top: 10%;
+        padding-right: 50%;
+        color: white;
+        font-size: 36px;
+        text-align: center;
+        font-family: money; }
+        .container-fluid .doubleHolder .mediaSign .section2 a {
+          font-size: 20px;
+          font-family: 'Open Sans';
+          text-decoration: none;
+          color: white; }
+          .container-fluid .doubleHolder .mediaSign .section2 a:hover {
+            color: red; }
   .container-fluid .eventsPage {
     background-color: #e9eaea;
     width: 100%;
