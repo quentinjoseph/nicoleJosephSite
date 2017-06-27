@@ -901,22 +901,19 @@ body{
   margin-right: auto;
   // padding-top: 10%;
   font-family: $font;
-  h4{
-    @media(max-width: 590px){
-      font-size: 165%;
-      margin-top: -40px;
+  p{
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) {
+    font-size: 10px;
+    width:50px;
+    margin-top: 45px;
     }
-    @media(max-width: 490px){
-      font-size: 135%;
-      margin-top: -30px;
-    }
-    @media(max-width: 404px){
-      font-size: 80%;
-      margin-top: -20px;
-    }
-
-    font-size: 200%;
-    margin-top: -50px;
+    width:80px;
+    font-family: $fancy;
+    font-size: 20px;
+    margin-top: 70px;
+    background-color: rgba(233, 234, 234,.6);
   }
 
   @keyframes showDivs{
@@ -1200,6 +1197,7 @@ body{
   and (min-device-width : 375px)
   and (max-device-width : 667px) {
   margin-top:550px;
+  height: 450px;
   }
   text-align: center;
   width: 80%;

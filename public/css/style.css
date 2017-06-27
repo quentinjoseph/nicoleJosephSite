@@ -639,21 +639,17 @@ body {
             width: 100vw;
             height: 75px;
             margin-top: 0px; } }
-      .container-fluid .allMedia .mediaContainer h4 {
-        font-size: 200%;
-        margin-top: -50px; }
-        @media (max-width: 590px) {
-          .container-fluid .allMedia .mediaContainer h4 {
-            font-size: 165%;
-            margin-top: -40px; } }
-        @media (max-width: 490px) {
-          .container-fluid .allMedia .mediaContainer h4 {
-            font-size: 135%;
-            margin-top: -30px; } }
-        @media (max-width: 404px) {
-          .container-fluid .allMedia .mediaContainer h4 {
-            font-size: 80%;
-            margin-top: -20px; } }
+      .container-fluid .allMedia .mediaContainer p {
+        width: 80px;
+        font-family: "Didact Gothic", sans-serif;
+        font-size: 20px;
+        margin-top: 70px;
+        background-color: rgba(233, 234, 234, 0.6); }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+          .container-fluid .allMedia .mediaContainer p {
+            font-size: 10px;
+            width: 50px;
+            margin-top: 45px; } }
 @keyframes showDivs {
   from {
     opacity: 0; }
@@ -878,7 +874,8 @@ body {
     position: relative; }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
       .container-fluid .photoBox {
-        margin-top: 550px; } }
+        margin-top: 550px;
+        height: 450px; } }
     .container-fluid .photoBox .photoGallery1 {
       background-image: url("/img/resized/nikkiNoSmile.jpg");
       background-size: cover;
