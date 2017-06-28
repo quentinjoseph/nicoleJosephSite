@@ -7,7 +7,10 @@
 <div id="upcmg" class="upcoming">
 <!-- <p style="color:white;" ng-click="moveEvent()" id="test">Q</p> -->
   <div class="surroundUpcoming">
-  <a href="#!/events"><h2 id="scrollLimit" class="section">Next Events</h2></a><h2 id="blinkingArrow" ng-click="moveEvent()" class="section"> > </h2>
+  <a href="#!/events"><h2 id="scrollLimit" class="section">Upcoming</h2></a>
+
+  <p id="blinkingArrow" ng-click="moveEventRev()" class="section"> < left </p>
+  <p id="blinkingArrowLeft" ng-click="moveEvent()" class="section"> right > </p>
   </div>
 
   <div id="moveTo1" class="row eventHomePage">
@@ -17,7 +20,7 @@
       <div class="eventData">
       <div class="afterDate">
       {{event.eventdate | date : longDate:'+0430'}}</div><br>
-      <span ng-click="goToEvent(event.id)" class="eventname" >{{event.eventname}}</span><br>
+      <p ng-click="goToEvent(event.id)" class="eventname" >{{event.eventname}}</p><br>
       <div class="descript"><p>{{event.description}}</p></div><br>
     </div>
     </div>
@@ -29,5 +32,7 @@
 <!-- <div class="lineThrough"></div> -->
 
 <div class="mediaSign">
+
   <h2 class="section2"><a href="#!/media">Media</a></h2>
+
 </div>

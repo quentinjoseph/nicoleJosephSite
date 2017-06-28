@@ -233,6 +233,25 @@ console.log('up'+indexCount)
 
 }
 
+$scope.moveEventRev=function(){
+
+if((indexCount<=2)&&(indexCount>0)){
+indexCount=indexCount-1;
+
+document.getElementById('go'+indexCount).scrollIntoView({behavior: "smooth"});
+document.getElementById('scrollLimit').scrollIntoView({behavior: "smooth"});
+console.log('down'+indexCount)
+}else {
+  indexCount=2;
+
+  document.getElementById('go'+indexCount).scrollIntoView({behavior: "smooth"});
+  document.getElementById('scrollLimit').scrollIntoView({behavior: "smooth"});
+
+  console.log('backdownRev'+indexCount)
+}
+
+}
+
 
 
 
