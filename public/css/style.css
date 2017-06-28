@@ -26,10 +26,13 @@ font-family: 'Didact Gothic', sans-serif;*/
   width: 100vw; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
     .footer {
-      height: 5%; } }
+      height: 3vh; } }
+  @media (orientation: landscape) and (max-device-width: 667px) {
+    .footer {
+      height: 9vh; } }
   .footer .iconCenter {
     padding-top: 10px;
-    width: 300px;
+    width: 100vw;
     margin: 0 auto;
     text-align: center;
     font-family: money; }
@@ -40,10 +43,18 @@ font-family: 'Didact Gothic', sans-serif;*/
       width: 15px;
       height: 15px;
       margin: auto; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
-      .footer .iconCenter p {
-        margin-bottom: 0;
-        font-size: 10px; } }
+    .footer .iconCenter p {
+      font-size: .9rem;
+      width: 100vw;
+      margin-left: 0;
+      margin-right: 0; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+        .footer .iconCenter p {
+          margin-bottom: 0;
+          font-size: 10px; } }
+      @media (max-width: 315px) {
+        .footer .iconCenter p {
+          font-size: .5rem; } }
 
 @keyframes showDivs {
   from {
@@ -65,7 +76,7 @@ body {
     text-align: center;
     width: 60px;
     background-color: rgba(212, 214, 214, 0.3);
-    position: fixed;
+    position: absolute;
     font-size: 40px;
     color: black;
     z-index: 19;
@@ -80,12 +91,13 @@ body {
     z-index: 20;
     top: 0;
     left: 0;
-    background-color: #222222;
+    background-color: #efefef;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     text-align: center; }
   body .sidenav a {
+    font-family: "Didact Gothic", sans-serif;
     margin-top: 20px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -111,7 +123,7 @@ body {
     height: 32px;
     margin: auto;
     z-index: 11; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+    @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
       body #navTable {
         display: none; } }
     @media (max-width: 607px) {
@@ -128,9 +140,12 @@ body {
       @media (max-width: 462px) {
         body #navTable a {
           font-size: 12px; } }
-      @media (max-width: 320px) {
+      @media (max-width: 375px) {
         body #navTable a {
           font-size: 9px; } }
+      @media (max-width: 288px) {
+        body #navTable a {
+          font-size: .5rem; } }
       body #navTable a:hover {
         color: white;
         background-color: rgba(212, 214, 214, 0.2);
@@ -148,6 +163,9 @@ body {
       font-family: money;
       display: inline;
       padding: 0 4vw; }
+      @media (max-width: 288px) {
+        body #navTable .navSelect {
+          padding: 0 .25em; } }
 
 .container-fluid {
   width: 100%;
@@ -170,77 +188,54 @@ body {
       height: 95px; } }
   .container-fluid .doubleHolder {
     height: 100vh; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+    @media only screen and (min-device-width: 300px) and (max-device-width: 666px) {
       .container-fluid .doubleHolder {
         height: 100vh; } }
     .container-fluid .doubleHolder .title {
       height: 125px;
-      letter-spacing: 3vw;
+      letter-spacing: 2rem;
       text-align: center;
       font-family: money;
       color: black;
       background-color: #efefef; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+      @media (max-width: 862px) {
         .container-fluid .doubleHolder .title {
-          background-color: rgba(233, 234, 234, 0.4);
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 0px;
-          width: 100%;
-          font-family: 'open sans';
-          color: black;
-          height: 55px; } }
-      @media (orientation: landscape) and (max-device-width: 600px) {
+          letter-spacing: 1rem; } }
+      @media (max-width: 705px) {
         .container-fluid .doubleHolder .title {
-          height: 300px;
-          position: absolute;
-          background-color: rgba(233, 234, 234, 0.4);
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 0px;
-          width: 100%;
-          font-family: 'open sans';
-          color: black;
-          height: 95px; } }
+          letter-spacing: 0; } }
+      @media (max-width: 530px) {
+        .container-fluid .doubleHolder .title {
+          letter-spacing: 0;
+          height: 6.5rem; } }
+      @media (max-width: 415px) {
+        .container-fluid .doubleHolder .title {
+          letter-spacing: 0;
+          height: 5rem; } }
+      @media (max-width: 310px) {
+        .container-fluid .doubleHolder .title {
+          letter-spacing: 0;
+          height: 4rem; } }
       .container-fluid .doubleHolder .title #soprano {
-        font-size: 30px;
+        font-size: 1.5em;
         margin-top: -13px;
         margin-bottom: 10px; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-          .container-fluid .doubleHolder .title #soprano {
-            font-size: 10px; } }
-        @media (max-width: 800px) {
-          .container-fluid .doubleHolder .title #soprano {
-            font-size: 28px; } }
-        @media (max-width: 680px) {
-          .container-fluid .doubleHolder .title #soprano {
-            margin-top: 0;
-            font-size: 27px; } }
-        @media (max-width: 600px) {
-          .container-fluid .doubleHolder .title #soprano {
-            margin-top: 0;
-            font-size: 10px; } }
-        @media (max-width: 400px) {
-          .container-fluid .doubleHolder .title #soprano {
-            font-size: 12px; } }
       .container-fluid .doubleHolder .title .accent {
         color: #9B0423; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-          .container-fluid .doubleHolder .title .accent {
-            font-family: 'open sans';
-            color: black; } }
       .container-fluid .doubleHolder .title .theN {
         font-family: money; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-          .container-fluid .doubleHolder .title .theN {
-            font-family: 'open sans';
-            color: black; } }
       .container-fluid .doubleHolder .title h1 {
-        font-size: 600%;
+        font-size: 5rem;
         margin: 0; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+        @media (max-width: 530px) {
           .container-fluid .doubleHolder .title h1 {
-            font-size: 28px; } }
+            font-size: 4rem; } }
+        @media (max-width: 415px) {
+          .container-fluid .doubleHolder .title h1 {
+            font-size: 3rem; } }
+        @media (max-width: 310px) {
+          .container-fluid .doubleHolder .title h1 {
+            font-size: 2rem; } }
     .container-fluid .doubleHolder .top {
       width: 100vw;
       height: 600px;
@@ -250,12 +245,12 @@ body {
       background-position: 0 -200px;
       background-repeat: no-repeat;
       background-size: cover; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+      @media only screen and (min-device-width: 300px) and (max-device-width: 666px) {
         .container-fluid .doubleHolder .top {
           background-size: cover;
           background-attachment: local;
           height: 40%; } }
-      @media (orientation: landscape) and (max-device-width: 667px) {
+      @media (orientation: landscape) and (max-device-width: 736px) {
         .container-fluid .doubleHolder .top {
           background-position: 0 -100px;
           background-size: cover;
@@ -268,36 +263,38 @@ body {
           background-position: 0 0px; } }
     .container-fluid .doubleHolder .upcoming {
       width: 100vw;
-      height: 25vw;
+      height: 50vh;
       margin: 0 auto;
       background-color: #efefef;
       position: relative; }
-      @media (max-width: 960px) {
-        .container-fluid .doubleHolder .upcoming {
-          height: 27vw; } }
-      @media (max-width: 750px) {
-        .container-fluid .doubleHolder .upcoming {
-          height: 28vw; } }
-      @media (max-width: 625px) {
-        .container-fluid .doubleHolder .upcoming {
-          height: 29vw; } }
       @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .doubleHolder .upcoming {
-          height: 20%;
-          background-color: #222222; } }
+          height: 15rem;
+          background-color: #efefef; } }
+      @media (orientation: landscape) and (max-device-width: 736px) {
+        .container-fluid .doubleHolder .upcoming {
+          height: 20rem; } }
+      @media (max-width: 480px) {
+        .container-fluid .doubleHolder .upcoming {
+          height: 40vh; } }
       .container-fluid .doubleHolder .upcoming .surroundUpcoming {
         width: 100%;
         margin: 0 auto;
         padding-bottom: 0;
         background-color: #efefef;
         text-align: center; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+          .container-fluid .doubleHolder .upcoming .surroundUpcoming {
+            background-color: #efefef;
+            color: #222222; } }
         .container-fluid .doubleHolder .upcoming .surroundUpcoming a {
           color: #173547;
           text-decoration: none; }
         .container-fluid .doubleHolder .upcoming .surroundUpcoming .section {
+          display: inline;
           margin-top: 0;
           margin-bottom: .5vw;
-          font-size: 4vw;
+          font-size: 3rem;
           text-align: center;
           font-family: money;
           position: relative;
@@ -305,10 +302,10 @@ body {
           @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
             .container-fluid .doubleHolder .upcoming .surroundUpcoming .section {
               margin-bottom: -1.5vw;
-              font-size: 22px;
-              background-color: #222222;
+              font-size: 1.5rem;
+              background-color: #efefef;
               border-color: 2px solid #222222;
-              color: white; } }
+              color: #222222; } }
         .container-fluid .doubleHolder .upcoming .surroundUpcoming span {
           font-family: "Didact Gothic", sans-serif;
           font-size: 2vw;
@@ -316,21 +313,43 @@ body {
           @media only screen and (min-device-width: 667px) {
             .container-fluid .doubleHolder .upcoming .surroundUpcoming span {
               display: none; } }
+      .container-fluid .doubleHolder .upcoming #blinkingArrow {
+        position: absolute;
+        font-size: 4rem;
+        right: .5rem;
+        margin-top: -.6rem;
+        animation: blink 2s infinite ease-in-out; }
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+          .container-fluid .doubleHolder .upcoming #blinkingArrow {
+            margin-top: 10rem;
+            font-size: 3.5rem;
+            background-color: rgba(34, 34, 34, 0); } }
       .container-fluid .doubleHolder .upcoming .eventHomePage {
         width: 100%;
         margin: auto;
-        overflow: auto;
+        overflow-x: hidden;
         white-space: nowrap;
         height: 83%;
         display: inline-block; }
         .container-fluid .doubleHolder .upcoming .eventHomePage .arrowRight {
-          margin-left: 75%;
-          margin-top: -24%;
-          position: absolute;
-          z-index: 2; }
-          .container-fluid .doubleHolder .upcoming .eventHomePage .arrowRight img {
-            width: 60px;
-            height: 60px; }
+          display: none; }
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+            .container-fluid .doubleHolder .upcoming .eventHomePage .arrowRight {
+              display: block;
+              margin-left: 75%;
+              margin-top: -24%;
+              position: absolute;
+              z-index: 2; }
+              .container-fluid .doubleHolder .upcoming .eventHomePage .arrowRight img {
+                width: 60px;
+                height: 60px; } }
         .container-fluid .doubleHolder .upcoming .eventHomePage .event1 {
           display: inline-block;
           width: 100vw;
@@ -347,8 +366,17 @@ body {
             cursor: pointer; }
           .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData {
             float: left;
-            width: 89vw; }
+            width: 45vw; }
+            @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData {
+                float: left;
+                width: 100vw; } }
+            @media (max-width: 480px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData {
+                width: 100vw;
+                text-align: center; } }
             .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .afterDate {
+              font-size: 2rem;
               width: 47vw;
               margin-top: 2vw;
               margin-bottom: -2vh; }
@@ -359,11 +387,18 @@ body {
                   font-size: 3vw;
                   margin-top: 4px;
                   margin-bottom: -1.5vh;
-                  color: white; } }
+                  color: #222222; } }
+              @media (max-width: 480px) {
+                .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .afterDate {
+                  text-align: center;
+                  margin-left: auto;
+                  margin-right: auto;
+                  font-size: 2rem; } }
             .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .eventname {
               color: #c67b40;
+              white-space: pre-line;
               font-family: "Didact Gothic", sans-serif;
-              font-size: 3vw; }
+              font-size: 1.5rem; }
               @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
                 .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .eventname {
                   width: 100%;
@@ -371,7 +406,7 @@ body {
                   font-size: 5vw;
                   font-family: "Didact Gothic", sans-serif; } }
             .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript {
-              font-size: 1.5vw;
+              font-size: 1.25rem;
               width: 47vw;
               height: 5vw;
               margin: 0;
@@ -380,8 +415,11 @@ body {
               @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
                 .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript {
                   width: 90%;
-                  font-size: 14px;
-                  color: white; } }
+                  font-size: 1rem;
+                  color: #222222; } }
+              @media (max-width: 480px) {
+                .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript {
+                  width: 95vw; } }
               .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript p {
                 margin: 0; }
           .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder0 {
@@ -394,6 +432,9 @@ body {
             @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
               .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder0 {
                 display: none; } }
+            @media (max-width: 480px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder0 {
+                display: none; } }
           .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder1 {
             width: 48vw;
             height: 100%;
@@ -404,6 +445,12 @@ body {
             @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
               .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder1 {
                 display: none; } }
+            @media (orientation: landscape) and (max-device-width: 736px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder1 {
+                background-position: right; } }
+            @media (max-width: 480px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder1 {
+                display: none; } }
           .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder2 {
             width: 48vw;
             height: 100%;
@@ -412,6 +459,9 @@ body {
             float: right;
             background-image: url("../img/resized/w900h600/flipped.png"); }
             @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder2 {
+                display: none; } }
+            @media (max-width: 480px) {
               .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder2 {
                 display: none; } }
     .container-fluid .doubleHolder .mediaSign {
@@ -427,13 +477,12 @@ body {
           background-attachment: initial;
           background-position: bottom;
           height: 35vh; } }
-      @media (orientation: landscape) and (max-device-width: 667px) {
+      @media (orientation: landscape) and (max-device-width: 736px) {
         .container-fluid .doubleHolder .mediaSign {
-          height: 35vh;
+          height: 70vh;
           background-size: cover;
           background-repeat: no-repeat;
-          background-position: center top;
-          background-attachment: fixed; } }
+          background-position: top; } }
       .container-fluid .doubleHolder .mediaSign .section2 {
         margin: 0;
         padding-top: 10%;
@@ -443,8 +492,8 @@ body {
         text-align: center;
         font-family: money; }
         .container-fluid .doubleHolder .mediaSign .section2 a {
-          font-size: 20px;
-          font-family: 'Open Sans';
+          font-size: 3rem;
+          font-family: money;
           text-decoration: none;
           color: white; }
           .container-fluid .doubleHolder .mediaSign .section2 a:hover {
@@ -452,13 +501,14 @@ body {
   .container-fluid .eventsPage {
     background-color: #e9eaea;
     width: 100%;
-    animation: showDivs 1s; }
-    @media only screen and (min-device-width: 320px) {
+    animation: showDivs 1s;
+    height: 80vh; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
       .container-fluid .eventsPage {
-        height: 775px; } }
-    @media (orientation: landscape) and (max-device-width: 667px) {
+        height: 86vh; } }
+    @media (orientation: landscape) and (max-device-width: 736px) {
       .container-fluid .eventsPage {
-        height: 170px; } }
+        height: 59vh; } }
     .container-fluid .eventsPage a {
       color: black;
       text-decoration: none; }
@@ -471,11 +521,10 @@ body {
       background-size: cover;
       background-position: center;
       z-index: 5; }
-      @media only screen and (device-width: 320px) {
+      @media only screen and (min-device-width: 300px) and (max-device-width: 666px) {
         .container-fluid .eventsPage .perfromancePic {
-          height: 175px;
-          background-size: cover; } }
-      @media (orientation: landscape) and (max-device-width: 667px) {
+          height: 20vh; } }
+      @media (orientation: landscape) and (max-device-width: 736px) {
         .container-fluid .eventsPage .perfromancePic {
           display: none; } }
       @media (max-width: 610px) {
@@ -507,35 +556,39 @@ body {
         background: rgba(233, 234, 234, 0.8);
         margin-top: -460px;
         right: 0%; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+        @media only screen and (min-device-width: 300px) and (max-device-width: 666px) {
           .container-fluid .eventsPage .eventHolder .section {
             margin-top: 0vw;
             width: 100vw;
             left: 0vw;
-            font-size: 45px; } }
-        @media (max-device-width: 667px) and (orientation: landscape) {
+            font-size: 2.75rem; } }
+        @media (max-device-width: 736px) and (orientation: landscape) {
           .container-fluid .eventsPage .eventHolder .section {
-            position: relative;
+            left: 0; } }
+        @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 666px) and (orientation: landscape) {
+          .container-fluid .eventsPage .eventHolder .section {
             display: none; } }
       .container-fluid .eventsPage .eventHolder .under {
         overflow: scroll;
         height: 300px;
         position: absolute;
         width: 50vw;
-        margin-top: -389px;
+        margin-top: -383px;
         background: rgba(233, 234, 234, 0.8);
         right: 0%;
         text-align: center; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
           .container-fluid .eventsPage .eventHolder .under {
-            margin-top: 71px;
+            margin-top: 60px;
             width: 100vw;
-            height: 205px;
+            height: 54vh;
             left: 0vw; } }
-        @media (orientation: landscape) and (max-device-width: 667px) {
+        @media (orientation: landscape) and (max-device-width: 736px) {
           .container-fluid .eventsPage .eventHolder .under {
-            height: 178px;
-            margin-top: 0; } }
+            position: absolute;
+            margin-top: -.5rem;
+            width: 100vw;
+            height: 54vh; } }
         .container-fluid .eventsPage .eventHolder .under .portraitEvent {
           display: none; }
           @media (orientation: landscape) and (max-device-width: 667px) {
@@ -546,27 +599,52 @@ body {
               font-size: 55px; } }
         .container-fluid .eventsPage .eventHolder .under span {
           font-family: "Didact Gothic", sans-serif; }
-        .container-fluid .eventsPage .eventHolder .under .fancyName {
+        .container-fluid .eventsPage .eventHolder .under h3 {
           font-family: "Didact Gothic", sans-serif;
           color: #c67b40; }
-          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-            .container-fluid .eventsPage .eventHolder .under .fancyName {
-              font-size: 25px;
-              font-family: "Didact Gothic", sans-serif; } }
+          @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .eventHolder .under h3 {
+              font-size: 1.5rem;
+              font-family: "Didact Gothic", sans-serif;
+              margin-bottom: -1rem; } }
+          @media (max-width: 330px) {
+            .container-fluid .eventsPage .eventHolder .under h3 {
+              font-size: 1rem; } }
+        .container-fluid .eventsPage .eventHolder .under h4 {
+          margin-bottom: -1rem;
+          margin-top: -1rem; }
+          @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .eventHolder .under h4 {
+              font-size: 1rem;
+              font-family: "Didact Gothic", sans-serif;
+              margin-bottom: -1rem;
+              margin-top: 1rem; } }
+          @media (max-width: 295px) {
+            .container-fluid .eventsPage .eventHolder .under h4 {
+              font-size: .75rem; } }
+        @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
+          .container-fluid .eventsPage .eventHolder .under p {
+            font-size: 1rem; } }
+        @media (max-width: 489px) {
+          .container-fluid .eventsPage .eventHolder .under p {
+            font-size: .75rem; } }
+        @media (max-width: 375px) {
+          .container-fluid .eventsPage .eventHolder .under p {
+            font-size: .75rem; } }
       .container-fluid .eventsPage .eventHolder .eventsDiv {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         font-family: "Didact Gothic", sans-serif;
         padding: 0;
-        width: 50%;
+        width: 80%;
         height: 150px; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .eventsPage .eventHolder .eventsDiv {
-            width: 70vw;
+            width: 95vw;
             font-size: 16px;
-            margin-top: 10px;
-            margin-bottom: 50px; } }
+            margin-top: 2rem;
+            margin-bottom: 3rem; } }
         .container-fluid .eventsPage .eventHolder .eventsDiv:hover {
           color: #9B0423;
           cursor: pointer; }
@@ -658,7 +736,12 @@ body {
     height: 1350px; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .allMedia {
-        height: 665px; } }
+        height: 120vh; } }
+    .container-fluid .allMedia h1 {
+      text-align: center;
+      font-family: money;
+      font-size: 1.5rem;
+      margin-bottom: 7rem; }
     .container-fluid .allMedia .mediaContainer {
       width: 100vw;
       margin-left: auto;
@@ -666,7 +749,7 @@ body {
       font-family: money; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .allMedia .mediaContainer {
-          margin-top: -85px; } }
+          margin-top: -100px; } }
       .container-fluid .allMedia .mediaContainer .downward {
         position: absolute;
         width: 100vw;
@@ -915,7 +998,8 @@ body {
     @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .photoBox {
         margin-top: 550px;
-        height: 450px; } }
+        height: 440px;
+        margin-bottom: 0px; } }
     .container-fluid .photoBox .photoGallery1 {
       background-image: url("/img/resized/nikkiNoSmile.jpg");
       background-size: cover;
@@ -967,25 +1051,32 @@ body {
 .downward {
   position: absolute;
   width: 15vw;
-  height: 800px;
+  height: 100vh;
   background-color: #9B0423;
   margin-top: -50px;
   margin-left: 70vw;
   z-index: -999; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
     .downward {
-      height: 950px;
-      width: 11vw;
-      margin-left: 89vw; } }
+      display: none; } }
+  @media (orientation: landscape) and (max-device-width: 736px) {
+    .downward {
+      height: 150vh; } }
 
 .bioContain {
   width: 85vw;
-  height: 750px;
+  height: 100vh;
   margin: 0 auto; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
     .bioContain {
-      height: 850px;
+      height: 171vh;
       width: 100vw; } }
+  @media (orientation: landscape) and (max-device-width: 736px) {
+    .bioContain {
+      height: 150vh; } }
+  @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 666px) and (orientation: landscape) {
+    .bioContain {
+      height: 240vh; } }
   .bioContain h2 {
     font-family: "Didact Gothic", sans-serif; }
   .bioContain .bioHolder {
@@ -1096,9 +1187,12 @@ body {
   width: 100vw;
   margin: 0 auto;
   height: 40vw; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .formContainer {
-      height: 500px; } }
+      height: 80vh; } }
+  @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 666px) and (orientation: landscape) {
+    .formContainer {
+      height: 90vh; } }
   .formContainer .stuffholder {
     width: 63vw;
     margin-left: auto;
@@ -1121,8 +1215,18 @@ body {
       position: absolute; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .formContainer .stuffholder .formholder {
-          width: 340px;
-          height: 300px; } }
+          width: 80vw;
+          height: 80vw;
+          margin: 0 auto;
+          float: none;
+          position: relative; } }
+      @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 667px) and (orientation: landscape) {
+        .formContainer .stuffholder .formholder {
+          width: 50vw;
+          height: 50vw;
+          margin: 0 auto;
+          float: none;
+          position: relative; } }
       .formContainer .stuffholder .formholder form {
         top: 10px;
         right: 10px;
@@ -1130,22 +1234,33 @@ body {
         left: 10px;
         background-color: rgba(233, 235, 235, 0.5);
         position: absolute;
-        text-align: center; }
+        text-align: center;
+        padding: 0rem; }
         .formContainer .stuffholder .formholder form input {
           border: solid #898686 1px;
-          text-align: center; }
+          text-align: center;
+          margin-top: 1rem; }
+        .formContainer .stuffholder .formholder form textarea {
+          margin-top: 2rem;
+          width: 80%; }
     .formContainer .stuffholder .contactPic {
       background-image: url("../img/resized/square500/laugh.jpg");
       background-size: cover;
       width: 30vw;
       height: 30vw;
       float: right; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+        .formContainer .stuffholder .contactPic {
+          display: none; } }
 
 .manageContainer {
   border: solid 1px black;
   width: 95vw;
   height: 80vh;
   margin: 0 auto; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+    .manageContainer {
+      height: 80vh; } }
   .manageContainer .form1 {
     float: right;
     width: 50%;

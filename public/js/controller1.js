@@ -212,18 +212,28 @@ $scope.closeNav=function() {
 }
 
 // scroll buttons
+$scope.scrolly=true;
 var indexCount = 0;
 $scope.moveEvent=function(){
+
 if((indexCount<2)&&(indexCount>=0)){
 indexCount=indexCount+1;
+
 document.getElementById('go'+indexCount).scrollIntoView({behavior: "smooth"});
+document.getElementById('scrollLimit').scrollIntoView({behavior: "smooth"});
 console.log('up'+indexCount)
 }else {
   indexCount=0;
+
   document.getElementById('go'+indexCount).scrollIntoView({behavior: "smooth"});
+  document.getElementById('scrollLimit').scrollIntoView({behavior: "smooth"});
+
   console.log('backdown'+indexCount)
 }
-  
+
 }
+
+
+
 
 });

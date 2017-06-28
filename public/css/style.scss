@@ -38,10 +38,10 @@ $light-grey:#efefef;
   @media only screen
   and (min-device-width : 320px)
   and (max-device-width : 666px){
-    height: 5%;
+    height: 3vh;
   }
   @media (orientation: landscape) and (max-device-width : 667px){
-
+    height: 9vh;
   }
   height: 75px;
   background-color: $grey;
@@ -56,8 +56,8 @@ $light-grey:#efefef;
 
     }
     padding-top: 10px;
-    width:300px;
-   margin:0 auto;
+    width:100vw;
+    margin:0 auto;
     text-align: center;
     font-family: $font;
     .footerIcons{
@@ -75,7 +75,13 @@ $light-grey:#efefef;
       @media (orientation: landscape) and (max-device-width : 667px){
 
       }
-
+      @media(max-width: 315px){
+        font-size: .5rem;
+      }
+      font-size: .9rem;
+      width:100vw;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -118,7 +124,7 @@ body{
       // border-radius: 57px;
       width:60px;
       background-color: rgba(212, 214, 214,.3);
-      position: fixed;
+      position: absolute;
       font-size: 40px;
       color:black;
       z-index: 19;
@@ -131,7 +137,7 @@ body{
       z-index: 20;
       top: 0;
       left: 0;
-      background-color: #222222;
+      background-color: $light-grey;
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
@@ -139,6 +145,7 @@ body{
   }
 
   .sidenav a {
+     font-family: $fancy;
       margin-top: 20px;
       padding: 8px 8px 8px 32px;
       text-decoration: none;
@@ -163,10 +170,9 @@ body{
   // large screen nav
     #navTable{
       @media only screen
-      and (min-device-width : 320px)
+      and (min-device-width : 300px)
       and (max-device-width : 667px){
         display: none;
-
       }
       @media(max-width: 607px){
         height: 28px;
@@ -181,8 +187,11 @@ body{
         @media(max-width: 462px){
           font-size: 12px;
         }
-        @media(max-width: 320px){
+        @media(max-width: 375px){
           font-size: 9px;
+        }
+        @media(max-width: 288px){
+          font-size: .5rem;
         }
 
         color:black;
@@ -208,6 +217,9 @@ body{
         }
       }
       .navSelect{
+        @media(max-width: 288px){
+          padding: 0 .25em;
+        }
         font-family: $font;
          display: inline;
          padding:0 4vw;
@@ -247,7 +259,7 @@ body{
   padding:0 !important;
   .doubleHolder{
     @media only screen
-    and (min-device-width : 320px)
+    and (min-device-width : 300px)
     and (max-device-width : 666px){
       height: 100vh;
     }
@@ -257,60 +269,42 @@ body{
     height: 100vh;
   .title{
     @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 666px){
-      // position:absolute;
-      background-color:rgba(233, 234, 234,.4);
-      margin-left: auto;
-      margin-right: auto;
-      margin-top:0px;
-      // margin-top: 200px;
-      width:100%;
-      font-family: 'open sans';
-      color:black;
-      height: 55px;
+    and (min-device-width : 300px)
+    and (max-device-width : 599px){
+
     }
     @media (orientation: landscape) and (max-device-width : 600px){
-    height: 300px;
-    position:absolute;
-    background-color:rgba(233, 234, 234,.4);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    width:100%;
-    font-family: 'open sans';
-    color:black;
-    height: 95px;
+
     }
+     @media (max-width : 862px){
+     letter-spacing: 1rem;
+     }
+     @media (max-width :705px){
+     letter-spacing:0;
+     }
+     @media (max-width :530px){
+     letter-spacing:0;
+     height: 6.5rem;
+     }
+     @media (max-width :415px){
+     letter-spacing:0;
+     height: 5rem;
+     }
+     @media (max-width :310px){
+     letter-spacing:0;
+     height: 4rem;
+     }
+
+
 
     height: 125px;
-    letter-spacing:3vw;
+    letter-spacing:2rem;
     text-align: center;
     font-family: $font;
     color:black;
     background-color: $light-grey;
     #soprano{
-      @media only screen
-      and (min-device-width : 320px)
-      and (max-device-width : 667px){
-        font-size: 10px;
-
-      }
-      @media (max-width: 800px){
-        font-size: 28px
-      }
-      @media (max-width: 680px){
-        margin-top: 0;
-        font-size: 27px;
-      }
-      @media (max-width: 600px){
-        margin-top: 0;
-        font-size: 10px;
-      }
-      @media(max-width: 400px){
-        font-size: 12px;
-      }
-      font-size: 30px;
+      font-size: 1.5em;
       margin-top: -13px;
       margin-bottom: 10px;
     }
@@ -318,8 +312,7 @@ body{
       @media only screen
       and (min-device-width : 320px)
       and (max-device-width : 667px){
-        font-family: 'open sans';
-        color:black;
+
       }
       color:$accent;
     }
@@ -327,26 +320,26 @@ body{
       @media only screen
       and (min-device-width : 320px)
       and (max-device-width : 667px){
-        font-family: 'open sans';
-        color:black;
+        // font-family: 'open sans';
+        // color:black;
       }
       font-family: $font;
     }
 
     h1{
-      @media only screen
-      and (min-device-width : 320px)
-      and (max-device-width : 667px){
-        font-size: 28px;
-      }
-      // @media (max-width: 540px){
-      //   font-size: 300%;
-      // }
-      // @media(max-width: 400px){
-      //   font-size: 200%;
-      // }
 
-      font-size: 600%;
+      @media (max-width: 530px){
+        font-size: 4rem;
+       }
+      @media (max-width: 415px){
+        font-size: 3rem;
+       }
+      @media (max-width: 310px){
+        font-size: 2rem;
+       }
+
+
+      font-size: 5rem;
       margin:0;
 
     }
@@ -354,13 +347,13 @@ body{
 
   .top{
     @media only screen
-    and (min-device-width : 320px)
+    and (min-device-width : 300px)
     and (max-device-width : 666px){
       background-size: cover;
       background-attachment: local;
       height: 40%;
     }
-    @media (orientation: landscape) and (max-device-width : 667px){
+    @media (orientation: landscape) and (max-device-width : 736px){
     background-position: 0 -100px;
     background-size: cover;
     height:100vh;
@@ -379,31 +372,38 @@ body{
     background-position: 0 -200px;
     background-repeat: no-repeat;
     background-size: cover;
+
   }
 
   .upcoming{
-    @media(max-width: 960px){
-      height: 27vw;
-    }
-    @media(max-width: 750px){
-      height: 28vw;
-    }
-    @media(max-width: 625px){
-      height: 29vw;
-    }
     @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 667px){
-      height: 20%;
-      background-color: #222222;
+      height: 15rem;
+      background-color: $light-grey;
+      // background-color: #222222;
     }
+    @media (orientation: landscape) and (max-device-width : 736px){
+    height:20rem;
+    }
+    @media (max-width: 480px){
+      height: 40vh;
+    }
+
     width: 100vw;
-    height: 25vw;
+    height: 50vh;
     margin: 0 auto;
     background-color: $light-grey;
     position:relative;
 
     .surroundUpcoming{
+      @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 667px){
+      background-color:$light-grey;
+      // background-color: #222222;
+      color:#222222;
+    }
       width:100%;
       margin:0 auto;
       padding-bottom: 0;
@@ -418,14 +418,16 @@ body{
     and (min-device-width : 320px)
     and (max-device-width : 667px){
       margin-bottom:-1.5vw;
-      font-size: 22px;
-      background-color: #222222;
+      font-size: 1.5rem;
+      background-color: $light-grey;
+      // background-color: #222222;
       border-color: 2px solid #222222;
-      color:white;
+      color:#222222;
     }
+      display: inline;
       margin-top: 0;
       margin-bottom: .5vw;
-      font-size: 4vw;
+      font-size: 3rem;
       text-align: center;
       font-family: $font;
       position: relative;
@@ -443,23 +445,49 @@ body{
       font-style: italic;
     }
   }
+    #blinkingArrow{
+      @keyframes blink{
+        0%{opacity: 0;}
+        50%{opacity: 1;}
+        100%{opacity: 0;}
+      }
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 667px){
+        margin-top: 10rem;
+        font-size: 3.5rem;
+        background-color: rgba(34, 34, 34,0);
+      }
+      position: absolute;
+      font-size: 4rem;
+      right: .5rem;
+      margin-top: -.6rem;
+      animation:blink 2s infinite ease-in-out;
+    }
     .eventHomePage{
 
       width:100%;
       margin: auto;
-      overflow:auto;
+      overflow-x:hidden;
       white-space:nowrap;
       height: 83%;
       display: inline-block;
       .arrowRight{
-        margin-left: 75%;
-        margin-top: -24%;
-        position: absolute;
-        z-index: 2;
-        img{
-          width:60px;
-          height: 60px;
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 667px){
+          display: block;
+          margin-left: 75%;
+          margin-top: -24%;
+          position: absolute;
+          z-index: 2;
+          img{
+            width:60px;
+            height: 60px;
+          }
         }
+        display: none;
+
       }
 
     .event1{
@@ -482,8 +510,18 @@ body{
       }
 
       .eventData{
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 667px){
+          float: left;
+          width: 100vw;
+        }
+        @media(max-width: 480px){
+          width:100vw;
+          text-align: center;
+        }
         float: left;
-        width: 89vw;
+        width: 45vw;
       .afterDate{
         @media only screen
         and (min-device-width : 320px)
@@ -494,8 +532,15 @@ body{
           // text-align: center;
           margin-top: 4px;
           margin-bottom: -1.5vh;
-          color:white;
+          color:#222222;
         }
+        @media(max-width: 480px){
+          text-align: center;
+          margin-left:auto;
+          margin-right: auto;
+          font-size: 2rem;
+        }
+        font-size: 2rem;
         width:47vw;
         margin-top: 2vw;
         margin-bottom: -2vh;
@@ -512,20 +557,22 @@ body{
           font-family: $fancy;
         }
         color:$gold;
-        // text-decoration: underline;
+        white-space: pre-line;
         font-family: $fancy;
-        font-size: 3vw;
+        font-size: 1.5rem;
       }
       .descript{
         @media only screen
         and (min-device-width : 320px)
         and (max-device-width : 667px){
           width: 90%;
-          // margin:0 auto;
-          font-size: 14px;
-          color:white;
+          font-size: 1rem;
+          color:#222222;
         }
-        font-size: 1.5vw;
+        @media(max-width:480px){
+          width: 95vw;
+        }
+        font-size: 1.25rem;
         width:47vw;
         height: 5vw;
         margin:0;
@@ -544,6 +591,9 @@ body{
 
          display: none;
        }
+       @media(max-width:480px){
+         display: none;
+       }
        width:48vw;
        height: 100%;
        margin-right:4vw;
@@ -558,6 +608,12 @@ body{
 
          display: none;
        }
+       @media (orientation: landscape) and (max-device-width : 736px){
+       background-position: right;
+       }
+       @media(max-width:480px){
+         display: none;
+       }
        width:48vw;
        height: 100%;
        margin-right:4vw;
@@ -570,6 +626,9 @@ body{
        and (min-device-width : 320px)
        and (max-device-width : 667px){
 
+         display: none;
+       }
+       @media(max-width:480px){
          display: none;
        }
        width:48vw;
@@ -593,13 +652,11 @@ body{
       background-position: bottom;
       height: 35vh;
     }
-    @media (orientation: landscape) and (max-device-width : 667px){
-    height: 35vh;
+    @media (orientation: landscape) and (max-device-width : 736px){
+    height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-
+    background-position: top;
     }
     width:100vw;
     height: 53.25vh;
@@ -609,8 +666,8 @@ body{
     background-position:center 32vh;
     .section2{
       a{
-        font-size: 20px;
-        font-family: 'Open Sans';
+        font-size: 3rem;
+        font-family: $font;
         text-decoration: none;
         color:white;
         &:hover{
@@ -629,19 +686,18 @@ body{
   }
   // events page
   .eventsPage{
-
     @media only screen
-    and (min-device-width : 320px){
-      height: 775px;
-      // height: 1790px;
+    and (min-device-width : 320px)
+    and (max-device-width : 666px) {
+      height: 86vh;
     }
-    @media(orientation:landscape)and (max-device-width : 667px) {
-      height: 170px;
+    @media(orientation:landscape)and (max-device-width : 736px) {
+      height: 59vh;
     }
     background-color: $grey;
     width: 100%;
     animation: showDivs 1s;
-
+    height: 80vh;
     a{
       color:black;
       text-decoration: none;
@@ -649,15 +705,12 @@ body{
 
     .perfromancePic{
       @media only screen
-      and (device-width : 320px)
-      /*and (max-device-width : 667px)*/ {
-        height: 175px;
-        // background-attachment: fixed;
-        // background-position: 0 110px;
-        background-size: cover;
-
+      and (min-device-width : 300px)
+      and (max-device-width : 666px) {
+        height: 20vh;
       }
-      @media (orientation: landscape) and (max-device-width : 667px){
+
+      @media (orientation: landscape) and (max-device-width : 736px){
       display: none;
 
       }
@@ -695,18 +748,21 @@ body{
       width: 100%;
       .section{
         @media only screen
-        and (min-device-width : 320px)
+        and (min-device-width : 300px)
         and (max-device-width : 666px){
           margin-top: 0vw;
           width:100vw;
           // right:4vw;
           left: 0vw;
-          font-size: 45px;
+          font-size: 2.75rem;
         }
-        @media (max-device-width : 667px) and (orientation: landscape){
-          position:relative;
-          display:none;
-
+        @media (max-device-width : 736px) and (orientation: landscape){
+          left:0;
+        }
+        @media only screen
+        and (min-device-width:300px) and (orientation: landscape)
+        and (max-device-width:666px) and (orientation: landscape){
+          display: none;
         }
         font-size: 65px;
         text-align: center;
@@ -725,23 +781,23 @@ body{
         @media only screen
         and (min-device-width : 320px)
         and (max-device-width : 666px){
-          margin-top: 71px;
+          margin-top: 60px;
           width:100vw;
-          height: 205px;
-          // height: 1500px;
-          // right:4vw;
+          height: 54vh;
           left: 0vw;
         }
-        @media(orientation:landscape)and (max-device-width : 667px) {
-          height: 178px;
-          margin-top: 0;
+        @media(orientation:landscape)and (max-device-width : 736px) {
+          position: absolute;
+          margin-top:-.5rem;
+          width:100vw;
+          height: 54vh;
         }
 
         overflow: scroll;
         height: 300px;
         position:absolute;
         width:50vw;
-        margin-top: -389px;
+        margin-top: -383px;
         background: rgba(233, 234, 234,.8);
         right: 0%;
         text-align: center;
@@ -758,27 +814,58 @@ body{
           font-family: $fancy;
           // font-style: italic;
         }
-        .fancyName{
+        h3{
           @media only screen
-          and (min-device-width : 320px)
+          and (min-device-width : 300px)
           and (max-device-width : 667px) {
-            font-size: 25px;
+            font-size: 1.5rem;
             font-family: $fancy;
-
+            margin-bottom: -1rem;
+          }
+          @media(max-width: 330px){
+            font-size: 1rem;
           }
           font-family: $fancy;
           color:$gold;
         }
+        h4{
+          @media only screen
+          and (min-device-width : 300px)
+          and (max-device-width : 667px){
+            font-size: 1rem;
+            font-family: $fancy;
+            margin-bottom: -1rem;
+            margin-top: 1rem;
+          }
+          @media(max-width: 295px){
+            font-size: .75rem;
+          }
 
+          margin-bottom: -1rem;
+          margin-top:-1rem;
+        }
+        p{
+          @media only screen
+          and (min-device-width : 300px)
+          and (max-device-width : 667px) {
+            font-size: 1rem;
+          }
+          @media(max-width: 489px){
+            font-size: .75rem;
+          }
+          @media(max-width: 375px){
+            font-size: .75rem;
+          }
+         }
       }
       .eventsDiv{
         @media only screen
         and (min-device-width : 320px)
         and (max-device-width : 667px) {
-          width:70vw;
+          width:95vw;
           font-size: 16px;
-          margin-top:10px;
-          margin-bottom: 50px;
+          margin-top:2rem;
+          margin-bottom: 3rem;
         }
 
         margin-left: auto;
@@ -786,7 +873,7 @@ body{
         text-align: center;
         font-family: $fancy;
         padding:0;
-        width:50%;
+        width:80%;
         height: 150px;
         &:hover{
           color: $accent;
@@ -935,16 +1022,21 @@ body{
   @media only screen
   and (min-device-width : 320px)
   and (max-device-width : 667px) {
-  height: 665px;
+  height: 120vh;
   }
   height: 1350px;
-
+  h1{
+    text-align: center;
+    font-family: $font;
+    font-size: 1.5rem;
+    margin-bottom: 7rem;
+  }
 .mediaContainer{
   @media only screen
   and (min-device-width : 320px)
   and (max-device-width : 667px) {
 
-  margin-top: -85px;
+  margin-top: -100px;
 
   }
   .downward{
@@ -1267,7 +1359,8 @@ body{
   and (min-device-width : 320px)
   and (max-device-width : 667px) {
   margin-top:550px;
-  height: 450px;
+  height: 440px;
+  margin-bottom: 0px;
   }
   text-align: center;
   width: 80%;
@@ -1342,13 +1435,14 @@ body{
   @media only screen
   and (min-device-width : 320px)
   and (max-device-width : 667px){
-  height: 950px;
-  width: 11vw;
-  margin-left: 89vw;
+    display: none;
+  }
+  @media(orientation:landscape)and (max-device-width : 736px) {
+    height: 150vh;
   }
   position:absolute;
   width:15vw;
-  height: 800px;
+  height: 100vh;
   background-color: $accent;
   margin-top:-50px;
   margin-left: 70vw;
@@ -1358,12 +1452,19 @@ body{
   @media only screen
   and (min-device-width : 320px)
   and (max-device-width : 667px){
-  height: 850px;
+  height: 171vh;
   width: 100vw;
   }
-
+  @media(orientation:landscape)and (max-device-width : 736px) {
+    height: 150vh;
+  }
+  @media only screen
+  and (min-device-width:300px) and (orientation: landscape)
+  and (max-device-width:666px) and (orientation: landscape){
+    height:240vh;
+  }
   width:85vw;
-  height: 750px;
+  height: 100vh;
   margin:0 auto;
   h2{
     font-family: $fancy;
@@ -1508,8 +1609,13 @@ body{
 .formContainer{
   @media only screen
   and (min-device-width : 320px)
-  and (max-device-width : 667px) {
-  height: 500px;
+  and (max-device-width : 768px) {
+  height: 80vh;
+  }
+  @media only screen
+  and (min-device-width:300px) and (orientation: landscape)
+  and (max-device-width:666px) and (orientation: landscape){
+    height: 90vh;
   }
   width: 100vw;
   margin:0 auto;
@@ -1535,8 +1641,20 @@ body{
       @media only screen
       and (min-device-width : 320px)
       and (max-device-width : 667px) {
-      width: 340px;
-      height: 300px;
+      width: 80vw;
+      height: 80vw;
+      margin:0 auto;
+      float:none;
+      position: relative;
+      }
+      @media only screen
+      and (min-device-width:300px) and (orientation: landscape)
+      and (max-device-width:667px) and (orientation: landscape){
+        width: 50vw;
+        height: 50vw;
+        margin:0 auto;
+        float:none;
+        position: relative;
       }
       float:left;
       width:30vw;
@@ -1558,13 +1676,18 @@ body{
       // background-color:$grey;
       // border:solid 1px $grey;
         text-align: center;
-        // padding: 7vh 0;
+        padding:0rem;
         input{
           // border-radius: 3px;
           border:solid #898686 1px;
           text-align: center;
+          margin-top: 1rem;
         }
-        textarea{}
+        textarea{
+          margin-top: 2rem;
+          width:80%;
+
+        }
         button{
           // border:solid black .5px;
           // border-radius: 5px;
@@ -1574,8 +1697,8 @@ body{
     .contactPic{
       @media only screen
       and (min-device-width : 320px)
-      and (max-device-width : 400px) {
-
+      and (max-device-width : 667px) {
+        display: none;
       }
 
       background-image: url('../img/resized/square500/laugh.jpg');
@@ -1590,6 +1713,11 @@ body{
 
 // manage eventsDiv
 .manageContainer{
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 667px) {
+    height:80vh;
+  }
   border:solid 1px black;
   width: 95vw;
   height: 80vh;
