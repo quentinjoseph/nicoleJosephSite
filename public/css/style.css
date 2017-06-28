@@ -712,13 +712,15 @@ body {
         .container-fluid .thisEventPage #thisEventHold {
           margin-top: -15px; } }
       .container-fluid .thisEventPage #thisEventHold .mapHolder {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .thisEventPage #thisEventHold .mapHolder {
             width: 100%;
-            margin: 0 auto; } }
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem; } }
         .container-fluid .thisEventPage #thisEventHold .mapHolder #map {
           margin: auto;
           height: 29vw;
@@ -733,7 +735,7 @@ body {
         float: left;
         font-family: money;
         padding-left: 2%;
-        width: 50%;
+        width: 48%;
         height: 150px; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
           .container-fluid .thisEventPage #thisEventHold .eventDiv {
