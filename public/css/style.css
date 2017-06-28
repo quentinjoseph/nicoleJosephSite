@@ -733,7 +733,7 @@ body {
       .container-fluid .thisEventPage #thisEventHold .eventDiv {
         margin: auto;
         float: left;
-        font-family: money;
+        font-family: "Didact Gothic", sans-serif;
         padding-left: 2%;
         width: 48%;
         height: 150px; }
