@@ -471,6 +471,7 @@ body{
       left: 0;
       top:0;
       font-size: 1rem;
+      font-family: $fancy;
      }
     #blinkingArrowLeft{
       @media(max-width: 480px){
@@ -482,6 +483,7 @@ body{
       right:0;
       top:0;
       font-size: 1rem;
+      font-family: $fancy;
      }
 
     .eventHomePage{
@@ -904,7 +906,7 @@ body{
             font-size: 1rem;
           }
           @media(max-width: 375px){
-            font-size: .75rem;
+            font-size: 1rem;
           }
          }
       }

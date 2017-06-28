@@ -326,7 +326,8 @@ body {
       position: absolute;
       left: 0;
       top: 0;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-family: "Didact Gothic", sans-serif; }
       @media (max-width: 480px) {
         .container-fluid .doubleHolder .upcoming #blinkingArrow {
           bottom: 1rem;
@@ -335,7 +336,8 @@ body {
       position: absolute;
       right: 0;
       top: 0;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-family: "Didact Gothic", sans-serif; }
       @media (max-width: 480px) {
         .container-fluid .doubleHolder .upcoming #blinkingArrowLeft {
           bottom: 1rem;
@@ -657,7 +659,7 @@ body {
             font-size: 1rem; } }
         @media (max-width: 375px) {
           .container-fluid .eventsPage .eventHolder .under p {
-            font-size: .75rem; } }
+            font-size: 1rem; } }
       .container-fluid .eventsPage .eventHolder .eventsDiv {
         margin-left: auto;
         margin-right: auto;
