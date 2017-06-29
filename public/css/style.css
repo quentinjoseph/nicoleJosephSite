@@ -39,7 +39,7 @@ html {
     .footer {
       height: 9vh; } }
   .footer .iconCenter {
-    padding-top: 10px;
+    padding-top: 0;
     width: 100vw;
     margin: 0 auto;
     text-align: center;
@@ -48,8 +48,8 @@ html {
       .footer .iconCenter {
         padding-top: 0; } }
     .footer .iconCenter .footerIcons {
-      width: 15px;
-      height: 15px;
+      width: .5rem;
+      height: .5rem;
       margin: auto; }
     .footer .iconCenter p {
       font-size: .9rem;
@@ -581,7 +581,7 @@ body {
             height: 54vh; } }
         @media (max-width: 610px) {
           .container-fluid .eventsPage .perfromancePic .under {
-            margin-top: 60px;
+            margin-top: 10rem;
             width: 100vw;
             height: 54vh;
             left: 0vw;
@@ -1095,35 +1095,6 @@ body {
   width: 85vw;
   height: auto;
   margin: 0 auto; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-    .bioContain {
-      height: 150vh;
-      width: 100vw; } }
-  @media only screen and (min-device-width: 668px) and (orientation: portrait) and (max-device-width: 1224px) and (orientation: portrait) {
-    .bioContain {
-      height: 80vh;
-      width: 100vw; } }
-  @media (orientation: landscape) and (max-device-width: 736px) {
-    .bioContain {
-      height: 150vh; } }
-  @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 667px) and (orientation: landscape) {
-    .bioContain {
-      height: 240vh; } }
-  @media only screen and (min-device-width: 737px) and (orientation: landscape) and (max-device-width: 1366px) and (orientation: landscape) {
-    .bioContain {
-      height: 84vh; } }
-  @media (max-width: 550px) {
-    .bioContain {
-      height: 150vh; } }
-  @media (max-width: 320px) {
-    .bioContain {
-      height: 170vh; } }
-  @media (max-width: 280px) {
-    .bioContain {
-      height: 200vh; } }
-  @media (max-width: 235px) {
-    .bioContain {
-      height: 300vh; } }
   .bioContain h2 {
     font-family: "Didact Gothic", sans-serif; }
   .bioContain .bioHolder {
@@ -1222,17 +1193,6 @@ body {
       .bioContain .bioHolder .docs p {
         width: 130px; }
 
-.sideways {
-  position: absolute;
-  width: 10vw;
-  height: 100vw;
-  background-color: #9B0423;
-  margin-top: -35vw;
-  margin-left: 45vw;
-  display: none;
-  z-index: -999;
-  transform: rotate(-90deg); }
-
 .formContainer {
   width: 100vw;
   margin: 0 auto;
@@ -1253,6 +1213,9 @@ body {
       .formContainer .stuffholder {
         width: 90vw;
         margin-top: 75px; } }
+    @media (max-width: 580px) {
+      .formContainer .stuffholder {
+        width: 100vw; } }
     .formContainer .stuffholder p {
       text-align: center;
       font-family: money; }
@@ -1277,6 +1240,29 @@ body {
           margin: 0 auto;
           float: none;
           position: relative; } }
+      @media (max-width: 580px) {
+        .formContainer .stuffholder .formholder {
+          float: none;
+          width: 90%;
+          height: 90%;
+          position: relative;
+          margin: 0 auto; } }
+      @media (max-width: 396px) {
+        .formContainer .stuffholder .formholder {
+          float: none;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          margin: 0 auto; } }
+      @media (max-width: 360px) {
+        .formContainer .stuffholder .formholder {
+          float: none;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          margin: 0 auto;
+          border: none;
+          background-color: rgba(255, 255, 255, 0); } }
       .formContainer .stuffholder .formholder form {
         top: 10px;
         right: 10px;
@@ -1290,9 +1276,18 @@ body {
           border: solid #898686 1px;
           text-align: center;
           margin-top: 1rem; }
+          @media (max-width: 360px) {
+            .formContainer .stuffholder .formholder form input {
+              width: 80%;
+              margin-top: .25rem; } }
         .formContainer .stuffholder .formholder form textarea {
           margin-top: 2rem;
-          width: 80%; }
+          width: 80%;
+          height: 50%; }
+          @media (max-width: 360px) {
+            .formContainer .stuffholder .formholder form textarea {
+              width: 80%;
+              margin-top: .25rem; } }
     .formContainer .stuffholder .contactPic {
       background-image: url("../img/resized/square500/laugh.jpg");
       background-size: cover;
@@ -1300,6 +1295,9 @@ body {
       height: 30vw;
       float: right; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+        .formContainer .stuffholder .contactPic {
+          display: none; } }
+      @media (max-width: 580px) {
         .formContainer .stuffholder .contactPic {
           display: none; } }
 
