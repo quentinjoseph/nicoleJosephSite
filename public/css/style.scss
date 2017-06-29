@@ -743,146 +743,15 @@ body{
     background-color: $grey;
     width: 100%;
     animation: showDivs 1s;
-    height: 100vh;
+    height: 94vh;
     a{
       color:black;
       text-decoration: none;
     }
 
-    .perfromancePic{
-      @media only screen
-      and (min-device-width : 300px)
-      and (max-device-width : 666px) {
-        height: 20vh;
-      }
 
-      @media (orientation: landscape) and (max-device-width : 736px){
-      display: none;
-
-      }
-      @media(max-width: 610px){
-        height: 20vh;
-        background-position: 45% 50%;
-      }
-      @media(max-width: 490px){
-        background-position: 40% 50%;
-      }
-
-      width: 100%;
-      height: 100vh;
-      // height: 500px;
-      border-top:#dee0e0 solid 1px;
-      border-bottom: black solid 1px;
-      background-image: url('/img/performance3.jpg');
-      background-size: cover;
-      background-position: center;
-      z-index: 5;
-      .under{
-        @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 666px){
-          margin-top: 60px;
-          width:100vw;
-          height: 54vh;
-          left: 0vw;
-        }
-        @media(orientation:landscape)and (max-device-width : 736px) {
-          position: absolute;
-          margin-top:-.5rem;
-          width:100vw;
-          height: 54vh;
-        }
-        @media(max-width: 610px){
-          margin-top: 10rem;;
-          width:100vw;
-          height: 54vh;
-          left: 0vw;
-          position: relative;
-        }
-        position:relative;
-        overflow: scroll;
-        float:right;
-        // margin-left: 30rem;
-        // margin-top: -40rem;
-        width:50vw;
-        height:100vh;
-        background: rgba(233, 234, 234,.8);
-        text-align: center;
-
-        .portraitEvent{
-          @media(orientation:landscape)and (max-device-width : 667px) {
-            display: block;
-            font-family: $fancy2;
-            color: $accent;
-            font-size: 55px;
-          }
-          display:none;
-        }
-        span{
-          font-family: $fancy;
-          // font-style: italic;
-        }
-        h3{
-          @media only screen
-          and (min-device-width : 300px)
-          and (max-device-width : 667px) {
-            font-size: 1.5rem;
-            font-family: $fancy;
-            margin-bottom: -1rem;
-          }
-          @media(max-width: 330px){
-            font-size: 1rem;
-          }
-          font-family: $fancy;
-          color:$gold;
-        }
-        h4{
-          @media only screen
-          and (min-device-width : 300px)
-          and (max-device-width : 667px){
-            font-size: 1rem;
-            font-family: $fancy;
-            margin-bottom: -1rem;
-            margin-top: 1rem;
-          }
-          @media(max-width: 295px){
-            font-size: .75rem;
-          }
-
-          margin-bottom: -1rem;
-          margin-top:-1rem;
-        }
-        p{
-          @media only screen
-          and (min-device-width : 300px)
-          and (max-device-width : 667px) {
-            font-size: 1rem;
-          }
-          @media(max-width: 489px){
-            font-size: 1rem;
-          }
-          @media(max-width: 375px){
-            font-size: 1rem;
-          }
-         }
-      }
-    }
-
-    .mapHolder{
-      /*float:right;*/
-      width: 50%;
-      height: 0%;
-      bottom: 0;
-      margin: 0;
-      #map{
-        margin: 0;
-        height: 0;
-        width:50vw;
-
-      }
-    }
     .eventHolder{
-      height: 100vh;
+      height: auto;
       width: 100%;
       .section{
         @media only screen
@@ -922,29 +791,161 @@ body{
         margin-top: -460px;
         right:0%;
       }
-
-      .eventsDiv{
+      .perfromancePic{
         @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 667px) {
-          width:95vw;
-          font-size: 16px;
-          margin-top:2rem;
-          margin-bottom: 3rem;
+        and (min-device-width : 300px)
+        and (max-device-width : 666px) {
+          height: 20vh;
         }
 
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        font-family: $fancy;
-        padding:0;
-        width:80%;
-        height: 150px;
-        &:hover{
-          color: $accent;
-          cursor: pointer;
+        @media (orientation: landscape) and (max-device-width : 736px){
+        display: none;
+
+        }
+        @media(max-width: 610px){
+          height: 20vh;
+          background-position: 45% 50%;
+        }
+        @media(max-width: 490px){
+          background-position: 40% 50%;
+        }
+
+        width: 100%;
+        height: 100vh;
+        // height: 500px;
+        border-top:#dee0e0 solid 1px;
+        border-bottom: black solid 1px;
+        background-image: url('/img/performance3.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: 5;
+        .under{
+          @media only screen
+          and (min-device-width : 320px)
+          and (max-device-width : 666px){
+            margin-top: 60px;
+            width:100vw;
+            height: 54vh;
+            left: 0vw;
+          }
+          @media(orientation:landscape)and (max-device-width : 736px) {
+            position: absolute;
+            margin-top:-.5rem;
+            width:100vw;
+            height: 54vh;
+          }
+          @media(max-width: 610px){
+            margin-top: 10rem;;
+            width:100vw;
+            height: 54vh;
+            left: 0vw;
+            position: relative;
+          }
+          position:relative;
+          overflow: scroll;
+          float:right;
+          // margin-left: 30rem;
+          // margin-top: -40rem;
+          width:50vw;
+          height:100vh;
+          background: rgba(233, 234, 234,.8);
+          text-align: center;
+
+          .portraitEvent{
+            @media(orientation:landscape)and (max-device-width : 667px) {
+              display: block;
+              font-family: $fancy2;
+              color: $accent;
+              font-size: 55px;
+            }
+            display:none;
+          }
+          span{
+            font-family: $fancy;
+            // font-style: italic;
+          }
+          h3{
+            @media only screen
+            and (min-device-width : 300px)
+            and (max-device-width : 667px) {
+              font-size: 1.5rem;
+              font-family: $fancy;
+              margin-bottom: -1rem;
+            }
+            @media(max-width: 330px){
+              font-size: 1rem;
+            }
+            font-family: $fancy;
+            color:$gold;
+          }
+          h4{
+            @media only screen
+            and (min-device-width : 300px)
+            and (max-device-width : 667px){
+              font-size: 1rem;
+              font-family: $fancy;
+              margin-bottom: -1rem;
+              margin-top: 1rem;
+            }
+            @media(max-width: 295px){
+              font-size: .75rem;
+            }
+
+            margin-bottom: -1rem;
+            margin-top:-1rem;
+          }
+          p{
+            @media only screen
+            and (min-device-width : 300px)
+            and (max-device-width : 667px) {
+              font-size: 1rem;
+            }
+            @media(max-width: 489px){
+              font-size: 1rem;
+            }
+            @media(max-width: 375px){
+              font-size: 1rem;
+            }
+           }
+           .eventsDiv{
+             @media only screen
+             and (min-device-width : 320px)
+             and (max-device-width : 667px) {
+               width:95vw;
+               font-size: 16px;
+               margin-top:2rem;
+               margin-bottom: 3rem;
+             }
+
+             margin-left: auto;
+             margin-right: auto;
+             text-align: center;
+             font-family: $fancy;
+             padding:0;
+             width:80%;
+             height: 150px;
+             &:hover{
+               color: $accent;
+               cursor: pointer;
+             }
+           }
         }
       }
+
+      // .mapHolder{
+      //   /*float:right;*/
+      //   width: 50%;
+      //   height: 0%;
+      //   bottom: 0;
+      //   margin: 0;
+      //   #map{
+      //     margin: 0;
+      //     height: 0;
+      //     width:50vw;
+      //
+      //   }
+      // }
+
    }
   }
   // thisEventPage
@@ -1759,7 +1760,7 @@ body{
       and (min-device-width:300px) and (orientation: landscape)
       and (max-device-width:667px) and (orientation: landscape){
         width: 50vw;
-        height: 50vw;
+        height: 50vh;
         margin:0 auto;
         float:none;
         position: relative;
