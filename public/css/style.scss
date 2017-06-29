@@ -799,8 +799,8 @@ body{
         }
 
         @media (orientation: landscape) and (max-device-width : 736px){
-        display: none;
-
+        background-image: none;
+        border:none;
         }
         @media(max-width: 610px){
           height: 20vh;
@@ -823,7 +823,7 @@ body{
           @media only screen
           and (min-device-width : 320px)
           and (max-device-width : 666px){
-            margin-top: 60px;
+            margin-top: 10rem;
             width:100vw;
             height: 54vh;
             left: 0vw;
@@ -835,7 +835,7 @@ body{
             height: 54vh;
           }
           @media(max-width: 610px){
-            margin-top: 10rem;;
+            margin-top: 12rem;;
             width:100vw;
             height: 54vh;
             left: 0vw;
