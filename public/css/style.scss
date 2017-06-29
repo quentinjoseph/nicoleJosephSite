@@ -468,7 +468,7 @@ body{
       }
       position: absolute;
       // padding:.5rem;
-      left: 0;
+      left: 1rem;
       top:0;
       font-size: 1rem;
       font-family: $fancy;
@@ -480,7 +480,7 @@ body{
       }
       position: absolute;
       // padding:.5rem;
-      right:0;
+      right:1rem;
       top:0;
       font-size: 1rem;
       font-family: $fancy;
@@ -612,6 +612,14 @@ body{
         p{
           margin:0;
         }
+      }
+      .seeEvents{
+        @media(max-width:670px){
+          display: none;
+        }
+        margin-left: 1rem;
+        position: absolute;
+        bottom:1rem;
       }
      }
      .picHolder0{

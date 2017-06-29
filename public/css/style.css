@@ -324,7 +324,7 @@ body {
             display: none; } }
     .container-fluid .doubleHolder .upcoming #blinkingArrow {
       position: absolute;
-      left: 0;
+      left: 1rem;
       top: 0;
       font-size: 1rem;
       font-family: "Didact Gothic", sans-serif; }
@@ -334,7 +334,7 @@ body {
           top: auto; } }
     .container-fluid .doubleHolder .upcoming #blinkingArrowLeft {
       position: absolute;
-      right: 0;
+      right: 1rem;
       top: 0;
       font-size: 1rem;
       font-family: "Didact Gothic", sans-serif; }
@@ -439,6 +439,13 @@ body {
                 margin: 0; } }
             .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript p {
               margin: 0; }
+          .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .seeEvents {
+            margin-left: 1rem;
+            position: absolute;
+            bottom: 1rem; }
+            @media (max-width: 670px) {
+              .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .seeEvents {
+                display: none; } }
         .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .picHolder0 {
           width: 48vw;
           height: 100%;
