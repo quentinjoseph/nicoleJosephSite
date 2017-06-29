@@ -1,6 +1,9 @@
 
-<div class="top">
-
+<div class="top" ng-model="homepage">
+  <div class="nameDiv">
+<h1 class="name">Nicole Joseph</h1>
+<h4 id="soprano">Soprano</h4>
+ </div>
 </div>
 <!-- <div class="lineThrough"></div> -->
 
@@ -13,7 +16,7 @@
   <p id="blinkingArrowLeft" ng-click="moveEvent()" class="section"> right > </p>
   </div>
 
-  <div id="moveTo1" class="row eventHomePage">
+  <div id="moveTo1" class="eventHomePage">
 
     <div ng-repeat="event in latest" id="go{{$index}}"class="event1 rec{{$index}}">
       <div class="picHolder{{$index}}"></div>
@@ -22,7 +25,6 @@
       {{event.eventdate | date : longDate:'+0430'}}</div><br>
       <p ng-click="goToEvent(event.id)" class="eventname" >{{event.eventname}}</p><br>
       <div class="descript"><p>{{event.description}}</p></div><br>
-      <a class="seeEvents" href="#!/events">see more events</a>
     </div>
     </div>
     <!-- <div class="arrowRight"><img ng-click="moveEvent()" src="../img/icons/arrow-right.png" alt=""></div> -->

@@ -12,6 +12,22 @@ font-family: 'Didact Gothic', sans-serif;*/
   font-family: money;
   src: url("../fonts/Montserrat-Thin.ttf"); }
 
+@font-face {
+  font-family: moneyReg;
+  src: url("../fonts/Montserrat-Regular.ttf"); }
+
+@font-face {
+  font-family: proxy;
+  src: url("../fonts/ProximaNova-Regular.otf"); }
+
+@font-face {
+  font-family: proxyLight;
+  src: url("../fonts/ProximaNova-Light.otf"); }
+
+@font-face {
+  font-family: blacksword;
+  src: url("../fonts/blacksword/Blacksword.otf"); }
+
 html {
   height: auto; }
   html body {
@@ -85,15 +101,12 @@ body {
   body .mobileNav {
     text-align: center;
     width: 60px;
-    background-color: rgba(212, 214, 214, 0.3);
+    background-color: rgba(212, 214, 214, 0);
     position: absolute;
     font-size: 40px;
     color: black;
     z-index: 19;
     margin-top: 0px; }
-    @media only screen and (min-device-width: 668px) {
-      body .mobileNav {
-        display: none; } }
   body .sidenav {
     height: 100%;
     width: 0;
@@ -123,59 +136,6 @@ body {
     right: 25px;
     font-size: 50px;
     margin-left: 50px; }
-  body #navTable {
-    text-align: center;
-    background-color: #e9eaea;
-    border-top: 1px solid #dee0e0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    height: 32px;
-    margin: auto;
-    z-index: 11; }
-    @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
-      body #navTable {
-        display: none; } }
-    @media (max-width: 607px) {
-      body #navTable {
-        height: 28px; } }
-    body #navTable a {
-      color: black;
-      font-size: 20px;
-      text-decoration: none;
-      z-index: 11; }
-      @media (max-width: 607px) {
-        body #navTable a {
-          font-size: 15px; } }
-      @media (max-width: 462px) {
-        body #navTable a {
-          font-size: 12px; } }
-      @media (max-width: 375px) {
-        body #navTable a {
-          font-size: 9px; } }
-      @media (max-width: 288px) {
-        body #navTable a {
-          font-size: .5rem; } }
-      body #navTable a:hover {
-        color: white;
-        background-color: rgba(212, 214, 214, 0.2);
-        border-radius: 4px; }
-      body #navTable a:before {
-        background-color: #e9eaea; }
-    body #navTable .pageNotify {
-      display: inline;
-      font-family: money;
-      padding: 0 4vw;
-      border-radius: 4px; }
-      body #navTable .pageNotify a {
-        color: #9B0423; }
-    body #navTable .navSelect {
-      font-family: money;
-      display: inline;
-      padding: 0 4vw; }
-      @media (max-width: 288px) {
-        body #navTable .navSelect {
-          padding: 0 .25em; } }
 
 .container-fluid {
   width: 100%;
@@ -198,62 +158,16 @@ body {
   @media only screen and (min-device-width: 300px) and (max-device-width: 666px) {
     .container-fluid .doubleHolder {
       height: 100vh; } }
-  .container-fluid .doubleHolder .title {
-    height: 125px;
-    letter-spacing: 2rem;
-    text-align: center;
-    font-family: money;
-    color: black;
-    background-color: #efefef; }
-    @media (max-width: 862px) {
-      .container-fluid .doubleHolder .title {
-        letter-spacing: 1rem; } }
-    @media (max-width: 705px) {
-      .container-fluid .doubleHolder .title {
-        letter-spacing: 0; } }
-    @media (max-width: 530px) {
-      .container-fluid .doubleHolder .title {
-        letter-spacing: 0;
-        height: 6.5rem; } }
-    @media (max-width: 415px) {
-      .container-fluid .doubleHolder .title {
-        letter-spacing: 0;
-        height: 5rem; } }
-    @media (max-width: 310px) {
-      .container-fluid .doubleHolder .title {
-        letter-spacing: 0;
-        height: 4rem; } }
-    .container-fluid .doubleHolder .title .nospace {
-      letter-spacing: 0 !important; }
-    .container-fluid .doubleHolder .title #soprano {
-      font-size: 1.5em;
-      margin-top: -13px;
-      margin-bottom: 10px; }
-    .container-fluid .doubleHolder .title .accent {
-      color: #9B0423; }
-    .container-fluid .doubleHolder .title .theN {
-      font-family: money; }
-    .container-fluid .doubleHolder .title h1 {
-      font-size: 5rem;
-      margin: 0; }
-      @media (max-width: 530px) {
-        .container-fluid .doubleHolder .title h1 {
-          font-size: 4rem; } }
-      @media (max-width: 415px) {
-        .container-fluid .doubleHolder .title h1 {
-          font-size: 3rem; } }
-      @media (max-width: 310px) {
-        .container-fluid .doubleHolder .title h1 {
-          font-size: 2rem; } }
   .container-fluid .doubleHolder .top {
     width: 100vw;
-    height: 600px;
+    height: 100vh;
     margin: 0;
-    background-image: url("../img/resized/window.jpg");
+    background-image: url("../img/performance2.jpg");
     background-attachment: fixed;
-    background-position: 0 -200px;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    text-align: center; }
     @media only screen and (min-device-width: 300px) and (max-device-width: 666px) {
       .container-fluid .doubleHolder .top {
         background-size: cover;
@@ -270,11 +184,27 @@ body {
     @media (max-width: 910px) {
       .container-fluid .doubleHolder .top {
         background-position: 0 0px; } }
+    .container-fluid .doubleHolder .top .nameDiv {
+      background-color: rgba(233, 234, 234, 0);
+      width: 70vw;
+      margin: 0 auto;
+      right: 0; }
+      .container-fluid .doubleHolder .top .nameDiv .name {
+        letter-spacing: 1rem;
+        font-family: blacksword;
+        color: white;
+        font-size: 4rem;
+        margin: 0; }
+      .container-fluid .doubleHolder .top .nameDiv #soprano {
+        font-family: money;
+        color: white;
+        font-size: 2rem;
+        margin: 0; }
   .container-fluid .doubleHolder .upcoming {
     width: 100vw;
     height: 20rem;
     margin: 0;
-    background-color: #efefef;
+    background-color: white;
     position: relative; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
       .container-fluid .doubleHolder .upcoming {
@@ -290,22 +220,22 @@ body {
       width: 100%;
       margin: 0 auto;
       padding-bottom: 0;
-      background-color: #efefef;
+      background-color: white;
       text-align: center; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .doubleHolder .upcoming .surroundUpcoming {
           background-color: #efefef;
           color: #222222; } }
       .container-fluid .doubleHolder .upcoming .surroundUpcoming a {
-        color: #173547;
+        color: black;
         text-decoration: none; }
       .container-fluid .doubleHolder .upcoming .surroundUpcoming .section {
         display: inline;
         margin-top: 0;
         margin-bottom: .5vw;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
-        font-family: money;
+        font-family: proxy;
         position: relative;
         z-index: 1; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
@@ -494,8 +424,10 @@ body {
   .container-fluid .doubleHolder .mediaSign {
     width: 100vw;
     height: 22rem;
-    background-image: url("../img/nikkiNoSmile1fit.jpg");
-    background-size: cover; }
+    background-image: url("../img/resized/w900h600/SBMF2015white.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
       .container-fluid .doubleHolder .mediaSign {
         background-size: cover;
@@ -518,7 +450,7 @@ body {
       font-family: money; }
       .container-fluid .doubleHolder .mediaSign .section2 a {
         font-size: 3rem;
-        font-family: money;
+        font-family: blacksword;
         text-decoration: none;
         color: white; }
         .container-fluid .doubleHolder .mediaSign .section2 a:hover {
@@ -527,7 +459,7 @@ body {
     background-color: #e9eaea;
     width: 100%;
     animation: showDivs 1s;
-    height: 100vh; }
+    height: 94vh; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
       .container-fluid .eventsPage {
         height: 86vh; } }
@@ -539,10 +471,10 @@ body {
       text-decoration: none; }
     .container-fluid .eventsPage .perfromancePic {
       width: 100%;
-      height: 100vh;
+      height: 94vh;
       border-top: #dee0e0 solid 1px;
       border-bottom: black solid 1px;
-      background-image: url("/img/performance3.jpg");
+      background-image: url("../img/nikkiNoSmile1fit.jpg");
       background-size: cover;
       background-position: center;
       z-index: 5; }
@@ -552,20 +484,23 @@ body {
       @media (orientation: landscape) and (max-device-width: 736px) {
         .container-fluid .eventsPage .perfromancePic {
           display: none; } }
-      @media (max-width: 610px) {
-        .container-fluid .eventsPage .perfromancePic {
-          height: 20vh;
-          background-position: 45% 50%; } }
       @media (max-width: 490px) {
         .container-fluid .eventsPage .perfromancePic {
           background-position: 40% 50%; } }
+      .container-fluid .eventsPage .perfromancePic #eventsTitleDiv {
+        position: absolute; }
+        .container-fluid .eventsPage .perfromancePic #eventsTitleDiv #eventsTitle {
+          font-family: blacksword;
+          color: white;
+          margin-left: 5rem;
+          font-size: 4rem; }
       .container-fluid .eventsPage .perfromancePic .under {
         position: relative;
         overflow: scroll;
         float: right;
         width: 50vw;
         height: 100vh;
-        background: rgba(233, 234, 234, 0.8);
+        background: rgba(233, 234, 234, 0);
         text-align: center; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
           .container-fluid .eventsPage .perfromancePic .under {
@@ -581,11 +516,9 @@ body {
             height: 54vh; } }
         @media (max-width: 610px) {
           .container-fluid .eventsPage .perfromancePic .under {
-            margin-top: 60px;
-            width: 100vw;
-            height: 54vh;
-            left: 0vw;
-            position: relative; } }
+            width: 70vw;
+            margin: 0 auto;
+            float: none; } }
         .container-fluid .eventsPage .perfromancePic .under .portraitEvent {
           display: none; }
           @media (orientation: landscape) and (max-device-width: 667px) {
@@ -595,6 +528,7 @@ body {
               color: #9B0423;
               font-size: 55px; } }
         .container-fluid .eventsPage .perfromancePic .under span {
+          color: #c67b40;
           font-family: "Didact Gothic", sans-serif; }
         .container-fluid .eventsPage .perfromancePic .under h3 {
           font-family: "Didact Gothic", sans-serif;
@@ -608,6 +542,7 @@ body {
             .container-fluid .eventsPage .perfromancePic .under h3 {
               font-size: 1rem; } }
         .container-fluid .eventsPage .perfromancePic .under h4 {
+          color: white;
           margin-bottom: -1rem;
           margin-top: -1rem; }
           @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
@@ -619,15 +554,17 @@ body {
           @media (max-width: 295px) {
             .container-fluid .eventsPage .perfromancePic .under h4 {
               font-size: .75rem; } }
-        @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
-          .container-fluid .eventsPage .perfromancePic .under p {
-            font-size: 1rem; } }
-        @media (max-width: 489px) {
-          .container-fluid .eventsPage .perfromancePic .under p {
-            font-size: 1rem; } }
-        @media (max-width: 375px) {
-          .container-fluid .eventsPage .perfromancePic .under p {
-            font-size: 1rem; } }
+        .container-fluid .eventsPage .perfromancePic .under p {
+          color: white; }
+          @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .perfromancePic .under p {
+              font-size: 1rem; } }
+          @media (max-width: 489px) {
+            .container-fluid .eventsPage .perfromancePic .under p {
+              font-size: 1rem; } }
+          @media (max-width: 375px) {
+            .container-fluid .eventsPage .perfromancePic .under p {
+              font-size: 1rem; } }
     .container-fluid .eventsPage .mapHolder {
       /*float:right;*/
       width: 50%;
@@ -1092,135 +1029,58 @@ body {
         margin-top: -500px; } }
 
 .bioContain {
-  width: 85vw;
-  height: auto;
-  margin: 0 auto; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-    .bioContain {
-      height: 150vh;
-      width: 100vw; } }
-  @media only screen and (min-device-width: 668px) and (orientation: portrait) and (max-device-width: 1224px) and (orientation: portrait) {
-    .bioContain {
-      height: 80vh;
-      width: 100vw; } }
-  @media (orientation: landscape) and (max-device-width: 736px) {
-    .bioContain {
-      height: 150vh; } }
-  @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 667px) and (orientation: landscape) {
-    .bioContain {
-      height: 240vh; } }
-  @media only screen and (min-device-width: 737px) and (orientation: landscape) and (max-device-width: 1366px) and (orientation: landscape) {
-    .bioContain {
-      height: 84vh; } }
-  @media (max-width: 550px) {
-    .bioContain {
-      height: 150vh; } }
-  @media (max-width: 320px) {
-    .bioContain {
-      height: 170vh; } }
-  @media (max-width: 280px) {
-    .bioContain {
-      height: 200vh; } }
-  @media (max-width: 235px) {
-    .bioContain {
-      height: 300vh; } }
+  width: 100vw;
+  height: 94vh;
+  margin: 0 auto;
+  background-image: url("../img/resized/w900h600/blackdressSingSBM2016.jpg");
+  background-size: cover; }
   .bioContain h2 {
     font-family: "Didact Gothic", sans-serif; }
   .bioContain .bioHolder {
-    margin-top: 1vw;
     height: auto; }
-    .bioContain .bioHolder .bioPic {
-      float: left;
-      width: 40vw;
-      height: 40vw;
-      margin-right: 1vw;
-      border: solid 4px #9B0423;
-      padding: 5px;
-      position: relative;
-      z-index: 1; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
-        .bioContain .bioHolder .bioPic {
-          width: 200px;
-          height: 200px;
-          border: solid 1px #9B0423;
-          float: right;
-          margin-right: 0; } }
-      @media (orientation: landscape) and (max-device-width: 667px) {
-        .bioContain .bioHolder .bioPic {
-          width: 300px;
-          height: 230px;
-          border: solid 1px #9B0423;
-          float: right;
-          margin-right: 100px; } }
-      .bioContain .bioHolder .bioPic div {
-        border: solid black 1px;
-        top: 5px;
-        right: 5px;
-        bottom: 5px;
-        left: 5px;
-        background-image: url("/img/resized/400x500/smiles.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        z-index: 2; }
-        @media only screen and (min-device-width: 664px) and (max-device-width: 665px) {
-          .bioContain .bioHolder .bioPic div {
-            background-position: center top;
-            background-size: contain; } }
-        @media (orientation: landscape) and (max-device-width: 666px) {
-          .bioContain .bioHolder .bioPic div {
-            background-position: center top; } }
+    .bioContain .bioHolder .bioTitle {
+      color: white;
+      font-family: blacksword;
+      font-size: 4rem;
+      position: absolute;
+      top: 3rem; }
     .bioContain .bioHolder .bioP {
-      margin-top: 5vw;
+      width: 40vw;
+      float: right;
+      margin-top: 0;
       font-family: "Didact Gothic", sans-serif;
       margin-bottom: 0;
-      color: black;
-      background: rgba(233, 234, 234, 0.7); }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-        .bioContain .bioHolder .bioP {
-          background: rgba(233, 234, 234, 0.9);
-          float: left; } }
+      color: white; }
+      .bioContain .bioHolder .bioP p {
+        height: 75vh;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        overflow: scroll; }
     .bioContain .bioHolder .buttonHide {
       display: none; }
-    .bioContain .bioHolder .bioButton {
-      border: solid 1px black;
-      margin-bottom: 0;
-      color: black;
-      display: inline-block;
-      animation: showDivs 2s; }
-      .bioContain .bioHolder .bioButton p {
-        margin: 0; }
-      .bioContain .bioHolder .bioButton a {
-        color: black;
-        text-decoration: none; }
-        .bioContain .bioHolder .bioButton a:hover {
-          color: white; }
-      .bioContain .bioHolder .bioButton:hover {
-        background-color: black;
-        color: white; }
     .bioContain .bioHolder .docs {
       font-family: money;
       font-size: 1.5rem;
-      width: 100%;
+      width: 40vw;
+      float: right;
       text-align: center;
       clear: both; }
-      .bioContain .bioHolder .docs #main {
-        width: 285px;
-        margin: 0 auto;
-        border: solid 1px #76767a; }
-        @media (max-width: 320px) {
-          .bioContain .bioHolder .docs #main {
-            width: 8rem; } }
-        .bioContain .bioHolder .docs #main:hover {
+      .bioContain .bioHolder .docs .bioButton {
+        border: solid 1px white;
+        margin-bottom: 0;
+        color: white;
+        display: inline-block;
+        animation: showDivs 2s; }
+        .bioContain .bioHolder .docs .bioButton p {
+          margin: 0; }
+        .bioContain .bioHolder .docs .bioButton a {
           color: white;
-          background-color: black;
-          border: 1px solid black;
-          cursor: pointer; }
-      .bioContain .bioHolder .docs img {
-        padding: 0 6vw; }
-      .bioContain .bioHolder .docs p {
-        width: 130px; }
+          text-decoration: none; }
+          .bioContain .bioHolder .docs .bioButton a:hover {
+            color: black; }
+        .bioContain .bioHolder .docs .bioButton:hover {
+          background-color: white;
+          color: black; }
 
 .sideways {
   position: absolute;

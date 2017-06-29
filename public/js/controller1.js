@@ -36,7 +36,7 @@ geocodeAddress();
 function getLatestEvents(){
   eventService.getLatestEvents().then(function(results){
     $scope.latest=results;
-    console.log($scope.latest);
+    // console.log($scope.latest);
   })
 }
 getLatestEvents();
@@ -113,78 +113,96 @@ if ((pword == userpword)&&(user == username)){
 
 
 // navbar seclection
-var home = angular.element(document.querySelector('#liHome'));
-var events = angular.element(document.querySelector('#liEvents'));
-var bio = angular.element(document.querySelector('#liBio'));
-var media = angular.element(document.querySelector('#liMedia'));
-var contact = angular.element(document.querySelector('#liContact'));
+// var home = angular.element(document.querySelector('#liHome'));
+// var events = angular.element(document.querySelector('#liEvents'));
+// var bio = angular.element(document.querySelector('#liBio'));
+// var media = angular.element(document.querySelector('#liMedia'));
+// var contact = angular.element(document.querySelector('#liContact'));
+//
+// $scope.navHome = function(){
+//   home.addClass('pageNotify');
+//   home.removeClass('navSelect');
+//   events.removeClass('pageNotify');
+//   events.addClass('navSelect');
+//   bio.removeClass('pageNotify');
+//   bio.addClass('navSelect');
+//   media.removeClass('pageNotify');
+//   media.addClass('navSelect');
+//   contact.removeClass('pageNotify');
+//   contact.addClass('navSelect');
+//
+//   }
+//
+// $scope.navEvents = function(){
+//   events.addClass('pageNotify');
+//   events.removeClass('navSelect');
+//   home.removeClass('pageNotify');
+//   home.addClass('navSelect');
+//   bio.removeClass('pageNotify');
+//   bio.addClass('navSelect');
+//   media.removeClass('pageNotify');
+//   media.addClass('navSelect');
+//   contact.removeClass('pageNotify');
+//   contact.addClass('navSelect');
+//   }
+//
+// $scope.navBio = function(){
+//   bio.addClass('pageNotify');
+//   bio.removeClass('navSelect');
+//   home.removeClass('pageNotify');
+//   home.addClass('navSelect');
+//   events.removeClass('pageNotify');
+//   events.addClass('navSelect');
+//   media.removeClass('pageNotify');
+//   media.addClass('navSelect');
+//   contact.removeClass('pageNotify');
+//   contact.addClass('navSelect');
+//   }
+//
+// $scope.navMedia = function(){
+//   media.addClass('pageNotify');
+//   media.removeClass('navSelect');
+//   home.removeClass('pageNotify');
+//   home.addClass('navSelect');
+//   events.removeClass('pageNotify');
+//   events.addClass('navSelect');
+//   bio.removeClass('pageNotify');
+//   bio.addClass('navSelect');
+//   contact.removeClass('pageNotify');
+//   contact.addClass('navSelect');
+//   }
+//
+//
+// $scope.navContact = function(){
+//   contact.addClass('pageNotify');
+//   contact.removeClass('navSelect');
+//   home.removeClass('pageNotify');
+//   home.addClass('navSelect');
+//   events.removeClass('pageNotify');
+//   events.addClass('navSelect');
+//   bio.removeClass('pageNotify');
+//   bio.addClass('navSelect');
+//   media.removeClass('pageNotify');
+//   media.addClass('navSelect');
+//   }
 
-$scope.navHome = function(){
-  home.addClass('pageNotify');
-  home.removeClass('navSelect');
-  events.removeClass('pageNotify');
-  events.addClass('navSelect');
-  bio.removeClass('pageNotify');
-  bio.addClass('navSelect');
-  media.removeClass('pageNotify');
-  media.addClass('navSelect');
-  contact.removeClass('pageNotify');
-  contact.addClass('navSelect');
+var urlPath = $location.path();
+$scope.path=function(){
 
-  }
+if((urlPath == '/events')){
+  console.log(urlPath);
+  document.getElementById('navmob').style.color='#efefef';
+}else if (urlPath == '/bio'){
+  console.log(urlPath);
+  document.getElementById('navmob').style.color='#efefef';
+}else {
+  console.log(urlPath);
+  document.getElementById('navmob').style.color='black';
+}
+}
 
-$scope.navEvents = function(){
-  events.addClass('pageNotify');
-  events.removeClass('navSelect');
-  home.removeClass('pageNotify');
-  home.addClass('navSelect');
-  bio.removeClass('pageNotify');
-  bio.addClass('navSelect');
-  media.removeClass('pageNotify');
-  media.addClass('navSelect');
-  contact.removeClass('pageNotify');
-  contact.addClass('navSelect');
-  }
+$scope.path();
 
-$scope.navBio = function(){
-  bio.addClass('pageNotify');
-  bio.removeClass('navSelect');
-  home.removeClass('pageNotify');
-  home.addClass('navSelect');
-  events.removeClass('pageNotify');
-  events.addClass('navSelect');
-  media.removeClass('pageNotify');
-  media.addClass('navSelect');
-  contact.removeClass('pageNotify');
-  contact.addClass('navSelect');
-  }
-
-$scope.navMedia = function(){
-  media.addClass('pageNotify');
-  media.removeClass('navSelect');
-  home.removeClass('pageNotify');
-  home.addClass('navSelect');
-  events.removeClass('pageNotify');
-  events.addClass('navSelect');
-  bio.removeClass('pageNotify');
-  bio.addClass('navSelect');
-  contact.removeClass('pageNotify');
-  contact.addClass('navSelect');
-  }
-
-
-$scope.navContact = function(){
-  contact.addClass('pageNotify');
-  contact.removeClass('navSelect');
-  home.removeClass('pageNotify');
-  home.addClass('navSelect');
-  events.removeClass('pageNotify');
-  events.addClass('navSelect');
-  bio.removeClass('pageNotify');
-  bio.addClass('navSelect');
-  media.removeClass('pageNotify');
-  media.addClass('navSelect');
-  }
 // bio show download buttons
 var resume = angular.element(document.querySelector('#resume'));
 var headshot1 = angular.element(document.querySelector('#headshot1'));
@@ -202,16 +220,28 @@ $scope.showButtons = function(){
 }
 
 // mobile slide nav
-$scope.openNav=function() {
-
-    document.getElementById("mySidenav").style.width = "100%";
+// $scope.openNav=function() {
+//
+//     document.getElementById("mySidenav").style.width = "100%";
+// }
+//
+// $scope.closeNav=function() {
+//     document.getElementById("mySidenav").style.width = "0";
+// }
+// mobile slide nav 2
+$scope.openNav =function() {
+    document.getElementById("mySidenav").style.width = "250px";
+    // document.getElementById("main1").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
-$scope.closeNav=function() {
+$scope.closeNav =function() {
     document.getElementById("mySidenav").style.width = "0";
+    // document.getElementById("main1").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
 }
 
-// scroll buttons
+// scroll buttons for upcoming events on homepage
 $scope.scrolly=true;
 var indexCount = 0;
 $scope.moveEvent=function(){
@@ -251,6 +281,8 @@ console.log('down'+indexCount)
 }
 
 }
+
+
 
 
 

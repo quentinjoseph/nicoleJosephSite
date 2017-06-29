@@ -55,7 +55,7 @@ app.service("eventService", function($http) {
          url: '/events'
      }).then(function successCallback(response) {
        eventArr = response.data;
-       console.log(eventArr);
+      //  console.log(eventArr);
        return eventArr;
    }, function errorCallback(response) {
        console.log('error');

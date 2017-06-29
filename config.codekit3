@@ -566,6 +566,18 @@
 		"oAP": "\/public\/files\/Nicole_S_Joseph_Resume.pdf",
 		"oF": 0
 		},
+	"\/public\/fonts\/blacksword\/Blacksword.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/fonts\/blacksword\/Blacksword.otf",
+		"oF": 0
+		},
+	"\/public\/fonts\/blacksword\/READ ME.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/fonts\/blacksword\/READ ME.txt",
+		"oF": 0
+		},
 	"\/public\/fonts\/Montserrat-Light.ttf": {
 		"ft": 8192,
 		"oA": 2,
@@ -582,6 +594,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/fonts\/Montserrat-Thin.ttf",
+		"oF": 0
+		},
+	"\/public\/fonts\/ProximaNova-Light.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/fonts\/ProximaNova-Light.otf",
+		"oF": 0
+		},
+	"\/public\/fonts\/ProximaNova-Regular.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/fonts\/ProximaNova-Regular.otf",
 		"oF": 0
 		},
 	"\/public\/img\/icons\/arrow-right.png": {
@@ -742,6 +766,12 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/public\/img\/NikkiSerious": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/img\/NikkiSerious",
+		"oF": 0
+		},
 	"\/public\/img\/NikkiSing.jpg": {
 		"ft": 16384,
 		"iS": 87804,
@@ -767,6 +797,16 @@
 		"iS": 396218,
 		"oA": 0,
 		"oAP": "\/public\/img\/operahouse.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/performance2.jpg": {
+		"ft": 16384,
+		"iS": 18035590,
+		"oA": 0,
+		"oAP": "\/public\/img\/performance2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

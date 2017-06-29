@@ -3,6 +3,29 @@ var app = angular.module("appMod");
 app.controller("mapController", function ($scope, eventService, $location) {
 $scope.singleEvent=[];
 
+// change menu bar color
+var urlPath = $location.path();
+$scope.path=function(){
+if((urlPath == '/events')){
+ console.log(urlPath);
+ document.getElementById('navmob').style.color='#efefef';
+}else if (urlPath == '/bio'){
+ console.log(urlPath);
+ document.getElementById('navmob').style.color='#efefef';
+}else {
+ console.log(urlPath);
+ document.getElementById('navmob').style.color='black';
+}
+}
+$scope.path();
+
+
+
+
+
+
+
+
   var map;
        function initMap() {
          map = new google.maps.Map(document.getElementById('map'), {
@@ -17,7 +40,7 @@ $scope.singleEvent=[];
        $scope.getEvents = function(){
          eventService.getAllEvents().then(function(eventArr){
            $scope.events=eventArr;
-           console.log($scope.events);
+          //  console.log($scope.events);
            for(i=0; i < eventArr.length; i++){
 
              var marker = new google.maps.Marker({
@@ -66,5 +89,7 @@ $scope.singleEvent=[];
            $location.url('/thisevent?id=' + eventId);
            console.log(eventId)
          }
+
+
 
 });

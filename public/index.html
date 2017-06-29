@@ -13,21 +13,21 @@
   </head>
   <body ng-app='appMod' ng-controller="controller1">
 
-    <div class="container-fluid">
+    <div id="main1" class="container-fluid">
       <div class="doubleHolder">
-        <div class="title">
+        <!-- <div class="title">
           <h1 id='titleName'><span class="accent theN">N</span>icole<span class="accent">Josep</span><span class="accent nospace">h</span></h1>
           <h3 id='soprano'>soprano</h3>
-        </div>
-        <ul ng-controller="controller1" id=navTable>
+        </div> -->
+        <!-- <ul ng-controller="controller1" id=navTable>
             <li ng-click="navHome()" id="liHome"class="navSelect"><a  href="#!/home">home</a></li>
             <li ng-click="navEvents()" id="liEvents"class="navSelect"><a href="#!/events">events</a></li>
             <li ng-click="navBio()" id="liBio"class="navSelect"><a  href="#!/bio">biography</a></li>
             <li ng-click="navMedia()" id="liMedia"class="navSelect"><a href="#!/media">media</a></li>
             <li ng-click="navContact()" id="liContact"class="navSelect"><a href="#!/contact">contact</a></li>
-          </ul>
+          </ul> -->
 <!--mobile nav  -->
-          <div class="circleNav"><span class="mobileNav" style="font-size:50px;cursor:pointer" ng-click="openNav()">&#9776; </span></div>
+          <div class="circleNav"><span id='navmob' class="mobileNav" style="font-size:50px;cursor:pointer" ng-click="openNav()">&#9776; </span></div>
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
             <a ng-click="closeNav()" href="#!/home">home</a>
