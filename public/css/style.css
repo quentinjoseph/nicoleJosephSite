@@ -11,6 +11,7 @@ font-family: 'Didact Gothic', sans-serif;*/
 @font-face {
   font-family: money;
   src: url("../fonts/Montserrat-Thin.ttf"); }
+
 html {
   height: auto; }
   html body {
@@ -68,12 +69,14 @@ html {
     opacity: 0; }
   to {
     opacity: 1; } }
+
 body {
   margin: 0;
   padding: 0;
   animation: showDivs 1s; }
   body ng-scope {
     background-color: #e9eaea; }
+
 @keyframes nav-slide {
   from {
     padding: 0 0; }
@@ -524,7 +527,7 @@ body {
     background-color: #e9eaea;
     width: 100%;
     animation: showDivs 1s;
-    height: 80vh; }
+    height: 100vh; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
       .container-fluid .eventsPage {
         height: 86vh; } }
@@ -536,7 +539,7 @@ body {
       text-decoration: none; }
     .container-fluid .eventsPage .perfromancePic {
       width: 100%;
-      height: 500px;
+      height: 100vh;
       border-top: #dee0e0 solid 1px;
       border-bottom: black solid 1px;
       background-image: url("/img/performance3.jpg");
@@ -556,6 +559,75 @@ body {
       @media (max-width: 490px) {
         .container-fluid .eventsPage .perfromancePic {
           background-position: 40% 50%; } }
+      .container-fluid .eventsPage .perfromancePic .under {
+        position: relative;
+        overflow: scroll;
+        float: right;
+        width: 50vw;
+        height: 100vh;
+        background: rgba(233, 234, 234, 0.8);
+        text-align: center; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
+          .container-fluid .eventsPage .perfromancePic .under {
+            margin-top: 60px;
+            width: 100vw;
+            height: 54vh;
+            left: 0vw; } }
+        @media (orientation: landscape) and (max-device-width: 736px) {
+          .container-fluid .eventsPage .perfromancePic .under {
+            position: absolute;
+            margin-top: -.5rem;
+            width: 100vw;
+            height: 54vh; } }
+        @media (max-width: 610px) {
+          .container-fluid .eventsPage .perfromancePic .under {
+            margin-top: 60px;
+            width: 100vw;
+            height: 54vh;
+            left: 0vw;
+            position: relative; } }
+        .container-fluid .eventsPage .perfromancePic .under .portraitEvent {
+          display: none; }
+          @media (orientation: landscape) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .perfromancePic .under .portraitEvent {
+              display: block;
+              font-family: "Rouge Script", cursive;
+              color: #9B0423;
+              font-size: 55px; } }
+        .container-fluid .eventsPage .perfromancePic .under span {
+          font-family: "Didact Gothic", sans-serif; }
+        .container-fluid .eventsPage .perfromancePic .under h3 {
+          font-family: "Didact Gothic", sans-serif;
+          color: #c67b40; }
+          @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .perfromancePic .under h3 {
+              font-size: 1.5rem;
+              font-family: "Didact Gothic", sans-serif;
+              margin-bottom: -1rem; } }
+          @media (max-width: 330px) {
+            .container-fluid .eventsPage .perfromancePic .under h3 {
+              font-size: 1rem; } }
+        .container-fluid .eventsPage .perfromancePic .under h4 {
+          margin-bottom: -1rem;
+          margin-top: -1rem; }
+          @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
+            .container-fluid .eventsPage .perfromancePic .under h4 {
+              font-size: 1rem;
+              font-family: "Didact Gothic", sans-serif;
+              margin-bottom: -1rem;
+              margin-top: 1rem; } }
+          @media (max-width: 295px) {
+            .container-fluid .eventsPage .perfromancePic .under h4 {
+              font-size: .75rem; } }
+        @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
+          .container-fluid .eventsPage .perfromancePic .under p {
+            font-size: 1rem; } }
+        @media (max-width: 489px) {
+          .container-fluid .eventsPage .perfromancePic .under p {
+            font-size: 1rem; } }
+        @media (max-width: 375px) {
+          .container-fluid .eventsPage .perfromancePic .under p {
+            font-size: 1rem; } }
     .container-fluid .eventsPage .mapHolder {
       /*float:right;*/
       width: 50%;
@@ -567,13 +639,15 @@ body {
         height: 0;
         width: 50vw; }
     .container-fluid .eventsPage .eventHolder {
+      height: 100vh;
       width: 100%; }
       .container-fluid .eventsPage .eventHolder .section {
+        display: none;
         font-size: 65px;
         text-align: center;
         font-family: "Rouge Script", cursive;
         color: #9B0423;
-        position: absolute;
+        position: relative;
         z-index: 15;
         width: 50%;
         background: rgba(233, 234, 234, 0.8);
@@ -597,76 +671,6 @@ body {
             width: 100vw;
             left: 0vw;
             font-size: 2.75rem; } }
-      .container-fluid .eventsPage .eventHolder .under {
-        overflow: scroll;
-        height: 300px;
-        position: absolute;
-        width: 50vw;
-        margin-top: -383px;
-        background: rgba(233, 234, 234, 0.8);
-        right: 0%;
-        text-align: center; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 666px) {
-          .container-fluid .eventsPage .eventHolder .under {
-            margin-top: 60px;
-            width: 100vw;
-            height: 54vh;
-            left: 0vw; } }
-        @media (orientation: landscape) and (max-device-width: 736px) {
-          .container-fluid .eventsPage .eventHolder .under {
-            position: absolute;
-            margin-top: -.5rem;
-            width: 100vw;
-            height: 54vh; } }
-        @media (max-width: 610px) {
-          .container-fluid .eventsPage .eventHolder .under {
-            margin-top: 60px;
-            width: 100vw;
-            height: 54vh;
-            left: 0vw;
-            position: relative; } }
-        .container-fluid .eventsPage .eventHolder .under .portraitEvent {
-          display: none; }
-          @media (orientation: landscape) and (max-device-width: 667px) {
-            .container-fluid .eventsPage .eventHolder .under .portraitEvent {
-              display: block;
-              font-family: "Rouge Script", cursive;
-              color: #9B0423;
-              font-size: 55px; } }
-        .container-fluid .eventsPage .eventHolder .under span {
-          font-family: "Didact Gothic", sans-serif; }
-        .container-fluid .eventsPage .eventHolder .under h3 {
-          font-family: "Didact Gothic", sans-serif;
-          color: #c67b40; }
-          @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
-            .container-fluid .eventsPage .eventHolder .under h3 {
-              font-size: 1.5rem;
-              font-family: "Didact Gothic", sans-serif;
-              margin-bottom: -1rem; } }
-          @media (max-width: 330px) {
-            .container-fluid .eventsPage .eventHolder .under h3 {
-              font-size: 1rem; } }
-        .container-fluid .eventsPage .eventHolder .under h4 {
-          margin-bottom: -1rem;
-          margin-top: -1rem; }
-          @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
-            .container-fluid .eventsPage .eventHolder .under h4 {
-              font-size: 1rem;
-              font-family: "Didact Gothic", sans-serif;
-              margin-bottom: -1rem;
-              margin-top: 1rem; } }
-          @media (max-width: 295px) {
-            .container-fluid .eventsPage .eventHolder .under h4 {
-              font-size: .75rem; } }
-        @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
-          .container-fluid .eventsPage .eventHolder .under p {
-            font-size: 1rem; } }
-        @media (max-width: 489px) {
-          .container-fluid .eventsPage .eventHolder .under p {
-            font-size: 1rem; } }
-        @media (max-width: 375px) {
-          .container-fluid .eventsPage .eventHolder .under p {
-            font-size: 1rem; } }
       .container-fluid .eventsPage .eventHolder .eventsDiv {
         margin-left: auto;
         margin-right: auto;
@@ -811,6 +815,7 @@ body {
             font-size: 10px;
             width: 50px;
             margin-top: 45px; } }
+
 @keyframes showDivs {
   from {
     opacity: 0; }
@@ -1343,5 +1348,3 @@ body {
   text-align: center; }
   .sentContainer img {
     width: 30%; }
-
-/*# sourceMappingURL=style.css.map */

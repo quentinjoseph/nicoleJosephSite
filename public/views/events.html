@@ -4,20 +4,28 @@
 
 
 <div class="perfromancePic">
-
-</div>
-
   <h2 class="section">Events</h2>
   <div id="flow" class="under">
       <h2 class="portraitEvent">Events</h2>
     <span>Scroll through events. Click on an event for more details.</span>
-    <!-- <h2 class="section">Events</h2> -->
     <div class="eventsDiv" ng-click="goToEvent(event.id)" ng-repeat="event in events">
         <h3><span class="fancyName">{{event.eventname}}</span></h3>
         <h4><b>{{event.eventdate | date: longDate: '+0430'}}</b></h4>
         <p>{{event.description}}</p>
     </div>
   </div>
+</div>
+
+  <!-- <h2 class="section">Events</h2>
+  <div id="flow" class="under">
+      <h2 class="portraitEvent">Events</h2>
+    <span>Scroll through events. Click on an event for more details.</span>
+    <div class="eventsDiv" ng-click="goToEvent(event.id)" ng-repeat="event in events">
+        <h3><span class="fancyName">{{event.eventname}}</span></h3>
+        <h4><b>{{event.eventdate | date: longDate: '+0430'}}</b></h4>
+        <p>{{event.description}}</p>
+    </div>
+  </div> -->
 
   <div class="mapHolder" ng-controller="mapController">
   <div id="map"></div>
