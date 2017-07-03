@@ -67,4 +67,7 @@ $scope.singleEvent=[];
            console.log(eventId)
          }
 
+
+    
+
 });

@@ -1,0 +1,1 @@
+var app=angular.module("appMod");app.controller("contactController",function(n,e,o){function t(){angular.element(document.querySelector("#admin")).removeClass("hide")}n.contactMe=function(t){e.sendEmail(t).then(function(){n.contactInfo={},o.url("/sent")})},t(),n.$on("$destroy",function(){angular.element(document.querySelector("#admin")).addClass("hide")})});

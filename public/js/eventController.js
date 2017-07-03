@@ -68,7 +68,7 @@ $scope.goToEvent = function (eventId) {
 
 
   var map;
-    
+
 
 
 });

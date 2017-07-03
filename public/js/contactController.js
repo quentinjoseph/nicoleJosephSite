@@ -10,4 +10,16 @@ app.controller("contactController", function ($scope, eventService, $location) {
 
   };
 
+
+  function showAdmin(){
+  var admin=angular.element(document.querySelector('#admin'));
+    admin.removeClass('hide');
+  }
+  showAdmin();
+
+  $scope.$on('$destroy', function() {
+    var admin=angular.element(document.querySelector('#admin'));
+      admin.addClass('hide');
+  })
+
 });

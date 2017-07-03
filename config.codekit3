@@ -584,6 +584,17 @@
 		"oAP": "\/public\/fonts\/Montserrat-Thin.ttf",
 		"oF": 0
 		},
+	"\/public\/img\/icons\/admin.png": {
+		"ft": 32768,
+		"iS": 6000,
+		"oA": 0,
+		"oAP": "\/public\/img\/icons\/admin.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/img\/icons\/arrow-right.png": {
 		"ft": 32768,
 		"iS": 1098,

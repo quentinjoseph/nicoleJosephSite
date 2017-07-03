@@ -3,7 +3,7 @@
 <div class="form2" ng-show='pageShow'>
 
   		<h1>Search</h1>
-  		<label><i class="fa fa-search" aria-hidden="true"></i></label><input style="color: black;"id="search" type="text" ng-model="searchInput">
+  		<label></label><input style="color: black;"id="search" type="text" ng-model="searchInput">
 
 
 
@@ -48,13 +48,13 @@
   [ng-change="string"]>
 </div>
 <div class="form-group">
-  <label for="event-description">Description</label>
+  <label for="event-description"></label>
   <textarea placeholder="enter description of event" rows="5" type="in" class="form-control" id="event-description" required ng-model="formItem.description">
   </textarea>
 </div>
 <div class="form-group">
   <label for="event-link"></label>
-  <textarea placeholder="link to more details" rows="1" type="in" class="form-control" id="event-description"  ng-model="formItem.linkto">
+  <textarea placeholder="link to more details" rows="1" type="in" class="form-control" id="link-description"  ng-model="formItem.linkto">
   </textarea>
 </div>
 <button type="submit">Add Event</button>
@@ -88,7 +88,7 @@
     <form ng-submit="updateEvents(updateItem)">
     <div class="form-group">
       <label for="edit-section">Which Section Do You Want To Edit</label>
-      <select class="form-control" id="edit-section" ng-model="updateItem.column">
+      <select class="form-control" id="update-edit-section" ng-model="updateItem.column">
         <option >event name</option>
         <option >link</option>
         <option >date</option>
@@ -100,8 +100,8 @@
         <input placeholder="eventID" type="number" name="" value="" required ng-model="updateItem.id">
     </div>
     <div class="form-group">
-      <label for="event-description">update</label>
-      <textarea placeholder="enter description of event" rows="5" type="in" class="form-control" id="event-description" required ng-model="updateItem.text">
+      <label for="event-description"></label>
+      <textarea placeholder="enter your update here" rows="5" type="in" class="form-control" id="update-event-description" required ng-model="updateItem.text">
       </textarea>
     </div>
     <button type="submit">Update Event</button>
