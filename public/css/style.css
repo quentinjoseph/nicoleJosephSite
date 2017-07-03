@@ -664,7 +664,7 @@ body {
       margin-top: 3vh; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         .container-fluid .thisEventPage #thisEventHold {
-          margin-top: -15px; } }
+          margin-top: 0px; } }
       .container-fluid .thisEventPage #thisEventHold .mapHolder {
         float: right;
         width: 50%;
