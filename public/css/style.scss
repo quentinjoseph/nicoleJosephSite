@@ -1677,6 +1677,7 @@ body{
     display: inline-block;
     // border-radius: 5px;
     animation: showDivs 2s;
+    margin-top: 2rem;
     p{
       margin: 0;
     }
@@ -1750,16 +1751,16 @@ body{
   @media only screen
   and (min-device-width : 320px)
   and (max-device-width : 768px) {
-  height: 80vh;
+  // height: 80vh;
   }
   @media only screen
   and (min-device-width:300px) and (orientation: landscape)
   and (max-device-width:666px) and (orientation: landscape){
-    height: 90vh;
+    // height: 90vh;
   }
   width: 100vw;
   margin:0 auto;
-  height: 85vh;
+  // height: 85vh;
 
   .stuffholder{
     @media only screen

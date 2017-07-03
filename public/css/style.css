@@ -1061,7 +1061,8 @@ body {
       margin-bottom: 0;
       color: black;
       display: inline-block;
-      animation: showDivs 2s; }
+      animation: showDivs 2s;
+      margin-top: 2rem; }
       .bioContain .bioHolder .bioButton p {
         margin: 0; }
       .bioContain .bioHolder .bioButton a {
@@ -1100,14 +1101,7 @@ body {
 
 .formContainer {
   width: 100vw;
-  margin: 0 auto;
-  height: 85vh; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .formContainer {
-      height: 80vh; } }
-  @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 666px) and (orientation: landscape) {
-    .formContainer {
-      height: 90vh; } }
+  margin: 0 auto; }
   .formContainer .stuffholder {
     width: 63vw;
     margin-left: auto;
