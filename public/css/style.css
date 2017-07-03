@@ -406,6 +406,7 @@ body {
                   width: 100%;
                   margin-top: 5px;
                   margin-left: 0;
+                  margin-bottom: -.5rem;
                   font-size: 5vw;
                   font-family: "Didact Gothic", sans-serif; } }
             .container-fluid .doubleHolder .upcoming .eventHomePage .event1 .eventData .descript {
