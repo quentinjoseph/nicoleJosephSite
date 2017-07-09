@@ -749,23 +749,10 @@ body {
       font-size: 1.5rem;
       margin-bottom: 1rem; }
     .container-fluid .mediaContainer p {
-      position: absolute;
       width: 80px;
       font-family: "Didact Gothic", sans-serif;
-      font-size: 150%;
-      margin-top: 70px;
-      background-color: rgba(233, 234, 234, 0.6); }
-      @media (max-width: 575px) {
-        .container-fluid .mediaContainer p {
-          margin-top: 30px;
-          background-color: rgba(233, 234, 234, 0);
-          font-size: 100%; } }
-      @media (max-width: 320px) {
-        .container-fluid .mediaContainer p {
-          margin-top: 15px;
-          background-color: rgba(233, 234, 234, 0);
-          font-size: 100%; } }
-    .container-fluid .mediaContainer #mediaLable {
+      font-size: 150%; }
+    .container-fluid .mediaContainer .mediaLable {
       color: white; }
 
 @keyframes showDivs {
@@ -783,7 +770,6 @@ body {
           justify-content: space-around; }
       .container-fluid .mediaContainer .mediaHolder .audioDiv {
         text-align: center;
-        color: black;
         border: solid 3px black;
         height: 20vw;
         width: 20vw;
@@ -793,7 +779,16 @@ body {
         background-size: cover;
         z-index: 1;
         -webkit-animation: showDivs 1s;
-                animation: showDivs 1s; }
+                animation: showDivs 1s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .container-fluid .mediaContainer .mediaHolder .audioDiv:hover {
           cursor: pointer;
           opacity: .5; }
@@ -807,7 +802,16 @@ body {
         background-image: url("/img/NikkiWindow2square.jpg");
         background-size: cover;
         -webkit-animation: showDivs 1s;
-                animation: showDivs 1s; }
+                animation: showDivs 1s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .container-fluid .mediaContainer .mediaHolder .photoDiv:hover {
           cursor: pointer;
           opacity: .5; }
@@ -821,7 +825,16 @@ body {
         background-image: url("/img/nikkiDecember1.jpg");
         background-size: cover;
         -webkit-animation: showDivs 1s;
-                animation: showDivs 1s; }
+                animation: showDivs 1s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .container-fluid .mediaContainer .mediaHolder .videoDiv:hover {
           cursor: pointer;
           opacity: .5; }
