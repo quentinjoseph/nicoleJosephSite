@@ -534,46 +534,40 @@ body {
     .container-fluid .eventsPage .eventHolder {
       height: 100%;
       width: 100%; }
-      .container-fluid .eventsPage .eventHolder .section {
-        display: none;
-        font-size: 65px;
+      .container-fluid .eventsPage .eventHolder .eventsLable {
+        width: 50vw;
         text-align: center;
-        font-family: "Rouge Script", cursive;
-        color: #9B0423;
-        position: relative;
-        z-index: 15;
-        width: 50%;
-        background: rgba(233, 234, 234, 0.8);
-        margin-top: -460px;
-        right: 0%; }
-        @media only screen and (min-device-width: 300px) and (max-device-width: 666px) {
-          .container-fluid .eventsPage .eventHolder .section {
-            margin-top: 0vw;
-            width: 100vw;
-            left: 0vw;
-            font-size: 2.75rem; } }
-        @media (max-device-width: 736px) and (orientation: landscape) {
-          .container-fluid .eventsPage .eventHolder .section {
-            left: 0; } }
-        @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 666px) and (orientation: landscape) {
-          .container-fluid .eventsPage .eventHolder .section {
-            display: none; } }
-        @media (max-width: 610px) {
-          .container-fluid .eventsPage .eventHolder .section {
-            margin-top: 0vw;
-            width: 100vw;
-            left: 0vw;
-            font-size: 2.75rem; } }
+        background: rgba(233, 234, 234, 0.8); }
+        .container-fluid .eventsPage .eventHolder .eventsLable .eventTitle {
+          font-size: 65px;
+          text-align: center;
+          font-family: "Rouge Script", cursive;
+          color: #9B0423;
+          z-index: 15; }
+          @media only screen and (min-device-width: 300px) and (orientation: landscape) and (max-device-width: 666px) and (orientation: landscape) {
+            .container-fluid .eventsPage .eventHolder .eventsLable .eventTitle {
+              display: none; } }
+          @media (max-width: 610px) {
+            .container-fluid .eventsPage .eventHolder .eventsLable .eventTitle {
+              width: 100vw;
+              font-size: 2.75rem;
+              background-color: white; } }
       .container-fluid .eventsPage .eventHolder .perfromancePic {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         width: 100%;
         border-top: #dee0e0 solid 1px;
-        border-bottom: black solid 1px;
         background-image: url("/img/performance3.jpg");
         background-size: cover;
         background-position: center;
@@ -584,15 +578,21 @@ body {
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
                     justify-content: center;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
             width: 100%; } }
         .container-fluid .eventsPage .eventHolder .perfromancePic .under {
           overflow: scroll;
           width: 50vw;
+          height: 20rem;
           background: rgba(233, 234, 234, 0.8);
           text-align: center; }
           @media (max-width: 600px) {
             .container-fluid .eventsPage .eventHolder .perfromancePic .under {
-              width: 100%; } }
+              width: 100%;
+              background-color: white;
+              border-bottom: none !important; } }
           .container-fluid .eventsPage .eventHolder .perfromancePic .under .portraitEvent {
             display: none; }
             @media (orientation: landscape) and (max-device-width: 667px) {

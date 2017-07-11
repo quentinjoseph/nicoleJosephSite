@@ -741,7 +741,9 @@ body{
 
    }
   }
-  // events page
+
+
+  // EVENTS PAGE
   .eventsPage{
     @media only screen
     and (min-device-width : 320px)
@@ -767,43 +769,47 @@ body{
     .eventHolder{
       height:100%;
       width: 100%;
-      .section{
-        @media only screen
-        and (min-device-width : 300px)
-        and (max-device-width : 666px){
-          margin-top: 0vw;
-          width:100vw;
-          // right:4vw;
-          left: 0vw;
-          font-size: 2.75rem;
-        }
-        @media (max-device-width : 736px) and (orientation: landscape){
-          left:0;
-        }
-        @media only screen
-        and (min-device-width:300px) and (orientation: landscape)
-        and (max-device-width:666px) and (orientation: landscape){
-          display: none;
-        }
-        @media(max-width: 610px){
-          margin-top: 0vw;
-          width: 100vw;
-          left:0vw;
-          font-size: 2.75rem;
-        }
-        display: none;
-        font-size: 65px;
+      .eventsLable{
+        width: 50vw;
         text-align: center;
-        font-family: $fancy2;
-        color: $accent;
-        position: relative;
-        z-index: 15;
-        width:50%;
         background: rgba(233, 234, 234,.8);
-        // margin-left: auto;
-        // margin-right: auto;
-        margin-top: -460px;
-        right:0%;
+        .eventTitle{
+          // @media only screen
+          // and (min-device-width : 300px)
+          // and (max-device-width : 666px){
+          //   margin-top: 0vw;
+          //   width:100vw;
+          //   // right:4vw;
+          //   left: 0vw;
+          //   font-size: 2.75rem;
+          // }
+          // @media (max-device-width : 736px) and (orientation: landscape){
+          //   left:0;
+          // }
+          @media only screen
+          and (min-device-width:300px) and (orientation: landscape)
+          and (max-device-width:666px) and (orientation: landscape){
+            display: none;
+          }
+          @media(max-width: 610px){
+            width: 100vw;
+            font-size: 2.75rem;
+            background-color: white;
+          }
+          // display: none;
+          font-size: 65px;
+          text-align: center;
+          font-family: $fancy2;
+          color: $accent;
+          // position: relative;
+          z-index: 15;
+          // width:50%;
+          // background: rgba(233, 234, 234,.8);
+          // margin-left: auto;
+          // margin-right: auto;
+          // margin-top: -460px;
+          // right:0%;
+        }
       }
       .perfromancePic{
         // @media only screen
@@ -826,44 +832,29 @@ body{
         @media(max-width: 600px){
           background-image: none;
           justify-content: center;
+          align-items: flex-start;
           width:100%;
 
         }
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
         width: 100%;
         // height: 68vh;
         // height: 74.85125vh;
         border-top:#dee0e0 solid 1px;
-        border-bottom: black solid 1px;
+        // border-bottom: black solid 1px;
         background-image: url('/img/performance3.jpg');
         background-size: cover;
         background-position: center;
         z-index: 5;
         .under{
-          // @media only screen
-          // and (min-device-width : 320px)
-          // and (max-device-width : 666px){
-          //   margin-top: 12rem;
-          //   width:100vw;
-          //   height: 300%;
-          //   left: 0vw;
-          // }
-          // @media(orientation:landscape)and (max-device-width : 736px) {
-          //   position: absolute;
-          //   // margin-top:-.5rem;
-          //   width:100vw;
-          //   height: 300%;
-          // }
-          // @media(max-width: 610px){
-          //   // margin-top: 9rem;
-          //   width:100vw;
-          //   height: 300%;
-          //   left: 0vw;
-          //   position: relative;
-          // }
+
           @media(max-width: 600px){
             width:100%;
+            background-color: white;
+            border-bottom:none !important;
           }
           // position:relative;
           overflow: scroll;
@@ -871,7 +862,7 @@ body{
           // margin-left: 30rem;
           // margin-top: -40rem;
           width:50vw;
-          // height:100%;
+          height:20rem;
           background: rgba(233, 234, 234,.8);
           text-align: center;
 
