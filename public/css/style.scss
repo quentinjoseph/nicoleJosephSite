@@ -285,14 +285,14 @@ body{
     // overflow: auto;
     padding-bottom: 2.7rem;
   .title{
-    @media only screen
-    and (min-device-width : 300px)
-    and (max-device-width : 599px){
-
-    }
-    @media (orientation: landscape) and (max-device-width : 600px){
-
-    }
+    // @media only screen
+    // and (min-device-width : 300px)
+    // and (max-device-width : 599px){
+    //
+    // }
+    // @media (orientation: landscape) and (max-device-width : 600px){
+    //
+    // }
      @media (max-width : 862px){
      letter-spacing: 1rem;
      }
@@ -314,7 +314,7 @@ body{
 
 
 
-    height: 125px;
+    height: 130px;
     letter-spacing:2rem;
     text-align: center;
     font-family: $font;
@@ -325,7 +325,7 @@ body{
     }
     #soprano{
       font-size: 1.5em;
-      margin-top: -13px;
+      margin-top: -5px;
       margin-bottom: 10px;
     }
     .accent{
@@ -390,7 +390,7 @@ body{
     width: 100vw;
     height: 600px;
     margin: 0;
-    background-image: url('../img/resized/window.jpg');
+    background-image: url('/img/resized/window.jpg');
     background-attachment: fixed;
     background-position: 0 -200px;
     background-repeat: no-repeat;
@@ -845,7 +845,7 @@ body{
         justify-content: center;
         align-items: flex-end;
         width: 100%;
-        // height: 68vh;
+        height: 69.5vh;
         // height: 74.85125vh;
         border-top:#dee0e0 solid 1px;
         // border-bottom: black solid 1px;
@@ -895,7 +895,7 @@ body{
               font-size: 1rem;
             }
             font-family: $fancy;
-            color:$gold;
+            color:$accent;
             margin-bottom: 1rem;
           }
           h4{
@@ -910,7 +910,7 @@ body{
             @media(max-width: 295px){
               font-size: .75rem;
             }
-
+            // color:$gold;
             margin-bottom: .5rem;
             margin-top:-1rem;
           }

@@ -197,7 +197,7 @@ body {
   .container-fluid .doubleHolder {
     padding-bottom: 2.7rem; }
     .container-fluid .doubleHolder .title {
-      height: 125px;
+      height: 130px;
       letter-spacing: 2rem;
       text-align: center;
       font-family: money;
@@ -225,7 +225,7 @@ body {
         letter-spacing: 0 !important; }
       .container-fluid .doubleHolder .title #soprano {
         font-size: 1.5em;
-        margin-top: -13px;
+        margin-top: -5px;
         margin-bottom: 10px; }
       .container-fluid .doubleHolder .title .accent {
         color: #9B0423; }
@@ -247,7 +247,7 @@ body {
       width: 100vw;
       height: 600px;
       margin: 0;
-      background-image: url("../img/resized/window.jpg");
+      background-image: url("/img/resized/window.jpg");
       background-attachment: fixed;
       background-position: 0 -200px;
       background-repeat: no-repeat;
@@ -570,6 +570,7 @@ body {
             -ms-flex-align: end;
                 align-items: flex-end;
         width: 100%;
+        height: 69.5vh;
         border-top: #dee0e0 solid 1px;
         background-image: url("/img/performance3.jpg");
         background-size: cover;
@@ -608,7 +609,7 @@ body {
             font-family: "Didact Gothic", sans-serif; }
           .container-fluid .eventsPage .eventHolder .perfromancePic .under h3 {
             font-family: "Didact Gothic", sans-serif;
-            color: #c67b40;
+            color: #9B0423;
             margin-bottom: 1rem; }
             @media only screen and (min-device-width: 300px) and (max-device-width: 667px) {
               .container-fluid .eventsPage .eventHolder .perfromancePic .under h3 {
