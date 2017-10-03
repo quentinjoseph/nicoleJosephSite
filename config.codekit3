@@ -7,7 +7,7 @@
 		"uuidString": "398C6685-88A6-4EA5-BE98-221CE3B0A61D"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25900",
 "files": {
 	"\/.env": {
 		"ft": 8192,
@@ -53,6 +53,7 @@
 		},
 	"\/pg-connection-pool.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/pg-connection-pool-min.js",
@@ -84,6 +85,7 @@
 		},
 	"\/public\/bower_components\/angular-scroll\/angular-scroll.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/angular-scroll\/angular-scroll.js",
@@ -93,6 +95,7 @@
 		},
 	"\/public\/bower_components\/angular-scroll\/angular-scroll.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/angular-scroll\/angular-scroll.min.js",
@@ -152,6 +155,7 @@
 		},
 	"\/public\/bower_components\/angular-scroll\/gulpfile.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/angular-scroll\/gulpfile.js",
@@ -161,6 +165,7 @@
 		},
 	"\/public\/bower_components\/angular-scroll\/index.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/angular-scroll\/index.js",
@@ -212,6 +217,7 @@
 		},
 	"\/public\/bower_components\/angular\/angular.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/angular\/angular.js",
@@ -221,6 +227,7 @@
 		},
 	"\/public\/bower_components\/angular\/angular.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/angular\/angular.min.js",
@@ -250,6 +257,7 @@
 		},
 	"\/public\/bower_components\/angular\/index.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/angular\/index.js",
@@ -319,6 +327,7 @@
 		},
 	"\/public\/bower_components\/disable-scroll\/dist\/disable-scroll.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/disable-scroll\/dist\/disable-scroll.js",
@@ -328,6 +337,7 @@
 		},
 	"\/public\/bower_components\/disable-scroll\/dist\/disable-scroll.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/disable-scroll\/dist\/disable-scroll.min.js",
@@ -343,6 +353,7 @@
 		},
 	"\/public\/bower_components\/disable-scroll\/index.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/disable-scroll\/index.js",
@@ -400,6 +411,7 @@
 		},
 	"\/public\/bower_components\/ng-disable-scroll\/disable-scroll.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/ng-disable-scroll\/disable-scroll.js",
@@ -409,6 +421,7 @@
 		},
 	"\/public\/bower_components\/ng-disable-scroll\/disable-scroll.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/ng-disable-scroll\/disable-scroll.min.js",
@@ -472,6 +485,7 @@
 		},
 	"\/public\/bower_components\/smoothscroll\/dist\/smoothscroll.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/public\/bower_components\/smoothscroll\/dist\/smoothscroll.js",
@@ -1065,6 +1079,7 @@
 		},
 	"\/public\/js\/app-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/app-min-min.js",
@@ -1074,6 +1089,7 @@
 		},
 	"\/public\/js\/app.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/app-min.js",
@@ -1083,6 +1099,7 @@
 		},
 	"\/public\/js\/contactController-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/contactController-min-min.js",
@@ -1092,6 +1109,7 @@
 		},
 	"\/public\/js\/contactController.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/contactController-min.js",
@@ -1101,6 +1119,7 @@
 		},
 	"\/public\/js\/controller1-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/controller1-min-min.js",
@@ -1110,6 +1129,7 @@
 		},
 	"\/public\/js\/controller1.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/controller1-min.js",
@@ -1119,6 +1139,7 @@
 		},
 	"\/public\/js\/eventController-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/eventController-min-min.js",
@@ -1128,6 +1149,7 @@
 		},
 	"\/public\/js\/eventController.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/eventController-min.js",
@@ -1137,6 +1159,7 @@
 		},
 	"\/public\/js\/mapController-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/mapController-min-min.js",
@@ -1146,6 +1169,7 @@
 		},
 	"\/public\/js\/mapController.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/mapController-min.js",
@@ -1155,6 +1179,7 @@
 		},
 	"\/public\/js\/mediaController-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/mediaController-min-min.js",
@@ -1164,6 +1189,7 @@
 		},
 	"\/public\/js\/mediaController.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/mediaController-min.js",
@@ -1173,6 +1199,7 @@
 		},
 	"\/public\/js\/query-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/query-min-min.js",
@@ -1182,6 +1209,7 @@
 		},
 	"\/public\/js\/query.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/query-min.js",
@@ -1191,6 +1219,7 @@
 		},
 	"\/public\/js\/routes.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/routes-min.js",
@@ -1200,6 +1229,7 @@
 		},
 	"\/public\/js\/service.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/js\/service-min.js",
@@ -1209,6 +1239,7 @@
 		},
 	"\/public\/lib\/angular-route.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lib\/angular-route.min-min.js",
@@ -1218,6 +1249,7 @@
 		},
 	"\/public\/lib\/angular.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lib\/angular.min-min.js",
@@ -1325,6 +1357,7 @@
 		},
 	"\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap-min.js",
@@ -1334,6 +1367,7 @@
 		},
 	"\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/js\/bootstrap.min-min.js",
@@ -1343,6 +1377,7 @@
 		},
 	"\/public\/lib\/bootstrap-3.3.7-dist\/js\/npm.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lib\/bootstrap-3.3.7-dist\/js\/npm-min.js",
@@ -1352,6 +1387,7 @@
 		},
 	"\/public\/lib\/ui-bootstrap-tpls-2.5.0.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lib\/ui-bootstrap-tpls-2.5.0.min-min.js",
@@ -1422,6 +1458,7 @@
 		},
 	"\/public\/lightbox\/js\/lightbox-plus-jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lightbox\/js\/lightbox-plus-jquery-min.js",
@@ -1431,6 +1468,7 @@
 		},
 	"\/public\/lightbox\/js\/lightbox-plus-jquery.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lightbox\/js\/lightbox-plus-jquery.min-min.js",
@@ -1446,6 +1484,7 @@
 		},
 	"\/public\/lightbox\/js\/lightbox.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lightbox\/js\/lightbox-min.js",
@@ -1455,6 +1494,7 @@
 		},
 	"\/public\/lightbox\/js\/lightbox.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/lightbox\/js\/lightbox.min-min.js",
@@ -1480,6 +1520,7 @@
 		},
 	"\/public\/litty\/lity.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/litty\/lity-min.js",
@@ -1499,6 +1540,7 @@
 		},
 	"\/public\/litty\/lity.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/public\/litty\/lity.min-min.js",
@@ -1562,6 +1604,7 @@
 		},
 	"\/server-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/server-min-min.js",
@@ -1571,6 +1614,7 @@
 		},
 	"\/server.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/server-min.js",
@@ -1991,6 +2035,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -1998,6 +2046,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -2095,6 +2147,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -2114,6 +2170,10 @@
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -2242,6 +2302,10 @@
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -2787,6 +2851,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -2855,6 +2923,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 0,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -2894,6 +2966,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -3527,6 +3603,7 @@
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
